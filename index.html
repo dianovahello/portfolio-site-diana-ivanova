@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diana Ivanova</title>
-    
-    <link rel="stylesheet" type="text/css" href="css\normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="design-work">
     <header>
         <div class="container" id="top">
             <a href="./index.html">diana ivanova</a>
@@ -29,8 +29,8 @@
         </div>
     </header>
     <main>
-        <div title="main">
-            <section title="intro">
+        <div class="container">
+            <section title="intro" id="intro">
                 <h1>
                     Hi, I&#39;m Diana.
                     <span>
@@ -43,14 +43,14 @@
                     have one job: make a hard task easy.
                 </p>
             </section>
-            <section title="my work">
+            <section id="my-work">
                 <div>
                     <h2>
-                        My Work
+                        Work
                     </h2>
-                    <div>
-                        <article title="Project 1"> <!-- open row that holds (2) columns for project -->
-                            <div title="column img"> <!-- open first column (used for image) -->
+                    <div class="container">
+                        <div class="row" id="design-project-1">
+                            <div class="column">
                                 <a href="./zenvelopes.html">
                                     <picture>
                                         <source srcset="img/zenvelopes/img-zen@1x/img-zen-1@1x.png"
@@ -59,75 +59,75 @@
                                             alt="The cover image for a personal budgeting app called Zenvelopes.">
                                     </picture>
                                 </a>
-                            </div> <!-- end first column -->
-                            <div title="column txt"> <!-- open second column (used for text) -->
-                                <h3> <!-- heading for the project -->
+                            </div>
+                            <div class="column">
+                                <h3>
                                     Zenvelopes
                                 </h3>
                                 <p> <!-- project description -->
                                     Zenvelopes is a personal budgeting app for the faint of heart. Native for iOS and
                                     Android, it helps apply Japanese philosophy and mindfulness to personal finance.
                                 </p>
-                                <p> <!-- skills description -->
+                                <p> <!-- skills -->
                                     The UI phase involved understanding native iOS and Android patterns for mobile
                                     devices. I used advanced prototyping to test with iOS and Android users.
                                 </p>
-                                <a href="#">View project</a> <!-- button or link label -->
-                            </div> <!-- end second column -->
-                        </article> <!-- end row that holds (2) columns for project -->
-                        <article title="Project 2"> <!-- open row that holds (2) columns for project -->
-                            <div title="column img"> <!-- open first column (used for image) -->
+                                <a href="./zenvelopes.html" class="button">See project</a>
+                            </div>
+                        </div> 
+                        <div class="row" id="design-project-2">
+                            <div class="column">
                                 <picture>
                                     <source srcset="img/cookshop/img-cookshop@1x/img-cookshop-1@1x.png"
                                         media="(max-width:767px)">
                                     <img src="img/cookshop/img-cookshop@2x/img-cookshop-1@2x.png"
                                         alt="The cover image for a recipes app for men called Cookshop.">
                                 </picture>
-                            </div> <!-- end first column -->
-                            <div title="column txt"> <!-- open second column (used for text) -->
+                            </div> 
+                            <div class="column">
                                 <h3>
                                     Cookshop
-                                </h3> <!-- heading for the project -->
-                                <p> <!-- project description -->
+                                </h3>
+                                <p> <!-- project -->
                                     Cookshop is a male-targeted recipes app for desktop and mobile. Solving men&#39;s
                                     needs in the kitchen by showing how to host a dinner like James Bond.
                                 </p>
-                                <p> <!-- skills description -->
+                                <p> <!-- skills -->
                                     UX research involved assessing two areas: men&#39;s recipe needs, and the extent of
                                     gender bias in existing recipe resources, to find opportunities for a new product.
                                     UI process explored the question What is masculine UI? And created a responsive
                                     design for the web.
                                 </p>
-                                <a href="#">View project</a> <!-- button or link label -->
-                            </div> <!-- end second column -->
-                        </article> <!-- end row that holds (2) columns for project -->
-                        <article title="Project 3"> <!-- open row that holds (2) columns for project -->
-                            <div title="column img"> <!-- open first column (used for image) -->
+                                <a href="#" class="button">See project</a> <!-- button or link label -->
+                            </div>
+                        </div>
+                        <div class="row" id="design-project-3">
+                            <div class="column"> 
                                 <picture>
                                     <source srcset="img/wild-bloom/img-wb@1x/img-wb-1@1x.png" media="(max-width:767px)">
                                     <img src="img/wild-bloom/img-wb@2x/img-wb-1@2x.png"
                                         alt="The cover image for an online tea store called Wild Bloom.">
                                 </picture>
-                            </div> <!-- end first column -->
-                            <div title="column txt"> <!-- open second column (used for text) -->
-                                <h3> <!-- heading for the project -->
+                            </div>
+                            <div class="column"> 
+                                <h3>
                                     Wild Bloom
                                 </h3>
-                                <p> <!-- project description -->
+                                <p> <!-- project -->
                                     “Wild Bloom” is an ethical tea company with an (Oscar) Wilde side. Their signature
                                     line of “nude tea” is sourced in micro-quantities in the wild, then packaged with
                                     zero processing or additives.
                                 </p>
-                                <p> <!-- skills description -->
+                                <p> <!-- skills -->
                                     I created brand guidelines and responsive UI for Wild Bloom&#39;s e-commerce
                                     platform, from sketches to a high-fidelity prototype with animated interactions. The
-                                    challenge was to combine branding and usability: express the company values and
-                                    Victorian flair, house extensive information about their products, practices, and
-                                    initiatives, without sacrificing clarity, accessibility, and pleasure.
+                                    challenge was to combine branding and usability: express the company values with
+                                    Victorian flair, house extensive information about their products and
+                                    initiatives, without sacrificing clarity, accessibility, or pleasure.
                                 </p>
-                                <a href="#">View project</a> <!-- button or link label -->
-                            </div> <!-- end second column -->
-                        </article> <!-- end row that holds (2) columns for project -->
+                                <a href="#" class="button">See project</a> <!-- button or link label -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -135,9 +135,9 @@
     </main>
     <footer id="contact">
         <div> <!-- start footer content -->
-            <h1>
+            <h2>
                 Get In Touch
-            </h1>
+            </h2>
             <a href="#top">Back to top</a>
             <p>
                 Let's build something together: email me at dianovahello[at]gmail(dot)com, or call: <a
@@ -145,7 +145,7 @@
                     goes here</a>
             </p>
             <div>
-                <a href="mailto:dianovahello@gmail.com">Email me</a>
+                <a href="mailto:dianovahello@gmail.com" class="button secondary">Send me an email</a>
             </div>
             <div> <!--Social Media Links -->
                 <ul>
