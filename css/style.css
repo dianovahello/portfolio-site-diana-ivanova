@@ -70,6 +70,39 @@ a:active {
     transition: 0.2s opacity;
 }
 
-a {
-    text-decoration: underline;
+.button:focus,
+.button:hover {
+    background: #8aff23;
+    color:#171b27;
+    padding: 8px 16px;
+    border: 2px solid #8aff23;
+    font-weight: 600;
+}
+
+.button:active {
+    background-color:#6ECC1C;
+    color:#171b27;
+    padding: 8px 16px;
+    border: 2px solid #6ECC1C;
+    font-weight: 600;
+}
+
+
+.button.secondary {
+    background-color: transparent; 
+    color: #171b27;
+    border: 2px solid #171b27;
+    font-weight: 600;
+}
+
+.button.secondary:focus,
+.button.secondary:hover {
+    background-color: #8aff23;
+    border: 2px solid #8aff23;
+}
+
+.button.secondary:active {
+    background-color: #6ECC1C;
+    color: #171b27;
+    border-color: #6ECC1C;
 }
