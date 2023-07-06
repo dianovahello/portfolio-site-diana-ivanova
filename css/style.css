@@ -106,3 +106,7 @@ a:active {
     color: #171b27;
     border-color: #6ECC1C;
 }
+
+img {
+    width: 100%;
+}
