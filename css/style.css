@@ -7,6 +7,10 @@ accent/dark green: #6ECC1C;
 accent/normal blue: #47F0FF;
 */
 
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: #fbfbfb;
     font-family: 'Archivo', sans-serif;
