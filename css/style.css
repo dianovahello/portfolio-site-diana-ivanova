@@ -47,9 +47,11 @@ h4 {
 
 /* links */
 
-a:link,
-a:visited {
+a {
     color: #171b27;
+    padding: 0 2px;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 a:focus,
