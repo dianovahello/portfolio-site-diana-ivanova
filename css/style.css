@@ -58,13 +58,13 @@ a:focus,
 a:hover {
     text-decoration: none;
     background: #8aff23;
-    padding: 2px 4px;
+    
 }
 
 a:active {
     text-decoration: none;
     background: #6ECC1C;
-    padding: 2px 4px;
+    
 }
 
 
