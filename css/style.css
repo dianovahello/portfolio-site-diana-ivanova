@@ -116,7 +116,6 @@ a:active {
     font-weight: 600;
 }
 
-
 .button.secondary {
     background-color: transparent; 
     color: #171b27;
@@ -139,3 +138,88 @@ a:active {
 img {
     width: 100%;
 }
+
+/* layout styling */
+
+.container {
+    padding: 0 16px;
+}
+
+.row {
+    margin: 24px 0;
+}
+
+#work .row {
+    padding-bottom: 25px; 
+    /* border-bottom: 1px solid rgba(23, 27, 39, 0.1); */
+}
+
+header{
+    background-color: #fbfbfb;
+    text-align: center;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(23, 27, 39, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(23, 27, 39, 0.1), 0 4px 16px 0 rgba(23, 27, 39, 0.1);
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* 
+nav > ul > li > a:hover,
+nav > ul > li > a:focus,
+nav > ul > li > a:active {
+
+} */
+
+main{
+    padding-top: 80px;
+}
+
+
+#hero{
+    display: inline-block;
+    background-color: #fbfbfb;
+    padding: 0;
+    width: 100%;
+}
+
+/* .social-links {
+display: inline-block;
+}
+
+.social-links > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links > ul > li {
+    display: inline-block;
+}
+
+.social-links > ul > li > a > img {
+    width: 24px;
+} */
+
+
