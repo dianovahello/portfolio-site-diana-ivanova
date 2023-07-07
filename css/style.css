@@ -76,6 +76,14 @@ a:active {
     font-weight: 400;
     /* text-transform: uppercase; */
     text-decoration: none;
+}
+
+.img-link,
+.img-link:hover {
+    padding: none;
+    background: none;
+    border: none;
+}
 
 .button,
 .button:visited {
