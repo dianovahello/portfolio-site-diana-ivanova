@@ -222,4 +222,13 @@ display: inline-block;
     width: 24px;
 } */
 
+/* span text highlight */
+
+.green-background {
+    background-color:#8aff23;
+}
+.blue-background {
+    background-color: #47F0FF;
+}
+
 
