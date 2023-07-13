@@ -26,26 +26,24 @@ h1,
 h2,
 h3,
 h4 {
-    margin: 0px;
+    margin: 0;
 }
 
 h1 {
-    /* font-size: 6.854em; */
     font-size: 42px;
     line-height: 64px;
     font-weight: 700;
     text-align: center;
-    background-color: #E4E5E6;
     margin-top: 24px;
 }
 
 #hero h1 {
     font-size: 110px;
     line-height: 150%;
+    background-color: blueviolet;
 }
 
 h2 {
-    /* font-size: 4.236em; */
     font-size: 33px;
     line-height: 51px;
     font-weight: 700;
@@ -53,14 +51,12 @@ h2 {
 }
 
 h3 {
-    /* font-size: 2.618em; */
     font-size: 26px;
     line-height: 41px;
     font-weight: 700;
 }
 
 h4 {
-    /* font-size: 1.618em; */
     font-size: 20px;
     line-height: 32px;
     font-weight: 700;
@@ -71,7 +67,7 @@ h4 {
     font-weight: 700;
     line-height: 41px;
     display: block;
-    background-color: #fbfbfb;
+    /* background-color: #fbfbfb; */
 }
 
 .sub-span {
@@ -79,7 +75,7 @@ h4 {
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
-    background-color: #fbfbfb;
+    /* background-color: #fbfbfb; */
 }
 
 /* styling for links */
@@ -101,7 +97,6 @@ a:hover {
 
 a:active {
     opacity: 0.8;
-    text-decoration: none;
 }
 
 .logo {
@@ -111,7 +106,7 @@ a:active {
     background-color: #E4E5E6;
     font-size: 1em;
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .img-link,
@@ -175,6 +170,13 @@ img {
     padding: 0 16px;
 }
 
+.flex-container{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
 /* .row {
     margin: 24px 0;
 } */
@@ -184,7 +186,7 @@ img {
 }
 
 header {
-    background-color: #fbfbfb;
+    background-color: #fcffad;
     text-align: center;
     padding: 8px 0;
     position: fixed;
@@ -194,11 +196,13 @@ header {
     box-shadow: 0 4px 8px 0 rgba(23, 27, 39, 0.1), 0 4px 16px 0 rgba(23, 27, 39, 0.1);
 }
 
+/* styling for nav */
+
 nav {
+    background-color:#f76414;
     display: inline-block;
-    background-color: #fbfbfb;
     width: 100%;
-    overflow: hidden;
+    padding: 0;
 }
 
 nav>ul {
@@ -206,11 +210,11 @@ nav>ul {
     padding: 0;
 }
 
-nav>ul>li {
+nav ul li {
     display: inline-block;
 }
 
-nav>ul>li>a {
+nav ul li a {
     padding: 0 8px;
     text-transform: uppercase;
     text-decoration: none;
@@ -223,6 +227,31 @@ nav > ul > li > a:focus,
 nav > ul > li > a:active {
 } */
 
+/* styling for subnav */
+
+#subnav{
+    background-color:#edc655;
+    width: 100%;
+    display:inline-block;
+}
+
+#subnav ul{
+    list-style-type: none;
+    padding:0;
+}
+
+#subnav ul li {
+    display:inline-block;
+}
+
+#subnav ul li a {
+padding: 0 8px;
+text-decoration: none;
+font-weight: 700px;
+text-transform:lowercase;
+}
+
+
 main {
     padding-top: 80px;
     background-color: #fbfbfb;
@@ -231,10 +260,16 @@ main {
 
 #hero {
     display: inline-block;
+    margin-top: 50px;
     padding: 0;
     width: 100%;
 }
 
+/* styling for footer */
+
+footer{
+    text-align: center;
+}
 
 .social-links {
     display: inline-block;
@@ -353,16 +388,15 @@ main {
     /* styling for headings med 640px */
 
     h1 {
-        /* font-size: #em; */
         font-size: 47px;
         line-height: 74px;
         font-weight: 700;
         text-align: center;
-        background-color: #E4E5E6;
+        /* background-color: #E4E5E6; */
     }
 
     h2 {
-        /* font-size: #em; */
+        
         font-size: 37px;
         line-height: 59px;
         font-weight: 700;
@@ -370,14 +404,12 @@ main {
     }
 
     h3 {
-        /* font-size: #em; */
         font-size: 29px;
         line-height: 47px;
         font-weight: 700;
     }
 
     h4 {
-        /* font-size: #em; */
         font-size: 23px;
         line-height: 38px;
         font-weight: 700;
@@ -385,11 +417,12 @@ main {
 
     #hero {
         text-align: center;
+        background-color: blueviolet;
     }
 
-    .col-md-6 {
+    /* .col-md-6 {
         width: 50%;
-    }
+    } */
 
     #about-me h3 {
         margin-top: 0;
@@ -406,6 +439,7 @@ main {
     .button.secondary:active,
     .button.secondary {
         max-width: 398px;
+        margin:auto;
     }
 
     @media only screen and (min-width: 1024px) {
@@ -420,16 +454,14 @@ main {
         /* styling for headings lg 1024px */
 
         h1 {
-            /* font-size: #em; */
             font-size: 47px;
             line-height: 76px;
             font-weight: 700;
             text-align: center;
-            background-color: #E4E5E6;
+            /* background-color: #E4E5E6; */
         }
 
         h2 {
-            /* font-size: #em; */
             font-size: 37px;
             line-height: 62px;
             font-weight: 700;
@@ -437,14 +469,12 @@ main {
         }
 
         h3 {
-            /* font-size: #em; */
             font-size: 29px;
             line-height: 50px;
             font-weight: 700;
         }
 
         h4 {
-            /* font-size: #em; */
             font-size: 23px;
             line-height: 41px;
             font-weight: 700;
@@ -468,7 +498,7 @@ main {
             line-height: 79px;
             font-weight: 700;
             text-align: center;
-            background-color: #E4E5E6;
+            /* background-color: #E4E5E6; */
         }
 
         h2 {
