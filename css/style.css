@@ -37,12 +37,6 @@ h1 {
     margin-top: 24px;
 }
 
-#hero h1 {
-    font-size: 110px;
-    line-height: 150%;
-    background-color: blueviolet;
-}
-
 h2 {
     font-size: 33px;
     line-height: 51px;
@@ -67,7 +61,6 @@ h4 {
     font-weight: 700;
     line-height: 41px;
     display: block;
-    /* background-color: #fbfbfb; */
 }
 
 .sub-span {
@@ -75,7 +68,6 @@ h4 {
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
-    /* background-color: #fbfbfb; */
 }
 
 /* styling for links */
@@ -106,7 +98,7 @@ a:active {
     background-color: #E4E5E6;
     font-size: 1em;
     font-weight: 700;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .img-link,
@@ -170,36 +162,33 @@ img {
     padding: 0 16px;
 }
 
-.flex-container{
-    display:flex;
-    width:100%;
+.flex-container {
+    display: flex;
+    width: 100%;
+    padding: 8px 0;
     align-items: center;
     justify-content: center;
 }
-
-/* .row {
-    margin: 24px 0;
-} */
 
 #work .row {
     padding-bottom: 16px;
 }
 
 header {
-    background-color: #fcffad;
+    background-color: #fbfbfb;
     text-align: center;
     padding: 8px 0;
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 1px solid rgba(23, 27, 39, 0.1);
-    box-shadow: 0 4px 8px 0 rgba(23, 27, 39, 0.1), 0 4px 16px 0 rgba(23, 27, 39, 0.1);
+    /* border-bottom: 4px solid #080808; */
+    box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
 }
 
 /* styling for nav */
 
 nav {
-    background-color:#f76414;
+    background-color: transparent;
     display: inline-block;
     width: 100%;
     padding: 0;
@@ -221,34 +210,26 @@ nav ul li a {
     font-weight: 700;
 }
 
-/* 
-nav > ul > li > a:hover,
-nav > ul > li > a:focus,
-nav > ul > li > a:active {
-} */
-
 /* styling for subnav */
 
-#subnav{
-    background-color:#edc655;
+#subnav {
+    background-color: transparent;
     width: 100%;
-    display:inline-block;
+    display: inline-block;
 }
 
-#subnav ul{
+#subnav ul {
     list-style-type: none;
-    padding:0;
-}
-
-#subnav ul li {
-    display:inline-block;
+    padding: 0;
+    margin: 4px 0;
 }
 
 #subnav ul li a {
-padding: 0 8px;
-text-decoration: none;
-font-weight: 700px;
-text-transform:lowercase;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: 700px;
+    text-transform: lowercase;
+    color:#080808;
 }
 
 
@@ -260,15 +241,46 @@ main {
 
 #hero {
     display: inline-block;
-    margin-top: 50px;
-    padding: 0;
+    padding:0;
     width: 100%;
+}
+
+@keyframes hero-color {
+    0% {
+        color: #FC48FF;
+    }
+
+    /* 50% {
+        color: #8AFF23;
+    } */
+
+    100% {
+        color: #47F0FF;
+    }
+}
+
+#hero h1 {
+    font-size: 110px;
+    line-height: 150%;
+    background-color: transparent;
+    padding-bottom: 8px;
+    margin: 0 8px;
+}
+
+.hello-animate {
+    animation: 4s hero-color infinite alternate linear;
+
 }
 
 /* styling for footer */
 
-footer{
+footer {
     text-align: center;
+    color:#fbfbfb;
+}
+
+footer div.container{
+    border-top: 4px solid #080808;
 }
 
 .social-links {
@@ -333,8 +345,6 @@ footer{
     animation-timing-function: linear;
 }
 
-/* .sun { animation: 4s color-change infinite alternate linear; } */
-
 @keyframes cloud-move {
     from {
         transform: translate(0, 50px);
@@ -356,8 +366,13 @@ footer{
 /* .cloud-front { animation: 30s cloud-move infinite alternate linear; } */
 
 @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
 }
 
 .cloud-back {
@@ -392,11 +407,11 @@ footer{
         line-height: 74px;
         font-weight: 700;
         text-align: center;
-        /* background-color: #E4E5E6; */
+        margin-top: 0;
     }
 
     h2 {
-        
+
         font-size: 37px;
         line-height: 59px;
         font-weight: 700;
@@ -417,12 +432,11 @@ footer{
 
     #hero {
         text-align: center;
-        background-color: blueviolet;
     }
 
-    /* .col-md-6 {
-        width: 50%;
-    } */
+    .col-md-6 {
+        width: 100%;
+    }
 
     #about-me h3 {
         margin-top: 0;
@@ -439,7 +453,7 @@ footer{
     .button.secondary:active,
     .button.secondary {
         max-width: 398px;
-        margin:auto;
+        margin: auto;
     }
 
     @media only screen and (min-width: 1024px) {
@@ -458,7 +472,6 @@ footer{
             line-height: 76px;
             font-weight: 700;
             text-align: center;
-            /* background-color: #E4E5E6; */
         }
 
         h2 {
@@ -493,16 +506,13 @@ footer{
         /* styling for headings xl 1440px */
 
         h1 {
-            /* font-size: #em; */
             font-size: 47px;
             line-height: 79px;
             font-weight: 700;
             text-align: center;
-            /* background-color: #E4E5E6; */
         }
 
         h2 {
-            /* font-size: #em; */
             font-size: 37px;
             line-height: 65px;
             font-weight: 700;
@@ -510,14 +520,12 @@ footer{
         }
 
         h3 {
-            /* font-size: #em; */
             font-size: 29px;
             line-height: 53px;
             font-weight: 700;
         }
 
         h4 {
-            /* font-size: #em; */
             font-size: 23px;
             line-height: 44px;
             font-weight: 700;
