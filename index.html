@@ -16,6 +16,7 @@
 </head>
 
 <body id="design-work">
+
     <header id="top">
         <div class="container">
             <a href="./index.html" class="logo">d ivanova</a>
@@ -25,14 +26,6 @@
                     <li><a href="./about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <nav class="subnav" id="subnav">
-                    <div class="container">
-                        <ul>
-                            <li><a href="#">art</a></li>
-                            <li><a href="#">design</a></li>
-                        </ul>
-                    </div>
-                </nav>
             </nav>
         </div>
     </header>
@@ -41,7 +34,7 @@
         <section id="hero">
             <div class="container">
                 <h1>
-                    Hello
+                    <span class="hello-animate" style="background-image: url(./img/bg/bg-black-min.png);">Hello</span>
                     <span class="intro-span"> I&#39;m Diana. </span>
                     <span class="sub-span">
                         I&#39;m a UX/UI designer and conceptual artist in New York.
@@ -50,16 +43,21 @@
             </div>
         </section>
         <section id="work">
+            <h2> Work </h2>
+            <nav class="subnav" id="subnav">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">art</a></li>
+                        <li><a href="./index.html">design</a></li>
+                    </ul>
+                </div>
+            </nav>
             <div class="container">
-                <h2> Work </h2>
                 <div class="row" id="design-project-1">
                     <div class="col-md-6 col-lg-7">
                         <a href="./zenvelopes.html" class="img-link">
-                            <picture>
-                                <source srcset="img/zenvelopes/img-zen@1x/img-zen-1@1x.png" media="(max-width:767px)">
-                                <img src="img/zenvelopes/img-zen@2x/img-zen-1@2x.png"
-                                    alt="The cover image for a personal budgeting app called Zenvelopes.">
-                            </picture>
+                            <img src="img/covers/img-min.png"
+                                alt="The cover image for a personal budgeting app called Zenvelopes.">
                         </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
@@ -82,12 +80,8 @@
                 <div class="row" id="design-project-2">
                     <div class="col-md-6 col-lg-7">
                         <a href="#" class="img-link">
-                            <picture>
-                                <source srcset="img/cookshop/img-cookshop@1x/img-cookshop-1@1x.png"
-                                    media="(max-width:767px)">
-                                <img src="img/cookshop/img-cookshop@2x/img-cookshop-1@2x.png"
-                                    alt="The cover image for a recipes app for men called Cookshop.">
-                            </picture>
+                            <img src="img/covers/img-2-min.png"
+                                alt="The cover image for a recipes app for men called Cookshop.">
                         </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
@@ -112,11 +106,8 @@
                 <div class="row" id="design-project-3">
                     <div class="col-md-6 col-lg-7">
                         <a href="#" class="img-link">
-                            <picture>
-                                <source srcset="img/wild-bloom/img-wb@1x/img-wb-1@1x.png" media="(max-width:767px)">
-                                <img src="img/wild-bloom/img-wb@2x/img-wb-1@2x.png"
-                                    alt="The cover image for an online tea store called Wild Bloom.">
-                            </picture>
+                            <img src="img/covers/img-1-min.png"
+                                alt="The cover image for an online tea store called Wild Bloom.">
                         </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
@@ -149,12 +140,12 @@
                         <h3>
                             CSS animation
                         </h3>
-                        <p> <!-- project -->
+                        <!-- <p>
                             project description goes here
                         </p>
-                        <p> <!-- skills -->
+                        <p>
                             skills description goes here
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -163,19 +154,18 @@
     </main>
 
     <footer id="contact">
-        <div class="container">
+        <div class="container" style="background-image: url(./img/bg/bg-black-min.png);">
             <h2>
-                <span class="intro-span">
-                    Get in touch.
+                <span>
+                    Contact
                 </span>
             </h2>
-            <!-- <a href="#top">Back to top</a> -->
             <p>
-                email me at dianovahello[at]gmail(dot)com, or call: <a href="tel:#">phone number
-                    goes here</a>
+                email me at dianovahello [at] gmail (dot) com
+                <!-- or call: <a href="tel:#">phone number goes here</a> -->
             </p>
-            <div>
-                <a href="mailto:dianovahello@gmail.com" class="button secondary">Send me an email</a>
+            <div class="flex-container">
+                <a href="mailto:dianovahello@gmail.com" class="button primary">Send me an email</a>
             </div>
             <div class="social-links">
                 <ul>
@@ -194,6 +184,9 @@
             <p>Copyright Diana Ivanova 2023-2024</p>
         </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
