@@ -92,7 +92,7 @@ a:active {
 }
 
 .logo {
-    max-width: 250px;
+    max-width: 150px;
     padding: 4px;
     color: #080808;
     background-color: #E4E5E6;
@@ -388,6 +388,10 @@ footer div.container{
 
     header {
         text-align: unset;
+    }
+
+    .logo {
+        max-width: 250px;
     }
 
     nav {
