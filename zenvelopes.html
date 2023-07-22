@@ -20,16 +20,23 @@
 </head>
 
 <body id="zen">
-    <header>
-        <div class="container" id="top">
-            <a href="./index.html" class="logo">d ivanova</a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Work</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <header id="top">
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="./index.html" class="logo">d ivanova</a>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Work</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li>
+                            <a href="#contact"
+                                onclick="if (window.matchMedia('(max-width: 639px)').matches) menuToggle()">Contact</a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"
+                                    id="hamburger-icon"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -48,18 +55,17 @@
                                 <p>
                                     Zenvelopes is a budgeting app that helps users apply an ancient Japanese budgeting
                                     system to their lives, gain a deep understanding of their spending habits, and grow
-                                    a
-                                    healthy relationship with money.
+                                    a healthy relationship with money.
                                 </p>
                                 <div class="prototype-links">
-                                    <h3>Try a prototype</h3>
+                                    <h3>Play prototype</h3>
                                     <ul>
                                         <li><a href="https://www.figma.com/proto/RejNsUfslRbg3oESUKl4tq/Zenvelopes-paper-prototype?node-id=1-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2"
-                                                target="_blank">low-fidelity paper</a></li>
+                                                target="_blank" class="button">paper</a></li>
                                         <li><a href="https://www.figma.com/proto/q2lf9NwyEG36pOMteZlhUc/Zenvelopes-iOS-high-fidelity-prototype?type=design&node-id=155-6283&t=a6ZN1wMzEwAtBXOf-1&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6283&mode=design"
-                                                target="_blank">high-fidelity iOS</a></li>
+                                                target="_blank" class="button">iOS</a></li>
                                         <li><a href="https://www.figma.com/proto/Rb9akdInOnROUxSUXyWFQC/Zenvelopes-Androind-high-fidelity-prototype?type=design&node-id=155-6433&t=sWBMWhcoSgNzmZe4-0&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6433"
-                                                target="_blank">high-fidelity Android</a></li>
+                                                target="_blank" class="button">Android</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -87,8 +93,9 @@
                 </div>
             </section>
 
-            <section class="problem-statement" id="zen-problem">
-                <h3>Defining the problem</h3>
+            <section class="problem-statement">
+                <h3 id="zen-problem">Defining the problem</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-15@2x.png"
                         alt="a frustrated young woman at a computer in a creative office.">
@@ -141,12 +148,13 @@
                             Kakeibo.
                         </p>
                     </div>
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="kakeibo" id="kakeibo">
-                <h3>Kakeibo</h3>
+            <section class="kakeibo">
+                <h3 id="kakeibo">Kakeibo</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-14@2x.png"
                         alt="A landscape photo showing Japanese architecture with Mount Fuji in the background.">
@@ -160,12 +168,13 @@
                         This minimalist method helps prevent overwhelm, encourages mindful decisionmaking, and increases
                         self-knowledge.
                     </p>
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="user-flow" id="zen-uflow">
-                <h3>user flow</h3>
+            <section class="user-flow">
+                <h3  id="zen-uflow">user flow</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-2@2x.png" alt="Flowchart showing the app structure.">
                     <p>
@@ -180,12 +189,13 @@
                         insights to the journaling feature. Any flow is accessible at any time from the homepage, and
                         reminders to track and reflect are set by the user themselves.
                     </p>
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="low-fi" id="zen-lofi">
-                <h3>low fidelity</h3>
+            <section class="low-fi">
+                <h3 id="zen-lofi">low fidelity</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-3@2x.png" alt="A series of sketches for app screens.">
                     <div class="prototype">
@@ -193,12 +203,13 @@
                             target="_blank">Try the paper prototype</a>
                     </div>
                     <p>paragraph about this step in the process goes here</p> <!--paste this content-->
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="iOS-vs-Android" id="zen-vs">
-                <h3>iOS vs Android</h3>
+            <section class="iOS-vs-Android">
+                <h3 id="zen-vs">iOS vs Android</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-4@2x.png"
                         alt="An annotated visual comparison of iOS and Android screens showing native patterns.">
@@ -208,12 +219,13 @@
                         Human Interface and Material Design guidelines, then worked side-by-side on every screen
                         starting at
                         the mid-fidelity level.</p> <!--add links to design guidelines-->
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="sounds-and-gestures" id="zen-sounds-gestures">
-                <h3>touch, sounds, and gestures</h3>
+            <section class="sounds-and-gestures">
+                <h3 id="zen-sounds-gestures">touch, sounds, and gestures</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-5@2x.png"
                         alt="Annotated mockups showing gestures, haptic and auditory feedback.">
@@ -226,12 +238,13 @@
                         appropriate, I implemented a soothing “paper theme” consistent with the ink-on-parchment look of
                         the
                         UI.</p>
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="logo-branding" id="zen-logo">
-                <h3>visual direction</h3>
+            <section class="logo-branding">
+                <h3 id="zen-logo">visual direction</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-8@2x.png"
                         alt="An image showing the Zenvelopes logo and its components: ink brushmark, equal sign, and the letter Z.">
@@ -245,12 +258,13 @@
                     <p>In keeping with this system, the logo is a minimal set of two ink strokes that create an “equal”
                         sign, signifying balance. Their positions relative to each other evidence the letter “Z”.
                     </p>
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="testing-and-revisions" id="zen-testing">
-                <h3>Testing and revisions</h3>
+            <section class="testing-and-revisions">
+                <h3 id="zen-testing">Testing and revisions</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <img src="img/zenvelopes/img-zen@2x/zen-revision-01@2x-min.png"
                         alt="A before and after image showing changes made after the testing phase.">
@@ -268,12 +282,13 @@
                         natural
                         and familiar. With user feedback, I applied several revisions. I reduced the number of screens,
                         added informative tooltips and slideouts.</p>
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="high-fi-iOS" id="zen-hifi-ios">
-                <h3>high fidelity: iOS</h3>
+            <section class="high-fi-iOS" >
+                <h3 id="zen-hifi-ios">high fidelity: iOS</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <div class="prototype">
                         <a href="https://www.figma.com/proto/q2lf9NwyEG36pOMteZlhUc/Zenvelopes-iOS-high-fidelity-prototype?type=design&node-id=155-6283&t=a6ZN1wMzEwAtBXOf-1&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6283&mode=design"
@@ -282,12 +297,13 @@
                     <img src="img/zenvelopes/img-zen@2x/img-zen-9@2x-min.png" alt="iOS high-fidelity mockups">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-10@2x-min.png" alt="iOS high-fidelity mockups">
                     <p>paragraph about this step in the process</p> <!--paste this content-->
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
-            <section class="high-fi-Android" id="zen-hifi-android">
-                <h3>high fidelity: Android</h3>
+            <section class="high-fi-Android">
+                <h3 id="zen-hifi-android">high fidelity: Android</h3>
+                <a href="#zen-table-contents">Back to table of contents</a>
                 <div class="content">
                     <div class="prototype">
                         <a href="https://www.figma.com/proto/Rb9akdInOnROUxSUXyWFQC/Zenvelopes-Androind-high-fidelity-prototype?type=design&node-id=155-6433&t=sWBMWhcoSgNzmZe4-0&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6433"
@@ -296,7 +312,7 @@
                     <img src="img/zenvelopes/img-zen@2x/img-zen-11@2x-min.png" alt="Android high-fidelity mockups">
                     <img src="img/zenvelopes/img-zen@2x/img-zen-12@2x-min.png" alt="Android high-fidelity mockups">
                     <p>paragraph about this step in the process</p> <!--paste this content-->
-                    <a href="#zen-table-contents">Back to table of contents</a>
+                    
                 </div>
             </section>
 
@@ -315,25 +331,24 @@
             </h2>
             <p>
                 email me at dianovahello [at] gmail (dot) com
-                <!-- or call: <a href="tel:#">phone number goes here</a> -->
             </p>
             <div class="flex-container">
                 <a href="mailto:dianovahello@gmail.com" class="button primary">Send me an email</a>
             </div>
             <div class="social-links">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/thediana/" target="_blank" rel="noreferrer"
-                            class="img-link">
-                            <img src="linkedin.svg" alt="linkedin logo" class="i-linkedin">
-                        </a>
-                    </li>
-                    <li><a href="https://www.behance.net/dianaivanova15" target="_blank" rel="noreferrer"
-                            class="img-link">
-                            <img src="behance.svg" alt="behance logo" class="i-behance">
-                        </a>
-                    </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/thediana/" target="_blank" rel="noreferrer">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.behance.net/dianaivanova15" target="_blank" rel="noreferrer">
+                      <i class="fab fa-behance"></i>
+                    </a>
+                  </li>
                 </ul>
-            </div>
+              </div>
             <p>Copyright Diana Ivanova 2023-2024</p>
         </div>
     </footer>
