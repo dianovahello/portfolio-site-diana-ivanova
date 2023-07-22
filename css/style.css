@@ -84,7 +84,6 @@ a:focus,
 a:hover {
     background: #E4E5E6;
     text-decoration: none;
-
 }
 
 a:active {
@@ -93,12 +92,11 @@ a:active {
 
 .logo {
     max-width: 150px;
-    padding: 4px;
-    color: #080808;
     background-color: #E4E5E6;
-    font-size: 1em;
     font-weight: 700;
     text-decoration: none;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .img-link,
@@ -108,6 +106,106 @@ a:active {
     border: none;
 }
 
+.social-links {
+    display: inline-block;
+    width: 100%;
+}
+
+.social-links>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links>ul>li {
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.social-links i {
+    color: #fbfbfb;
+}
+
+.social-links a:focus,
+.social-links a:hover {
+    background: transparent;
+    text-decoration: none;
+}
+
+/* styling for nav */
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 0 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle,
+.navtoggle-responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding: 0;
+    font-size: 20px;
+    margin: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.navtoggle-responsive li .icon:hover,
+.navtoggle-responsive li .icon:focus {
+    background: transparent;
+}
+
+.navtoggle-responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle-responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #e4e5e6;
+}
+
+.navtoggle-responsive li:last-child {
+    padding: 10px 0 0;
+}
+
+/* styling for subnav */
+
+#subnav {
+    background-color: transparent;
+    width: 100%;
+    display: inline-block;
+}
+
+#subnav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 4px 0;
+}
+
+#subnav ul li a {
+    padding: 8px;
+    text-decoration: none;
+    font-weight: 700px;
+    text-transform: lowercase;
+    color: #080808;
+}
 
 /* styling for buttons */
 
@@ -176,8 +274,7 @@ img {
 
 header {
     background-color: #fbfbfb;
-    text-align: center;
-    padding: 8px 0;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -185,63 +282,18 @@ header {
     box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
 }
 
-/* styling for nav */
-
-nav {
-    background-color: transparent;
-    display: inline-block;
-    width: 100%;
-    padding: 0;
-}
-
-nav>ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    padding: 0 8px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-/* styling for subnav */
-
-#subnav {
-    background-color: transparent;
-    width: 100%;
-    display: inline-block;
-}
-
-#subnav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 4px 0;
-}
-
-#subnav ul li a {
-    padding: 8px;
-    text-decoration: none;
-    font-weight: 700px;
-    text-transform: lowercase;
-    color:#080808;
-}
-
+/* styling for main */
 
 main {
-    padding-top: 80px;
+    padding-top: 44px;
     background-color: #fbfbfb;
 }
 
 
 #hero {
     display: inline-block;
-    padding:0;
+    background-color: #fbfbfb;
+    padding: 0;
     width: 100%;
 }
 
@@ -276,32 +328,11 @@ main {
 
 footer {
     text-align: center;
-    color:#fbfbfb;
+    color: #fbfbfb;
 }
 
-footer div.container{
+footer div.container {
     border-top: 4px solid #080808;
-}
-
-.social-links {
-    display: inline-block;
-    width: 100%;
-}
-
-.social-links>ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-links>ul>li {
-    display: inline-block;
-    padding: 0 8px;
-}
-
-.i-behance,
-.i-linkedin {
-    width: 40px;
-    height: auto;
 }
 
 [class*="col-"] {
@@ -392,11 +423,25 @@ footer div.container{
 
     .logo {
         max-width: 250px;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
 
     nav {
         width: auto;
         float: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
     }
 
     main {
