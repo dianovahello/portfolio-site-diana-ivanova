@@ -34,7 +34,6 @@ h1 {
     line-height: 64px;
     font-weight: 700;
     text-align: center;
-    margin-top: 24px;
 }
 
 h2 {
@@ -225,6 +224,21 @@ nav ul li a {
 
 }
 
+.button-secondary,
+.button-secondary:visited {
+    display: inline-block;
+    width: 100%;
+    background-color: #E4E5E6;
+    color: #080808;
+    border: 2px solid #080808;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 40px;
+    text-align: center;
+    transition: 0.2s color;
+}
+
 .button:focus,
 .button:hover,
 .button.secondary:focus,
@@ -243,11 +257,10 @@ nav ul li a {
     border: 2px solid #FC48FF;
 }
 
-.button.secondary {
-    background-color: #E4E5E6;
-    color: #080808;
-    border: 2px solid #080808;
-    font-weight: 400;
+.button-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 img {
