@@ -19,16 +19,23 @@
 </head>
 
 <body id="about-me">
-    <header>
-        <div class="container" id="top">
-            <a href="./index.html" class="logo">d ivanova</a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Work</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <header id="top">
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="./index.html" class="logo">d ivanova</a>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Work</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li>
+                            <a href="#contact"
+                                onclick="if (window.matchMedia('(max-width: 639px)').matches) menuToggle()">Contact</a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"
+                                    id="hamburger-icon"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -74,7 +81,9 @@
                             in real time, and applying design thinking to develop a product that helps people achieve
                             their goals.
                         </p>
-                        <a href="files/cv-placeholder.pdf" target="_blank" class="button">download my cv</a>
+                        <div class="flex-container">
+                            <a href="files/cv-placeholder.pdf" target="_blank" class="button">download my cv</a>
+                        </div>
                     </div>
                     <div class="row">
                         <h2>Skills and tools</h2>
@@ -114,25 +123,24 @@
             </h2>
             <p>
                 email me at dianovahello [at] gmail (dot) com
-                <!-- or call: <a href="tel:#">phone number goes here</a> -->
             </p>
             <div class="flex-container">
                 <a href="mailto:dianovahello@gmail.com" class="button primary">Send me an email</a>
             </div>
             <div class="social-links">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/thediana/" target="_blank" rel="noreferrer"
-                            class="img-link">
-                            <img src="linkedin.svg" alt="linkedin logo" class="i-linkedin">
-                        </a>
-                    </li>
-                    <li><a href="https://www.behance.net/dianaivanova15" target="_blank" rel="noreferrer"
-                            class="img-link">
-                            <img src="behance.svg" alt="behance logo" class="i-behance">
-                        </a>
-                    </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/thediana/" target="_blank" rel="noreferrer">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.behance.net/dianaivanova15" target="_blank" rel="noreferrer">
+                      <i class="fab fa-behance"></i>
+                    </a>
+                  </li>
                 </ul>
-            </div>
+              </div>
             <p>Copyright Diana Ivanova 2023-2024</p>
         </div>
     </footer>
