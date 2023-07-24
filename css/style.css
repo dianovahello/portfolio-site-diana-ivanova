@@ -80,18 +80,15 @@ a {
 }
 
 a:focus,
-a:hover {
-    background: #E4E5E6;
-    text-decoration: none;
-}
-
+a:hover,
 a:active {
-    opacity: 0.8;
+    background-color: rgba(71, 240, 255, 0.2);
+    text-decoration: none;
+    border-radius: 40px;
 }
 
 .logo {
     max-width: 150px;
-    background-color: #E4E5E6;
     font-weight: 700;
     text-decoration: none;
     -ms-transform: translateY(-50%);
@@ -110,12 +107,12 @@ a:active {
     width: 100%;
 }
 
-.social-links>ul {
+.social-links > ul {
     list-style-type: none;
     padding: 0;
 }
 
-.social-links>ul>li {
+.social-links > ul > li {
     display: inline-block;
     padding: 0 8px;
 }
@@ -139,7 +136,7 @@ nav>ul {
 }
 
 nav ul li a {
-    padding: 0 8px;
+    padding: 8px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
@@ -182,28 +179,6 @@ nav ul li a {
 
 .navtoggle-responsive li:last-child {
     padding: 10px 0 0;
-}
-
-/* styling for subnav */
-
-#subnav {
-    background-color: transparent;
-    width: 100%;
-    display: inline-block;
-}
-
-#subnav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 4px 0;
-}
-
-#subnav ul li a {
-    padding: 8px;
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: lowercase;
-    color: #080808;
 }
 
 /* styling for buttons */
@@ -250,7 +225,7 @@ nav ul li a {
 }
 
 .button:active,
-.button.secondary:active {
+.button-secondary:active {
     background-color: #FC48FF;
     color: #080808;
     padding: 8px 16px;
@@ -258,13 +233,63 @@ nav ul li a {
 }
 
 .button-list {
-list-style-type: none;
-margin: 0;
-padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
     width: 100%;
+}
+
+/* styling for subnav */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #fbfbfb;
+    border-top: solid 2px #E4E5E6;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: none; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.2s;
+    font-size: 17px;
+    border-radius: 40px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgba(71, 240, 255, 0.2);
+    border-radius: 40px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgba(71, 240, 255, 0.2);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+/* Activate the design tab by default */
+.tabcontent.default-active {
+    display: block;
 }
 
 /* layout styling */
@@ -279,6 +304,10 @@ img {
     padding: 8px 0;
     align-items: center;
     justify-content: center;
+}
+
+.tab {
+    padding: 16px 0;
 }
 
 #work .row {
@@ -359,72 +388,7 @@ footer div.container {
     display: table;
 }
 
-/*--css animation--*/
-
-.berlin-illustration {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-
-    50% {
-        fill: #fcffad;
-    }
-
-    100% {
-        fill: #f76414;
-    }
-}
-
-.sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-/* .cloud-front { animation: 30s cloud-move infinite alternate linear; } */
-
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-
-
+/*--css animation can go here--*/
 
 /* media queries */
 
@@ -457,7 +421,11 @@ footer div.container {
         display: none;
     }
 
-    main {
+    .tab{
+        float: inherit;
+    }
+
+   main {
         font-size: 18px;
         line-height: 31px;
     }

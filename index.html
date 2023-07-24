@@ -53,24 +53,31 @@
                 </h1>
             </div>
         </section>
+
         <section id="work">
             <h2> Work </h2>
-            <nav class="subnav" id="subnav">
+
+            <nav class="subnav tab flex-container" id="subnav">
+
                 <div class="container">
-                    <ul>
-                        <li><a href="#">art</a></li>
-                        <li><a href="./index.html">design</a></li>
-                    </ul>
+                    <button class="tablinks subnavlinks" onclick="openWork(event, 'art')">art</button>
+                    <button class="tablinks subnavlinks active" onclick="openWork(event, 'design')">design</button>
+                    <button class="tablinks subnavlinks" onclick="openWork(event, 'world')">world</button>
                 </div>
+                
             </nav>
-            <div class="container">
+
+            <div class="container tabcontent default-active" id="design">
+
                 <div class="row" id="design-project-1">
+
                     <div class="col-md-6 col-lg-7">
                         <a href="./zenvelopes.html" class="img-link">
                             <img src="img/covers/img-min.png"
                                 alt="The cover image for a personal budgeting app called Zenvelopes.">
                         </a>
                     </div>
+
                     <div class="col-md-6 col-lg-5">
                         <h3>
                             Zenvelopes
@@ -87,14 +94,18 @@
                             <a href="./zenvelopes.html" class="button">See project</a>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="row" id="design-project-2">
+
                     <div class="col-md-6 col-lg-7">
                         <a href="#" class="img-link">
                             <img src="img/covers/img-2-min.png"
                                 alt="The cover image for a recipes app for men called Cookshop.">
                         </a>
                     </div>
+
                     <div class="col-md-6 col-lg-5">
                         <h3>
                             Cookshop
@@ -114,13 +125,16 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row" id="design-project-3">
+
                     <div class="col-md-6 col-lg-7">
                         <a href="#" class="img-link">
                             <img src="img/covers/img-1-min.png"
                                 alt="The cover image for an online tea store called Wild Bloom.">
                         </a>
                     </div>
+
                     <div class="col-md-6 col-lg-5">
                         <h3>
                             Wild Bloom
@@ -141,12 +155,142 @@
                             <a href="#" class="button">See project</a>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row" id="design-project-4">
-                 <!-- animation goes here -->
+                    <!-- animation goes here -->
                 </div>
             </div>
+
+            <div class="container tabcontent" id="art">
+                <div class="row" id="art-project-1">
+                    <div class="col-md-6 col-lg-7">
+                        <a href="./zenvelopes.html" class="img-link">
+                            <img src="img/covers/img-min.png"
+                                alt="The cover image for a personal budgeting app called Zenvelopes.">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3>
+                            Art Project
+                        </h3>
+                        <p> <!-- project description -->
+                            Project description goes here.
+                        </p>
+                        <div class="flex-container">
+                            <a href="./zenvelopes.html" class="button">See project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="art-project-2">
+                    <div class="col-md-6 col-lg-7">
+                        <a href="#" class="img-link">
+                            <img src="img/covers/img-2-min.png"
+                                alt="The cover image for a recipes app for men called Cookshop.">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3>
+                            Art project
+                        </h3>
+                        <p> <!-- project -->
+                            Project description goes here.
+                        </p>
+                        <div class="flex-container">
+                            <a href="#" class="button">See project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="art-project-3">
+                    <div class="col-md-6 col-lg-7">
+                        <a href="#" class="img-link">
+                            <img src="img/covers/img-1-min.png"
+                                alt="The cover image for an online tea store called Wild Bloom.">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3>
+                            Art project
+                        </h3>
+                        <p> <!-- project -->
+                            Project description goes here.
+                        </p>
+                        <div class="flex-container">
+                            <a href="#" class="button">See project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="art-project-4">
+                    <!-- animation goes here -->
+                </div>
+            </div>
+
+            <div class="container tabcontent" id="world">
+                <div class="row" id="textile-project-1">
+                    <div class="col-md-6 col-lg-7">
+                        <a href="./zenvelopes.html" class="img-link">
+                            <img src="img/covers/img-min.png"
+                                alt="The cover image for a personal budgeting app called Zenvelopes.">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3>
+                            Textile Project
+                        </h3>
+                        <p> <!-- project description -->
+                            Project description goes here.
+                        </p>
+                        <div class="flex-container">
+                            <a href="./zenvelopes.html" class="button">See project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="textile-project-2">
+                    <div class="col-md-6 col-lg-7">
+                        <a href="#" class="img-link">
+                            <img src="img/covers/img-2-min.png"
+                                alt="The cover image for a recipes app for men called Cookshop.">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3>
+                            Textile project
+                        </h3>
+                        <p> <!-- project -->
+                            Project description goes here.
+                        </p>
+                        <div class="flex-container">
+                            <a href="#" class="button">See project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="textile-project-3">
+                    <div class="col-md-6 col-lg-7">
+                        <a href="#" class="img-link">
+                            <img src="img/covers/img-1-min.png"
+                                alt="The cover image for an online tea store called Wild Bloom.">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3>
+                            Textile project
+                        </h3>
+                        <p> <!-- project -->
+                            Project description goes here.
+                        </p>
+                        <div class="flex-container">
+                            <a href="#" class="button">See project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="textile-project-4">
+                    <!-- animation goes here -->
+                </div>
+            </div>
+
         </section>
 
     </main>
@@ -166,18 +310,18 @@
             </div>
             <div class="social-links">
                 <ul>
-                  <li>
-                    <a href="https://www.linkedin.com/in/thediana/" target="_blank" rel="noreferrer">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.behance.net/dianaivanova15" target="_blank" rel="noreferrer">
-                      <i class="fab fa-behance"></i>
-                    </a>
-                  </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/thediana/" target="_blank" rel="noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/dianaivanova15" target="_blank" rel="noreferrer">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </li>
                 </ul>
-              </div>
+            </div>
             <p>Copyright Diana Ivanova 2023-2024</p>
         </div>
     </footer>

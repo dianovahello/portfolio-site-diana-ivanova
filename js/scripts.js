@@ -16,7 +16,7 @@ function menuToggle() {
 }
 
 // Smooth scrolling
-// 1. select all link with #
+// 1. select all links with #
 $('a[href*="#"]')
 
     // 2. Remove links that don't link to anything
@@ -56,5 +56,25 @@ $('a[href*="#"]')
             }
         }
     });
+
+// Subnav tabs
+
+function openWork(evt, workName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        if (tablinks[i].getAttribute("onclick") === evt.currentTarget.getAttribute("onclick")) {
+            tablinks[i].classList.add("active");
+        } else {
+            tablinks[i].classList.remove("active");
+        }
+    }
+    document.getElementById(workName).style.display = "block";
+}
+
 
 
