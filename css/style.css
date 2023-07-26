@@ -2,8 +2,9 @@
 Colors used:
 white: #fbfbfb;
 black: #080808;
-light grey: #E4E5E6;
+light grey: #E4E5E6; rgba(23, 27, 39, 0.1);
 accent/pink: 
+accent/blue:  rgba(71, 240, 255, 0.2);
 */
 
 * {
@@ -74,7 +75,7 @@ h4 {
 a {
     color: #080808;
     padding: 4px;
-    font-weight: 600;
+    /* font-weight: 600; */
     text-decoration: underline;
     transition: 0.2s color;
     border-radius: 40px;
@@ -83,7 +84,7 @@ a {
 a:focus,
 a:hover,
 a:active {
-    background-color: rgba(71, 240, 255, 0.2);
+    background-color: rgba(23, 27, 39, 0.1);
     text-decoration: none;
 }
 
@@ -216,6 +217,18 @@ nav ul li a {
     transition: 0.2s color;
 }
 
+.button-tertiary,
+.button-tertiary:visited {
+    display: inline-block;
+    width: 100%;
+    color: #080808;
+    font-weight: 400;
+    padding: 8px;
+    border-radius: 40px;
+    text-align: center;
+    transition: 0.2s color;
+}
+
 .button:focus,
 .button:hover,
 .button-secondary:focus,
@@ -273,7 +286,7 @@ img {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: rgba(71, 240, 255, 0.2);
+    background-color: rgba(23, 27, 39, 0.1);
     border-radius: 40px;
 }
 
@@ -501,7 +514,9 @@ footer div.container {
     .button-secondary:hover,
     .button:active,
     .button-secondary:active,
-    .button-secondary {
+    .button-secondary,
+    .button-tertiary,
+    .button-tertiary:visited {
         max-width: 398px;
         margin: auto;
     }
