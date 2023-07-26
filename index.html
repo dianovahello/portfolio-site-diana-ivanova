@@ -19,312 +19,320 @@
 
 </head>
 
-<body id="design-work">
+<body id="design-work" class="body-background">
 
-    <header id="top">
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <a href="./index.html" class="logo">d ivanova</a>
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Work</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li>
-                            <a href="#contact"
-                                onclick="if (window.matchMedia('(max-width: 639px)').matches) menuToggle()">Contact</a>
-                        </li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"
-                                    id="hamburger-icon"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <div class="wrapper">
 
-    <main>
-        <section id="hero">
+        <header id="top">
             <div class="container">
-                <h1>
-                    <span class="hello-animate" style="background-image: url(./img/bg/bg-black-min.png);">Hello</span>
-                    <span class="intro-span"> I&#39;m Diana. </span>
-                    <span class="sub-span">
-                        I&#39;m a UX/UI designer and conceptual artist in New York.
-                    </span>
-                </h1>
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="./index.html" class="logo">d ivanova</a>
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">Work</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li>
+                                <a href="#contact"
+                                    onclick="if (window.matchMedia('(max-width: 639px)').matches) menuToggle()">Contact</a>
+                            </li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"
+                                        id="hamburger-icon"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </section>
+        </header>
 
-        <section id="work">
-            <h2> Work </h2>
 
-            <nav class="subnav tab flex-container" id="subnav">
 
+        <main>
+            <section id="hero">
                 <div class="container">
-                    <button class="tablinks subnavlinks" onclick="openWork(event, 'art')">art</button>
-                    <button class="tablinks subnavlinks active" onclick="openWork(event, 'design')">design</button>
-                    <button class="tablinks subnavlinks" onclick="openWork(event, 'world')">world</button>
+                    <h1>
+                        <span class="hello-animate" style="background-image: url(./img/bg/bg-black-min.png);">Hello</span>
+                        <span class="intro-span"> I&#39;m Diana. </span>
+                        <span class="sub-span">
+                            I&#39;m a UX/UI designer and conceptual artist in New York.
+                        </span>
+                    </h1>
                 </div>
-                
-            </nav>
+            </section>
 
-            <div class="container tabcontent default-active" id="design">
+            <section id="work">
+                <div class="subnav">
+                    <h2> Work </h2>
 
-                <div class="row" id="design-project-1">
+                    <nav class="tab flex-container" id="subnav">
 
-                    <div class="col-md-6 col-lg-7">
-                        <a href="./zenvelopes.html" class="img-link">
-                            <img src="img/covers/img-min.png"
-                                alt="The cover image for a personal budgeting app called Zenvelopes.">
-                        </a>
+                        <div class="container">
+                            <button class="tablinks subnavlinks active"
+                                onclick="openWork(event, 'design')">design</button>
+                            <button class="tablinks subnavlinks" onclick="openWork(event, 'art')">art</button>
+                            <button class="tablinks subnavlinks" onclick="openWork(event, 'world')">world</button>
+                        </div>
+
+                    </nav>
+                </div>
+
+                <div class="container tabcontent default-active" id="design">
+
+                    <div class="row" id="design-project-1">
+
+                        <div class="col-md-6 col-lg-7">
+                            <a href="./zenvelopes.html" class="img-link">
+                                <img src="img/covers/img-min.png"
+                                    alt="The cover image for a personal budgeting app called Zenvelopes.">
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Zenvelopes
+                            </h3>
+                            <p> <!-- project description -->
+                                Zenvelopes is a personal budgeting app for the faint of heart. Native for iOS and
+                                Android, it helps apply Japanese philosophy and mindfulness to personal finance.
+                            </p>
+                            <p> <!-- skills -->
+                                The UI phase involved understanding native iOS and Android patterns for mobile
+                                devices. I used advanced prototyping to test with iOS and Android users.
+                            </p>
+                            <div class="flex-container">
+                                <a href="./zenvelopes.html" class="button">See project</a>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Zenvelopes
-                        </h3>
-                        <p> <!-- project description -->
-                            Zenvelopes is a personal budgeting app for the faint of heart. Native for iOS and
-                            Android, it helps apply Japanese philosophy and mindfulness to personal finance.
-                        </p>
-                        <p> <!-- skills -->
-                            The UI phase involved understanding native iOS and Android patterns for mobile
-                            devices. I used advanced prototyping to test with iOS and Android users.
-                        </p>
-                        <div class="flex-container">
-                            <a href="./zenvelopes.html" class="button">See project</a>
+                    <div class="row" id="design-project-2">
+
+                        <div class="col-md-6 col-lg-7">
+                            <a href="#" class="img-link">
+                                <img src="img/covers/img-2-min.png"
+                                    alt="The cover image for a recipes app for men called Cookshop.">
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Cookshop
+                            </h3>
+                            <p> <!-- project -->
+                                Cookshop is a male-targeted recipes app for desktop and mobile. Solving men&#39;s
+                                needs in the kitchen by showing how to host a dinner like James Bond.
+                            </p>
+                            <p> <!-- skills -->
+                                UX research involved assessing two areas: men&#39;s recipe needs, and the extent of
+                                gender bias in existing recipe resources, to find opportunities for a new product.
+                                UI process explored the question What is masculine UI? And created a responsive
+                                design for the web.
+                            </p>
+                            <div class="flex-container">
+                                <a href="#" class="button">See project</a>
+                            </div>
                         </div>
                     </div>
 
-                </div>
+                    <div class="row" id="design-project-3">
 
-                <div class="row" id="design-project-2">
+                        <div class="col-md-6 col-lg-7">
+                            <a href="#" class="img-link">
+                                <img src="img/covers/img-1-min.png"
+                                    alt="The cover image for an online tea store called Wild Bloom.">
+                            </a>
+                        </div>
 
-                    <div class="col-md-6 col-lg-7">
-                        <a href="#" class="img-link">
-                            <img src="img/covers/img-2-min.png"
-                                alt="The cover image for a recipes app for men called Cookshop.">
-                        </a>
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Wild Bloom
+                            </h3>
+                            <p> <!-- project -->
+                                “Wild Bloom” is an ethical tea company with an (Oscar) Wilde side. Their signature
+                                line of “nude tea” is sourced in micro-quantities in the wild, then packaged with
+                                zero processing or additives.
+                            </p>
+                            <p> <!-- skills -->
+                                I created brand guidelines and responsive UI for Wild Bloom&#39;s e-commerce
+                                platform, from sketches to a high-fidelity prototype with animated interactions. The
+                                challenge was to combine branding and usability: express the company values with
+                                Victorian flair, house extensive information about their products and
+                                initiatives, without sacrificing clarity, accessibility, or pleasure.
+                            </p>
+                            <div class="flex-container">
+                                <a href="#" class="button">See project</a>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Cookshop
-                        </h3>
-                        <p> <!-- project -->
-                            Cookshop is a male-targeted recipes app for desktop and mobile. Solving men&#39;s
-                            needs in the kitchen by showing how to host a dinner like James Bond.
-                        </p>
-                        <p> <!-- skills -->
-                            UX research involved assessing two areas: men&#39;s recipe needs, and the extent of
-                            gender bias in existing recipe resources, to find opportunities for a new product.
-                            UI process explored the question What is masculine UI? And created a responsive
-                            design for the web.
-                        </p>
-                        <div class="flex-container">
-                            <a href="#" class="button">See project</a>
+                    <div class="row" id="design-project-4">
+                        <!-- animation goes here -->
+                    </div>
+                </div>
+
+                <div class="container tabcontent" id="art">
+                    <div class="row" id="art-project-1">
+                        <div class="col-md-6 col-lg-7">
+                            <a href="#" class="img-link">
+                                <img src="img\art-mars\art-cover-min.png" alt="a traditional knitted foot covering">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Art Project
+                            </h3>
+                            <p> <!-- project description -->
+                                Project description goes here and explains why this project is cool.
+                            </p>
+                            <div class="flex-container">
+                                <a href="#" class="button">See project</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row" id="design-project-3">
-
-                    <div class="col-md-6 col-lg-7">
-                        <a href="#" class="img-link">
-                            <img src="img/covers/img-1-min.png"
-                                alt="The cover image for an online tea store called Wild Bloom.">
-                        </a>
+                    <div class="row" id="art-project-2">
+                        <div class="col-md-6 col-lg-7">
+                            <a href="#" class="img-link">
+                                <img src="img/art-terlik/img-cover-min.jpg"
+                                    alt="a diagram showing a box with a viewing hole in which a tablet can be placed for private viewing">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Art project
+                            </h3>
+                            <p> <!-- project -->
+                                Project description goes here.
+                            </p>
+                            <div class="flex-container">
+                                <a href="#" class="button">See project</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Wild Bloom
-                        </h3>
-                        <p> <!-- project -->
-                            “Wild Bloom” is an ethical tea company with an (Oscar) Wilde side. Their signature
-                            line of “nude tea” is sourced in micro-quantities in the wild, then packaged with
-                            zero processing or additives.
-                        </p>
-                        <p> <!-- skills -->
-                            I created brand guidelines and responsive UI for Wild Bloom&#39;s e-commerce
-                            platform, from sketches to a high-fidelity prototype with animated interactions. The
-                            challenge was to combine branding and usability: express the company values with
-                            Victorian flair, house extensive information about their products and
-                            initiatives, without sacrificing clarity, accessibility, or pleasure.
-                        </p>
-                        <div class="flex-container">
-                            <a href="#" class="button">See project</a>
+                    <div class="row" id="art-project-3">
+                        <div class="col-md-6 col-lg-7">
+                            <a href="#" class="img-link">
+                                <img src="img/covers/img-1-min.png"
+                                    alt="The cover image for an online tea store called Wild Bloom.">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Art project
+                            </h3>
+                            <p> <!-- project -->
+                                Project description goes here.
+                            </p>
+                            <div class="flex-container">
+                                <a href="#" class="button">See project</a>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="row" id="art-project-4">
+                        <!-- animation goes here -->
+                    </div>
                 </div>
 
-                <div class="row" id="design-project-4">
-                    <!-- animation goes here -->
+                <div class="container tabcontent" id="world">
+                    <div class="row" id="textile-project-1">
+                        <div class="col-md-6 col-lg-7">
+                            <a href="./zenvelopes.html" class="img-link">
+                                <img src="img\textile\fabric-swatch-min.png"
+                                    alt="The cover image for a personal budgeting app called Zenvelopes.">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Textile Project
+                            </h3>
+                            <p> <!-- project description -->
+                                Project description goes here.
+                            </p>
+                            <div class="flex-container">
+                                <a href="./zenvelopes.html" class="button">See project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="textile-project-2">
+                        <div class="col-md-6 col-lg-7">
+                            <a href="#" class="img-link">
+                                <img src="img\textile\fabric-swatch-min.png"
+                                    alt="The cover image for a recipes app for men called Cookshop.">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Textile project
+                            </h3>
+                            <p> <!-- project -->
+                                Project description goes here.
+                            </p>
+                            <div class="flex-container">
+                                <a href="#" class="button">See project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="textile-project-3">
+                        <div class="col-md-6 col-lg-7">
+                            <a href="#" class="img-link">
+                                <img src="img\textile\fabric-swatch-min.png"
+                                    alt="The cover image for an online tea store called Wild Bloom.">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <h3>
+                                Textile project
+                            </h3>
+                            <p> <!-- project -->
+                                Project description goes here.
+                            </p>
+                            <div class="flex-container">
+                                <a href="#" class="button">See project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="textile-project-4">
+                        <!-- animation goes here -->
+                    </div>
                 </div>
+
+            </section>
+
+        </main>
+
+        <footer id="contact">
+            <div class="container" style="background-image: url(./img/bg/bg-black-min.png);">
+                <h2>
+                    <span>
+                        Contact
+                    </span>
+                </h2>
+                <p>
+                    email me at dianovahello [at] gmail (dot) com
+                </p>
+                <div class="flex-container">
+                    <a href="mailto:dianovahello@gmail.com" class="button">Send me an email</a>
+                </div>
+                <div class="social-links">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/thediana/" target="_blank" rel="noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/dianaivanova15" target="_blank" rel="noreferrer">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Copyright Diana Ivanova 2023-2024</p>
             </div>
+        </footer>
 
-            <div class="container tabcontent" id="art">
-                <div class="row" id="art-project-1">
-                    <div class="col-md-6 col-lg-7">
-                        <a href="./zenvelopes.html" class="img-link">
-                            <img src="img/covers/img-min.png"
-                                alt="The cover image for a personal budgeting app called Zenvelopes.">
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Art Project
-                        </h3>
-                        <p> <!-- project description -->
-                            Project description goes here.
-                        </p>
-                        <div class="flex-container">
-                            <a href="./zenvelopes.html" class="button">See project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="art-project-2">
-                    <div class="col-md-6 col-lg-7">
-                        <a href="#" class="img-link">
-                            <img src="img/covers/img-2-min.png"
-                                alt="The cover image for a recipes app for men called Cookshop.">
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Art project
-                        </h3>
-                        <p> <!-- project -->
-                            Project description goes here.
-                        </p>
-                        <div class="flex-container">
-                            <a href="#" class="button">See project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="art-project-3">
-                    <div class="col-md-6 col-lg-7">
-                        <a href="#" class="img-link">
-                            <img src="img/covers/img-1-min.png"
-                                alt="The cover image for an online tea store called Wild Bloom.">
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Art project
-                        </h3>
-                        <p> <!-- project -->
-                            Project description goes here.
-                        </p>
-                        <div class="flex-container">
-                            <a href="#" class="button">See project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" id="art-project-4">
-                    <!-- animation goes here -->
-                </div>
-            </div>
-
-            <div class="container tabcontent" id="world">
-                <div class="row" id="textile-project-1">
-                    <div class="col-md-6 col-lg-7">
-                        <a href="./zenvelopes.html" class="img-link">
-                            <img src="img/covers/img-min.png"
-                                alt="The cover image for a personal budgeting app called Zenvelopes.">
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Textile Project
-                        </h3>
-                        <p> <!-- project description -->
-                            Project description goes here.
-                        </p>
-                        <div class="flex-container">
-                            <a href="./zenvelopes.html" class="button">See project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="textile-project-2">
-                    <div class="col-md-6 col-lg-7">
-                        <a href="#" class="img-link">
-                            <img src="img/covers/img-2-min.png"
-                                alt="The cover image for a recipes app for men called Cookshop.">
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Textile project
-                        </h3>
-                        <p> <!-- project -->
-                            Project description goes here.
-                        </p>
-                        <div class="flex-container">
-                            <a href="#" class="button">See project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="textile-project-3">
-                    <div class="col-md-6 col-lg-7">
-                        <a href="#" class="img-link">
-                            <img src="img/covers/img-1-min.png"
-                                alt="The cover image for an online tea store called Wild Bloom.">
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <h3>
-                            Textile project
-                        </h3>
-                        <p> <!-- project -->
-                            Project description goes here.
-                        </p>
-                        <div class="flex-container">
-                            <a href="#" class="button">See project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" id="textile-project-4">
-                    <!-- animation goes here -->
-                </div>
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer id="contact">
-        <div class="container" style="background-image: url(./img/bg/bg-black-min.png);">
-            <h2>
-                <span>
-                    Contact
-                </span>
-            </h2>
-            <p>
-                email me at dianovahello [at] gmail (dot) com
-            </p>
-            <div class="flex-container">
-                <a href="mailto:dianovahello@gmail.com" class="button">Send me an email</a>
-            </div>
-            <div class="social-links">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/thediana/" target="_blank" rel="noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.behance.net/dianaivanova15" target="_blank" rel="noreferrer">
-                            <i class="fab fa-behance"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p>Copyright Diana Ivanova 2023-2024</p>
-        </div>
-    </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
