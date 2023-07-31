@@ -54,6 +54,7 @@ h4 {
     font-size: 20px;
     line-height: 32px;
     font-weight: 700;
+    text-align: center;
 }
 
 .intro-span {
@@ -68,6 +69,13 @@ h4 {
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
+}
+
+.italic-span {
+    display:block;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic; 
 }
 
 /* styling for links */
@@ -556,6 +564,10 @@ footer div.container {
     @media only screen and (min-width: 1024px) {
         .col-lg-5 {
             width: 41.66%;
+        }
+
+        .col-lg-6 {
+            width: 50%;
         }
 
         .col-lg-7 {
