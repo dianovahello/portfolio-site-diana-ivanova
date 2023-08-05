@@ -1,7 +1,7 @@
 /*
 Colors used:
-white: #fbfbfb;
-black: #080808;
+white: #fbfbfb; rgba(251, 251, 251, 0.5)
+black: #080808; rgba(8, 8, 8, 0.5)
 light grey: #E4E5E6; rgba(23, 27, 39, 0.1);
 accent/pink: 
 accent/blue:  rgba(71, 240, 255, 0.2);
@@ -72,10 +72,10 @@ h4 {
 }
 
 .italic-span {
-    display:block;
+    display: block;
     font-size: 1em;
     font-weight: 400;
-    font-style: italic; 
+    font-style: italic;
 }
 
 /* styling for links */
@@ -111,6 +111,18 @@ a:active {
     border: none;
 }
 
+
+/* Styling for icons */
+
+i {
+    color: #080808;
+    padding: 0 8px;
+}
+
+#hamburger-icon {
+    padding: 0;
+}
+
 .social-links {
     display: inline-block;
     width: 100%;
@@ -127,6 +139,7 @@ a:active {
 }
 
 .social-links i {
+    padding: 8px;
     color: #fbfbfb;
 }
 
@@ -180,6 +193,7 @@ nav ul li a {
 
 .navtoggle-responsive nav {
     padding: 16px 0 0;
+    z-index: 4;
 }
 
 .navtoggle-responsive li {
@@ -237,6 +251,21 @@ nav ul li a {
     transition: 0.2s color;
 }
 
+.button-contact,
+.button-contact:visited {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.5);
+    color: #fbfbfb;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #fbfbfb;
+    text-align: center;
+    border-radius: 40px;
+    transition: 0.2s color;
+}
+
 .button:focus,
 .button:hover,
 .button-secondary:focus,
@@ -247,6 +276,11 @@ nav ul li a {
     border: 2px solid #FC48FF;
 }
 
+.button-contact:focus,
+.button-contact:hover {
+    background-color: #FC48FF;
+}
+
 .button:active,
 .button-secondary:active {
     background-color: #FC48FF;
@@ -255,7 +289,7 @@ nav ul li a {
     border: 2px solid #FC48FF;
 }
 
-.buttons-group{
+.buttons-group {
     margin: 1em 0;
 }
 
@@ -264,7 +298,7 @@ img {
 }
 
 .project-img {
-    max-width: 600px; 
+    max-width: 600px;
 }
 
 /* styling for subnav */
@@ -295,6 +329,7 @@ img {
 }
 
 /* Change background color of buttons on hover */
+.tab button:focus,
 .tab button:hover {
     background-color: rgba(23, 27, 39, 0.1);
     border-radius: 40px;
@@ -348,10 +383,109 @@ header {
     padding: 10px 0;
     position: fixed;
     top: 0;
+    z-index: 3;
     width: 100%;
+    max-width: 1200px;
     box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
     /* border-bottom: 1px solid rgba(23, 27, 39, 0.1); */
 }
+
+/* styling for side nav table of contents in project */
+
+.sub-header {
+    background-color: #fbfbfb;
+    color: #080808;
+    position: fixed; top: 44px;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+}
+
+.sub-header a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 8px 8px 0;
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #fbfbfb;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 40px;
+    /* Place content 44px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
+}
+
+/* styling for table of contents*/
+
+.table-contents {
+    list-style-type: none;
+    padding: 0;
+}
+
+.table-contents h4 {
+    text-align: unset;
+    padding: 0;
+    display: inline-block;
+
+}
+
+.table-contents a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 8px 8px 24px;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(23, 27, 39, 0.1);
+}
+
+
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    background-color: #e4e5e6;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    /* position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 24px; */
+    padding: none;
+    /* border-bottom: none; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
 
 /* styling for main */
 
@@ -360,6 +494,9 @@ main {
     background-color: #fbfbfb;
 }
 
+.project-main {
+    padding-top: 108px;
+}
 
 #hero {
     display: inline-block;
@@ -413,22 +550,6 @@ main {
     animation: 4s body-background infinite alternate linear;
 }
 
-/* styling for table of contents*/
-
-.table-contents {
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-.table-contents a {
-    display: block;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 0;
-    border-bottom: 2px solid rgba(23, 27, 39, 0.1);
-}
-
 /* styling for footer */
 
 footer {
@@ -436,9 +557,6 @@ footer {
     color: #fbfbfb;
 }
 
-footer div.container {
-    border-top: 4px solid #080808;
-}
 
 [class*="col-"] {
     float: left;
@@ -451,11 +569,31 @@ footer div.container {
     display: table;
 }
 
+/* Styling for project pages*/
+
+
+.project-blurb {
+    padding: 16px;
+
+}
+
+.project-section {
+    padding: 16px 0;
+    border-bottom: 1px solid #e4e5e6;
+}
+
+
+
 /* Styling for classes */
 
 .hidden {
     display: none;
 }
+
+.inline-block {
+    display: inline-block;
+}
+
 
 /*--css animation can go here--*/
 
@@ -499,7 +637,7 @@ footer div.container {
         line-height: 31px;
     }
 
-    .text-block{
+    .text-block {
         max-width: 800px;
     }
 
@@ -562,6 +700,11 @@ footer div.container {
     }
 
     @media only screen and (min-width: 1024px) {
+
+        .col-lg-3 {
+            width: 25%;
+        }
+
         .col-lg-5 {
             width: 41.66%;
         }
