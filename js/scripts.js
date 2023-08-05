@@ -16,6 +16,7 @@ function menuToggle() {
 }
 
 // Smooth scrolling
+
 // 1. select all links with #
 $('a[href*="#"]')
 
@@ -24,26 +25,37 @@ $('a[href*="#"]')
     .not('[href="#0"]')
 
     // 3. Add event
+
     .click(function (event) {
+
         // On-page links
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
             // Figure out element to scroll to
+
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
             // Does a scroll target exist?
+
             if (target.length) {
+
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
 
-                // Calculate the offset for the header height (44px)
-                var headerOffset = 44;
+                // Calculate the offset for the header height (108px)
+
+                var headerOffset = 108;
 
                 $('html, body').animate({
+
                     scrollTop: target.offset().top - headerOffset // Subtract the header height from the target position
                 }, 1000, function () {
+
                     // Callback after animation
+
                     // Must change focus!
+
                     var $target = $(target);
                     $target.focus();
                     if ($target.is(":focus")) { // Checking if the target was focused
@@ -78,3 +90,66 @@ function openWork(evt, workName) {
 
 
 
+// Side nav in project
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function openNavWithAnimation() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set a brief delay before opening the side nav */
+function openNav() {
+    setTimeout(openNavWithAnimation, 50); // Adjust the delay time (in ms) to your preference
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+
+
+// Function to handle smooth scrolling and close side navigation
+function handleLinkClick(event, targetSectionId) {
+    // Close the side navigation
+    closeNav();
+    // Get the target section to scroll to
+    const targetSection = document.querySelector(targetSectionId);
+
+    // Calculate the offset for the header height (44px)
+    const headerOffset = 44;
+
+    // Calculate the target position to scroll to
+    const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+    // Scroll to the target position with smooth animation
+    window.scroll({
+        top: targetPosition,
+        behavior: "smooth"
+    });
+
+    // Prevent the default link behavior (i.e., navigating to the link)
+    event.preventDefault();
+}
+
+// Get all links in the side navigation
+const sidenavLinks = document.querySelectorAll("#mySidenav a");
+
+// Add event listener to each link
+sidenavLinks.forEach(link => {
+    link.addEventListener("click", function (event) {
+        // Get the target section's ID from the link's href attribute
+        const targetSectionId = link.getAttribute("href");
+
+        // Call the function to handle smooth scrolling and close side navigation
+        handleLinkClick(event, targetSectionId);
+    });
+});
