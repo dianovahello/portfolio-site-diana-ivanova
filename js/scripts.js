@@ -15,6 +15,7 @@ function menuToggle() {
     }
 }
 
+
 // Smooth scrolling
 
 // 1. select all links with #
@@ -89,63 +90,16 @@ function openWork(evt, workName) {
 }
 
 
-
 // Side nav in project
 
 function sideNavToggle() {
-const element = document.getElementById("mySideNav");
+    const element = document.getElementById("mySideNav");
 
     if (element.className === 'sidenav-closed') {
         element.classList.remove("sidenav-closed");
-        element.classList.add("sidenav-250px")
+        element.classList.add("sidenav-250px");
 
     } else {
         element.className = 'sidenav-closed';
     }
 }
-
-
-
-
-
-
-// Function to handle smooth scrolling and close side nav
-
-function handleLinkClick(event, targetSectionId) {
-
-    // Close the side navigation
-    sideNavToggle();
-
-    // Get the target section to scroll to
-    const targetSection = document.querySelector(targetSectionId);
-
-    // Calculate the offset for the header height (44px)
-    const headerOffset = 44;
-
-    // Calculate the target position to scroll to
-    const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-
-    // Scroll to the target position with smooth animation
-    window.scroll({
-        top: targetPosition,
-        behavior: "smooth"
-    });
-
-    // Prevent the default link behavior (i.e., navigating to the link)
-    event.preventDefault();
-}
-
-// Get all links in the side navigation
-const sidenavLinks = document.querySelectorAll("#mySidenav a");
-
-// Add event listener to each link
-sidenavLinks.forEach(link => {
-    link.addEventListener("click", function (event) {
-
-        // Get the target section's ID from the link's href attribute
-        const targetSectionId = link.getAttribute("href");
-
-        // Call the function to handle smooth scrolling and close side navigation
-        handleLinkClick(event, targetSectionId);
-    });
-});
