@@ -114,7 +114,7 @@ const element = document.getElementById("mySideNav");
 function handleLinkClick(event, targetSectionId) {
 
     // Close the side navigation
-    closeNav();
+    sideNavToggle();
 
     // Get the target section to scroll to
     const targetSection = document.querySelector(targetSectionId);
