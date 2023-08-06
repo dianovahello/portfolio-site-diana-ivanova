@@ -42,14 +42,16 @@
             </div>
         </header>
 
-        <div id="mySidenav" class="sidenav">
+        <div id="mySideNav" class="sidenav-closed">
             <ul class="table-contents">
                 <li>
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span>Skip to section</span><i
-                        class="fa-solid fa-arrow-left"></i></a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="sideNavToggle()"><i
+                            class="fa-solid fa-xmark"></i></a>
                 </li>
-
-                <li><a href="#zen-home">Back to top</a></li>
+                <li>
+                    <h4>Contents</h4>
+                </li>
+                <li><a href="#sub-header">Intro</a></li>
                 <li><a href="#zen-problem">Defining the problem</a></li>
                 <li><a href="#kakeibo">Enter Kakeibo</a></li>
                 <li><a href="#zen-uflow">User flow</a></li>
@@ -66,10 +68,12 @@
         <main class="project-main">
 
             <section id="sub-header">
-                <div class="container">
-                    <div class="sub-header">
-                        <a onclick="openNav()"><i class="fa-solid fa-arrow-right"></i><h4 class="inline-block">Skip to section</h4></a>
-                    </div>
+                <div class="sub-header">
+                    <span class="sub-span inline-block">
+                        <a onclick="sideNavToggle()"><i class="fa-solid fa-arrow-right"></i>
+                            <span class="inline-block">Skip to section</span>
+                        </a>
+                    </span>
                 </div>
             </section>
 
@@ -85,13 +89,15 @@
                                 alt="An iPhone 14 mockup showing the home screen from Zenvelopes.">
                         </div>
                         <div class="col-md-6 col-lg-6 project-blurb">
-                            <h3>
+                            <h2>
                                 Zenvelopes
-                            </h3>
-                            <p><span class="sub-span">This app helps users plan, track, and reflect on their budget so
+                            </h2>
+                            <p><span class="sub-span">Zenvelopes helps users plan, track, and reflect on their
+                                    budget so
                                     they can grow a healthy
                                     relationship with money over time.</span></p>
-                            <p><span class="sub-span"> I was responsible for a short UX research phase, prototyping, UI
+                            <p><span class="sub-span"> I was responsible for a short UX research phase, prototyping,
+                                    UI
                                     and interaction
                                     design as well as branding.</span></p>
                             <div class="buttons-group">
@@ -104,28 +110,10 @@
                                         target="_blank" class="button">Android prototype</a>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
-                </div>
-            </section>
-
-
-            <section class="table-contents" id="zen-table-contents">
-                <div class="container">
-                    <h3>Table of Contents</h3>
-                    <ul class="table-contents">
-                        <li><a href="#zen-problem">Defining the problem</a></li>
-                        <li><a href="#kakeibo">Enter Kakeibo</a></li>
-                        <li><a href="#zen-uflow">User flow</a></li>
-                        <li><a href="#zen-lofi">Low fidelity</a></li>
-                        <li><a href="#zen-vs">Native patterns</a></li>
-                        <li><a href="#zen-sounds-gestures">Interaction design</a></li>
-                        <li><a href="#zen-logo">Branding</a></li>
-                        <li><a href="#zen-testing">Testing</a></li>
-                        <li><a href="#zen-hifi-ios">iOS screens</a></li>
-                        <li><a href="#zen-hifi-android">Android screens</a></li>
-                    </ul>
                 </div>
             </section>
 
@@ -142,7 +130,7 @@
                             <h3 id="zen-problem">
                                 Defining the problem
                             </h3>
-                            <a href="#zen-table-contents">Back to table of contents</a>
+
                             <p>We live at a time of change. As more individuals shift to freelance work,
                                 even full-time
                                 employees are finding ways to monetize their passions. The freedom of this can feel
@@ -194,7 +182,7 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-6">
                             <h3 id="kakeibo">Enter kakeibo</h3>
-                            <a href="#zen-table-contents">Back to table of contents</a>
+
                             <p>
                                 <span class="italic-span">What is mindful budgeting?</span>Kakeibo is a budgeting system
                                 from medieval Japan. It&#39;s well adapted to help the
@@ -222,7 +210,7 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-6">
                             <h3 id="zen-uflow">User flow</h3>
-                            <a href="#zen-table-contents">Back to table of contents</a>
+
                             <p>
                                 I stuctured the app along three major flows. The Plan
                                 flow guides the user through inputting their projected income and expenses, adding an
@@ -250,7 +238,7 @@
                         </div>
                         <div class="col-md-6 col-lg-5">
                             <h3 id="zen-lofi">Low fidelity</h3>
-                            <a href="#zen-table-contents">Back to table of contents</a>
+
                             <p>I sketched out the "Plan" flow using one of my favorite tools, a Sharpie marker. It's so
                                 thick that I have to focus on essential elements. This keeps my process focused.</p>
                             <div class="prototype">
@@ -275,7 +263,7 @@
 
                         <div class="col-md-6 col-lg-5">
                             <h3 id="zen-vs">Native patterns <span class="sub-span">iOS vs Android</span> </h3>
-                            <a href="#zen-table-contents">Back to table of contents</a>
+
                             <p>I used native features and interactions as much as
                                 possible. I made a deep study of <a
                                     href="https://developer.apple.com/design/human-interface-guidelines"
@@ -303,7 +291,7 @@
                             <h3 id="zen-sounds-gestures">Interaction design <span class="sub-span">touch, sound,
                                     gesture</span>
                             </h3>
-                            <a href="#zen-table-contents">Back to table of contents</a>
+
                             <p>I took advantage of native gestures, sound cues, and subtle haptics to
                                 ground interactions in the real world and reinforce the native feel of the app.
                                 Where appropriate, I implemented a soothing “paper" aural theme consistent with the
@@ -322,7 +310,7 @@
                         </div>
                         <div class="col-md-6 col-lg-5">
                             <h3 id="zen-logo">visual direction</h3>
-                            <a href="#zen-table-contents">Back to table of contents</a>
+
                             <p>The logo is a minimal set of two ink strokes creating an “equal” sign. They signify
                                 balance
                                 and reference calligraphy. They also suggest the letter “Z”.
@@ -346,7 +334,7 @@
                         </div>
                         <div class="col-md-6 col-lg-6">
                             <h3 id="zen-testing">Testing and revisions</h3>
-                            <a href="#zen-table-contents">Back to table of contents</a>
+
                             <p>I built two high-fi prototypes with animated interactions to perform
                                 user testing with iOS and Android users. I wanted to assess how easily they can plan a
                                 budget, how
@@ -367,7 +355,7 @@
             <section class="project-section high-fi-iOS">
                 <div class="container">
                     <h3 id="zen-hifi-ios">High fidelity: iOS</h3>
-                    <a href="#zen-table-contents">Back to table of contents</a>
+
                     <div class="flex-container">
                         <a href="https://www.figma.com/proto/q2lf9NwyEG36pOMteZlhUc/Zenvelopes-iOS-high-fidelity-prototype?type=design&node-id=155-6283&t=OKVim6zvTGJiQKdJ-0&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6283"
                             target="_blank" class="button">iOS prototype</a>
@@ -380,7 +368,7 @@
             <section class="project-section high-fi-Android">
                 <div class="container">
                     <h3 id="zen-hifi-android">High fidelity: Android</h3>
-                    <a href="#zen-table-contents">Back to table of contents</a>
+
                     <div class="flex-container">
                         <a href="https://www.figma.com/proto/Rb9akdInOnROUxSUXyWFQC/Zenvelopes-Androind-high-fidelity-prototype?type=design&node-id=155-6433&t=Z5JvH7j0xoaezpmn-0&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6433"
                             target="_blank" class="button">Try the Android prototype</a>

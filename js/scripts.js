@@ -92,35 +92,30 @@ function openWork(evt, workName) {
 
 // Side nav in project
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function sideNavToggle() {
+const element = document.getElementById("mySideNav");
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
+    if (element.className === 'sidenav-closed') {
+        element.classList.remove("sidenav-closed");
+        element.classList.add("sidenav-250px")
 
-function openNavWithAnimation() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set a brief delay before opening the side nav */
-function openNav() {
-    setTimeout(openNavWithAnimation, 50); // Adjust the delay time (in ms) to your preference
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    } else {
+        element.className = 'sidenav-closed';
+    }
 }
 
 
-// Function to handle smooth scrolling and close side navigation
+
+
+
+
+// Function to handle smooth scrolling and close side nav
+
 function handleLinkClick(event, targetSectionId) {
+
     // Close the side navigation
     closeNav();
+
     // Get the target section to scroll to
     const targetSection = document.querySelector(targetSectionId);
 
@@ -146,6 +141,7 @@ const sidenavLinks = document.querySelectorAll("#mySidenav a");
 // Add event listener to each link
 sidenavLinks.forEach(link => {
     link.addEventListener("click", function (event) {
+
         // Get the target section's ID from the link's href attribute
         const targetSectionId = link.getAttribute("href");
 
