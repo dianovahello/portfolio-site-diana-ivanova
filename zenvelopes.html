@@ -2,26 +2,24 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Diana Ivanova</title>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <script src="https://kit.fontawesome.com/f7ab72f41f.js" crossorigin="anonymous"></script>
-
 </head>
 
-<body id="zen">
+<body id="zen" class="body-background">
     <div class="wrapper">
-
         <header id="top">
             <div class="container">
                 <div class="navtoggle" id="myNavtoggle">
@@ -34,8 +32,10 @@
                                 <a href="#contact"
                                     onclick="if (window.matchMedia('(max-width: 639px)').matches) menuToggle()">Contact</a>
                             </li>
-                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"
-                                        id="hamburger-icon"></i></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"
+                                        id="hamburger-icon"></i></a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -51,22 +51,49 @@
                 <li>
                     <h4>Contents</h4>
                 </li>
-                <li><a href="#sub-header" onclick="sideNavToggle()">Intro</a></li>
-                <li><a href="#zen-problem" onclick="sideNavToggle()">Defining the problem</a></li>
-                <li><a href="#kakeibo" onclick="sideNavToggle()">Enter Kakeibo</a></li>
-                <li><a href="#zen-uflow" onclick="sideNavToggle()">User flow</a></li>
-                <li><a href="#zen-lofi" onclick="sideNavToggle()">Low fidelity</a></li>
-                <li><a href="#zen-vs" onclick="sideNavToggle()">Native patterns</a></li>
-                <li><a href="#zen-sounds-gestures" onclick="sideNavToggle()">Interaction design</a></li>
-                <li><a href="#zen-logo" onclick="sideNavToggle()">Branding</a></li>
-                <li><a href="#zen-testing" onclick="sideNavToggle()">Testing</a></li>
-                <li><a href="#zen-hifi-ios" onclick="sideNavToggle()">iOS screens</a></li>
-                <li><a href="#zen-hifi-android" onclick="sideNavToggle()">Android screens</a></li>
+                <li class="process-early">
+                    <a href="#sub-header" onclick="sideNavToggle()">Intro</a>
+                </li>
+                <li class="process-early">
+                    <a href="#zen-problem" onclick="sideNavToggle()">Define the problem</a>
+                </li>
+                <li class="process-early">
+                    <a href="#kakeibo" onclick="sideNavToggle()">Enter Kakeibo</a>
+                </li>
+
+                <li class="process-mid">
+                    <a href="#zen-uflow" onclick="sideNavToggle()">User flow</a>
+                </li>
+                <li class="process-mid">
+                    <a href="#zen-lofi" onclick="sideNavToggle()">Paper prototype</a>
+                </li>
+                <li class="process-mid">
+                    <a href="#zen-vs" onclick="sideNavToggle()">Native patterns</a>
+                </li>
+
+                <li class="process-late">
+                    <a href="#zen-sounds-gestures" onclick="sideNavToggle()">Interaction design</a>
+                </li>
+                <li class="process-late">
+                    <a href="#zen-testing" onclick="sideNavToggle()">Test and revise</a>
+                </li>
+                <li class="process-late">
+                    <a href="#zen-logo" onclick="sideNavToggle()">Brand</a>
+                </li>
+
+                <li class="process-next">
+                    <a href="#zen-hifi" onclick="sideNavToggle()">High fidelity</a>
+                </li>
+                <li class="process-next">
+                    <a href="#zen-next" onclick="sideNavToggle()">Next steps</a>
+                </li>
+                <li class="process-next">
+                    <a href="#zen-learnings" onclick="sideNavToggle()">Key learnings</a>
+                </li>
             </ul>
         </div>
 
         <main class="project-main">
-
             <section id="sub-header">
                 <div class="sub-header">
                     <span class="sub-span inline-block">
@@ -79,27 +106,33 @@
 
             <section id="zen-home">
                 <div class="container">
-
-                    <h1 class="hidden">UX UI case study for a budgeting app called Zenvelopes</h1>
+                    <h1 class="hidden">
+                        UX UI case study for a budgeting app called Zenvelopes
+                    </h1>
 
                     <div class="row">
-                        <div class="col-md-6 col-lg-6"
-                            style="background-image: url(./img/bg/bg-water-min.png); background-repeat: no-repeat;">
+                        <div class="col-md-6 col-lg-6" style="
+                  background-image: url(./img/bg/bg-water-min.png);
+                  background-repeat: no-repeat;
+                ">
                             <img src="img/zenvelopes/img-zen@2x/img-min.png"
-                                alt="An iPhone 14 mockup showing the home screen from Zenvelopes.">
+                                alt="An iPhone 14 mockup showing the home screen from Zenvelopes." />
                         </div>
+
                         <div class="col-md-6 col-lg-6 project-blurb">
-                            <h2>
-                                Zenvelopes
-                            </h2>
-                            <p><span class="sub-span">Zenvelopes helps users plan, track, and reflect on their
-                                    budget so
-                                    they can grow a healthy
-                                    relationship with money over time.</span></p>
-                            <p><span class="sub-span"> I was responsible for a short UX research phase, prototyping,
-                                    UI
-                                    and interaction
-                                    design as well as branding.</span></p>
+                            <h2>Zenvelopes</h2>
+                            <p>
+                                <span class="sub-span">Zenvelopes helps users plan, track, and reflect on their
+                                    budget so they can grow a healthy relationship with money
+                                    over time.</span>
+                            </p>
+                            <p>
+                                <span class="sub-span">
+                                    My role encompassed end-to-end conception and design process
+                                    including research, interaction design, prototyping, UI
+                                    design to native platform constraints, and branding.</span>
+                            </p>
+
                             <div class="buttons-group">
                                 <div class="flex-container">
                                     <a href="https://www.figma.com/proto/q2lf9NwyEG36pOMteZlhUc/Zenvelopes-iOS-high-fidelity-prototype?type=design&node-id=155-6283&t=OKVim6zvTGJiQKdJ-0&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6283"
@@ -110,70 +143,71 @@
                                         target="_blank" class="button">Android prototype</a>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </section>
 
             <section class="project-section define-problem">
                 <div class="container">
-
                     <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <h3 id="zen-problem">Define the problem</h3>
 
+                            <p>
+                                We live at a time of change. As more individuals shift to
+                                freelance work, even full-time employees are finding ways to
+                                monetize their passions. The freedom of this can feel amazing,
+                                but it comes at the cost of complicating our monthly budget.
+                                Increasingly we need to manage multiple income streams, big
+                                fluctuations month to month, optional expenses and more.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-6"></div>
                     </div>
 
                     <div class="row">
-
                         <div class="col-md-6 col-lg-6">
-                            <h3 id="zen-problem">
-                                Defining the problem
-                            </h3>
-
-                            <p>We live at a time of change. As more individuals shift to freelance work,
-                                even full-time
-                                employees are finding ways to monetize their passions. The freedom of this can feel
-                                amazing, but it comes at the cost of complicating our monthly budget.
-                                Increasingly we need to manage multiple income streams, big fluctuations month to month,
-                                optional expenses and more.
-                            </p>
-                            <h4 id="zen-user">
-                                Key target users
-                            </h4>
-                            <p><span class="italic-span">Who is most affected?</span>Makers, nomads, side-hustlers,
-                                social media creators, and freelancers.
-                                Anyone with
-                                unpredictable or sometimes negative income, such as a student. They may experience
-                                financial anxiety, and may describe themselves as “not a math person”.
+                            <h4 id="zen-user">Key target users</h4>
+                            <p>
+                                The app's target audience includes makers, nomads,
+                                side-hustlers, social media creators, and freelancers. Anyone
+                                with unpredictable or sometimes negative income, such as a
+                                student. They may experience financial anxiety, and may
+                                describe themselves as “not a math person”.
                             </p>
                         </div>
 
                         <div class="col-md-6 col-lg-6">
-                            <h4 id="zen-competitor">
-                                Key competitors
-                            </h4>
-                            <p><span class="italic-span">Do existing apps help?</span>I explored Rocket Money, Mint, and
-                                the Spending Buckets feature offered
-                                by Ally Bank. I found that while they offer powerful features like dynamic data
-                                visualization, automatic expense tracking, alerts, and insights, they suffer from steep
-                                learning curves and too many features. Furthermore, they do not address financial
-                                anxiety or offer a path to a healthier and more thoughtful relationship with money.
-                            </p>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-6">
-                                    <img src="img/zenvelopes/img-zen@2x/zen-competitor-min.png"
-                                        alt="chart showing the strengths and weaknesses of competitors">
-                                </div>
-                                <div class="col-md-6 col-lg-6">
-                                    <img src="img/zenvelopes/img-zen@2x/zen-user-min.png"
-                                        alt="chart describing the needs and pain points of target users">
-                                </div>
-                            </div>
+                            <img src="img/zenvelopes/img-zen@2x/zen-user-min.png"
+                                alt="chart describing the needs and pain points of target users" />
                         </div>
                     </div>
 
-
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <h4 id="zen-competitor">Key competitors</h4>
+                            <p>
+                                I explored Rocket Money, Mint, and the Spending Buckets
+                                feature offered by Ally Bank.
+                            </p>
+                            <p>
+                                I found that while they offer powerful features like dynamic
+                                data visualization, automatic expense tracking, alerts, and
+                                insights, they suffer from steep learning curves and too many
+                                features.
+                            </p>
+                            <p>
+                                Furthermore, they do not address financial anxiety
+                                or offer a path to a healthier and more thoughtful
+                                relationship with money.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <img src="img/zenvelopes/img-zen@2x/zen-competitor-min.png"
+                                alt="chart showing the strengths and weaknesses of competitors" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -184,21 +218,18 @@
                             <h3 id="kakeibo">Enter kakeibo</h3>
 
                             <p>
-                                <span class="italic-span">What is mindful budgeting?</span>Kakeibo is a budgeting system
-                                from medieval Japan. It&#39;s well adapted to help the
-                                contemporary anxious budgeter because it&#39;s minimalist and growth-minded in its
-                                approach.
+                                The app's unique approach draws inspiration from the
+                                traditional Japanese budgeting system called "Kakeibo." Users
+                                can categorize expenses into four categories: <span class="bold-span">needs, wants,
+                                    culture, and the unexpected.</span> This minimalist and growth-minded
+                                approach empowers users to make mindful decisions about
+                                spending. The app aims to alleviate financial anxiety and help
+                                users build healthier relationships with money.
                             </p>
-                            <p>A Kakeibo practitioner divides their expenses into four categories: needs, wants,
-                                culture,
-                                and the unexpected. The user is not overwhelmed by tracking 50 envelopes with labels
-                                like
-                                “Netflix” or “Car insurance”. They are empowered to make mindful decisions about
-                                spending.</p>
                         </div>
                         <div class="col-md-6 col-lg-6">
                             <img src="img/zenvelopes/img-zen@2x/img-zen-14@2x.png"
-                                alt="A landscape photo showing Japanese architecture with Mount Fuji in the background.">
+                                alt="A landscape photo showing Japanese architecture with Mount Fuji in the background." />
                         </div>
                     </div>
                 </div>
@@ -206,22 +237,22 @@
 
             <section class="project-section user-flow">
                 <div class="container">
-
                     <div class="row">
                         <div class="col-md-6 col-lg-6">
                             <h3 id="zen-uflow">User flow</h3>
 
                             <p>
-                                I stuctured the app along three major flows. The Plan
-                                flow guides the user through inputting their projected income and expenses, adding an
-                                optional savings goal, and scheduling a day to track and reflect. Any flow is accessible
-                                at any time from the homepage. Reminders to track and reflect are set by the user
-                                themselves.
+                                I stuctured the app along three major flows. The Plan flow
+                                guides the user through inputting their projected income and
+                                expenses, adding an optional savings goal, and scheduling a
+                                day to track and reflect. Any flow is accessible at any time
+                                from the homepage. Reminders to track and reflect are set by
+                                the user themselves.
                             </p>
                         </div>
                         <div class="col-md-6 col-lg-6">
                             <img src="img/zenvelopes/img-zen@2x/img-zen-2@2x.png"
-                                alt="Flowchart showing the app structure.">
+                                alt="Flowchart showing the app structure." />
                         </div>
                     </div>
                 </div>
@@ -229,51 +260,56 @@
 
             <section class="project-section low-fi">
                 <div class="container">
-
                     <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <h3 id="zen-lofi">Paper prototype</h3>
 
-                        <div class="col-md-6 col-lg-7">
-                            <img src="img/zenvelopes/img-zen@2x/img-zen-3@2x-min.png"
-                                alt="A series of sketches for app screens.">
-                        </div>
-                        <div class="col-md-6 col-lg-5">
-                            <h3 id="zen-lofi">Low fidelity</h3>
-
-                            <p>I sketched out the "Plan" flow using one of my favorite tools, a Sharpie marker. It's so
-                                thick that I have to focus on essential elements. This keeps my process focused.</p>
-                            <div class="prototype">
+                            <p>
+                                I sketched out the "Plan" flow using one of my favorite tools,
+                                a Sharpie marker. It's so thick that I have to focus on
+                                essential elements. This keeps my process focused.
+                            </p>
+                            <p>
+                                The goal of this prototype was to validate the big picture of the "Plan" flow.
+                            </p>
+                            <div class="flex-container">
                                 <a href="https://www.figma.com/proto/RejNsUfslRbg3oESUKl4tq/Zenvelopes-paper-prototype?node-id=1-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2"
-                                    target="_blank" class="button">Try the paper prototype</a>
+                                    target="_blank" class="button">Try it!</a>
                             </div>
                         </div>
-
+                        <div class="col-md-6 col-lg-6">
+                            <img src="img/zenvelopes/img-zen@2x/img-zen-3@2x-min.png"
+                                alt="A series of sketches for app screens." />
+                        </div>
                     </div>
-
                 </div>
             </section>
 
             <section class="project-section native patterns">
                 <div class="container">
                     <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <h3 id="zen-vs">
+                                Native patterns <span class="sub-span">iOS vs Android</span>
+                            </h3>
 
-                        <div class="col-md-6 col-lg-7">
-                            <img src="img/zenvelopes/img-zen@2x/img-zen-4@2x.png"
-                                alt="An annotated visual comparison of iOS and Android screens showing native patterns.">
+                            <p>
+                                I used native features and interactions as much as possible. I
+                                made a deep study of
+                                <a href="https://developer.apple.com/design/human-interface-guidelines"
+                                    target="_blank">HID</a>
+                                and <a href="https://m3.material.io/">Material Design</a>
+                                guidelines, then worked side-by-side on every screen starting
+                                at the mid-fidelity level to create iOS and Android native
+                                versions of Zenvelopes. I wanted seamless integration with
+                                good security, a smooth native user experience, and an easy
+                                time for developers already familiar with native elements.
+                            </p>
                         </div>
 
-                        <div class="col-md-6 col-lg-5">
-                            <h3 id="zen-vs">Native patterns <span class="sub-span">iOS vs Android</span> </h3>
-
-                            <p>I used native features and interactions as much as
-                                possible. I made a deep study of <a
-                                    href="https://developer.apple.com/design/human-interface-guidelines"
-                                    target="_blank">HID</a> and <a href="https://m3.material.io/">Material Design</a>
-                                guidelines, then worked side-by-side on every screen starting at the mid-fidelity
-                                level to create iOS and Android native versions of Zenvelopes. I wanted seamless
-                                integration with good security,
-                                a smooth native user experience, and an easy time for developers already familiar with
-                                native elements.
-                            </p>
+                        <div class="col-md-6 col-lg-6">
+                            <img src="img/zenvelopes/img-zen@2x/img-zen-4@2x.png"
+                                alt="An annotated visual comparison of iOS and Android screens showing native patterns." />
                         </div>
                     </div>
                 </div>
@@ -282,44 +318,23 @@
             <section class="project-section interaction-design">
                 <div class="container">
                     <div class="row">
-
-                        <div class="col-md-6 col-lg-7">
-                            <img src="img/zenvelopes/img-zen@2x/img-zen-5@2x.png"
-                                alt="Annotated mockups showing gestures, haptic and auditory feedback.">
-                        </div>
-                        <div class="col-md-6 col-lg-5">
-                            <h3 id="zen-sounds-gestures">Interaction design <span class="sub-span">touch, sound,
-                                    gesture</span>
+                        <div class="col-md-6 col-lg-6">
+                            <h3 id="zen-sounds-gestures">
+                                Interaction design
+                                <span class="sub-span">touch, sound, gesture</span>
                             </h3>
 
-                            <p>I took advantage of native gestures, sound cues, and subtle haptics to
-                                ground interactions in the real world and reinforce the native feel of the app.
-                                Where appropriate, I implemented a soothing “paper" aural theme consistent with the
+                            <p>
+                                I took advantage of native gestures, sound cues, and subtle
+                                haptics to ground interactions in the real world and reinforce
+                                the native feel of the app. Where appropriate, I implemented a
+                                soothing “paper" aural theme consistent with the
                                 ink-on-parchment look of the UI.
                             </p>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="project-section logo-branding">
-                <div class="row">
-                    <div class="container">
-                        <div class="col-md-6 col-lg-7"><img src="img/zenvelopes/img-zen@2x/img-zen-8@2x.png"
-                                alt="An image showing the Zenvelopes logo and its components: ink brushmark, equal sign, and the letter Z.">
-                        </div>
-                        <div class="col-md-6 col-lg-5">
-                            <h3 id="zen-logo">visual direction</h3>
-
-                            <p>The logo is a minimal set of two ink strokes creating an “equal” sign. They signify
-                                balance
-                                and reference calligraphy. They also suggest the letter “Z”.
-                            </p>
-                            <p>The overall visual direction for this app reinforces a Zen theme. It's minimalist with an
-                                emphasis on typographic hierarchy. It's effectively monochromatic. Textures like
-                                parchment or sand
-                                are applied to some screens, reinforcing a theme of mindfulness and calm.
-                            </p>
+                        <div class="col-md-6 col-lg-6">
+                            <img src="img/zenvelopes/img-zen@2x/img-zen-5@2x.png"
+                                alt="Annotated mockups showing gestures, haptic and auditory feedback." />
                         </div>
                     </div>
                 </div>
@@ -329,74 +344,169 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-6">
-                            <img src="img/zenvelopes/img-zen@2x/zen-revision-02@2x-min.png"
-                                alt="A before and after image showing changes made after the testing phase.">
+                            <h3 id="zen-testing">Test and revise</h3>
+
+                            <p>
+                                I built two high-fi prototypes with animated interactions to
+                                perform user testing with iOS and Android users. I wanted to
+                                assess how easily they can plan a budget, how confident they
+                                feel throughout the flow, and to what extent they find the
+                                interactions to be natural and familiar.
+                            </p>
+                            <p>
+                                Revisions included an improved navigation pannel allowing
+                                users to access an Overview of the process at any time. Users
+                                appreciated seeing explanatory tooltip modals throughout the
+                                flow, so I kept those. Feedback I did not implement included a
+                                suggestion to add more colors and images.
+                            </p>
                         </div>
                         <div class="col-md-6 col-lg-6">
-                            <h3 id="zen-testing">Testing and revisions</h3>
+                            <img src="img/zenvelopes/img-zen@2x/zen-revision-02@2x-min.png"
+                                alt="A before and after image showing changes made after the testing phase." />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                            <p>I built two high-fi prototypes with animated interactions to perform
-                                user testing with iOS and Android users. I wanted to assess how easily they can plan a
-                                budget, how
-                                confident they feel throughout the flow, and to what extent they find the interactions
-                                to be
-                                natural and familiar.
+            <section class="project-section logo-branding">
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-6 col-lg-6">
+                            <h3 id="zen-logo">Brand</h3>
+                            <p>
+                                In keeping with a Zen theme, the overall visual direction for
+                                Zenvelopes is minimalist and emphasizes typographic hierarchy.
+                                It's effectively monochromatic. Textures of handmade paper,
+                                parchment or sand are applied to some screens; this reinforces
+                                a feeling of mindfulness and calm.
                             </p>
-                            <p>Users appreciating access to explanatory modals in particular. Revisions included
-                                an improved navigation pannel allowing users to access an Overview of the process
-                                at any time. Feedback I did not implement included a suggestion to add more colors and
-                                images.
+                            <p>
+                                The logo is a minimal set of two ink strokes creating an
+                                “equal” sign. They signify balance and reference calligraphy.
+                                They also suggest the letter “Z”.
                             </p>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <img src="img/zenvelopes/img-zen@2x/img-zen-8@2x.png"
+                                alt="An image showing the Zenvelopes logo and its components: ink brushmark, equal sign, and the letter Z." />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="project-section high-fi-iOS">
-                <div class="container">
-                    <h3 id="zen-hifi-ios">High fidelity: iOS</h3>
-
-                    <div class="flex-container">
-                        <a href="https://www.figma.com/proto/q2lf9NwyEG36pOMteZlhUc/Zenvelopes-iOS-high-fidelity-prototype?type=design&node-id=155-6283&t=OKVim6zvTGJiQKdJ-0&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6283"
-                            target="_blank" class="button">iOS prototype</a>
+                <div class="row">
+                    <div class="container">
+                        <h3 id="zen-hifi">High fidelity iOS and Android</h3>
+                        <div class="col-md-6 col-lg-6">
+                            <h4>iOS</h4>
+                            <img src="img/zenvelopes/img-zen@2x/img-zen-9@2x-min.png" alt="iOS high-fidelity mockups" />
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <h4>Android</h4>
+                            <img src="img/zenvelopes/img-zen@2x/img-zen-11@2x-min.png"
+                                alt="Android high-fidelity mockups" />
+                        </div>
                     </div>
-                    <img src="img/zenvelopes/img-zen@2x/img-zen-9@2x-min.png" alt="iOS high-fidelity mockups">
-                    <img src="img/zenvelopes/img-zen@2x/img-zen-10@2x-min.png" alt="iOS high-fidelity mockups">
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-6 col-lg-6">
+                            <h4>iOS</h4>
+                            <img src="img/zenvelopes/img-zen@2x/img-zen-10@2x-min.png"
+                                alt="iOS high-fidelity mockups" />
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <h4>Android</h4>
+                            <img src="img/zenvelopes/img-zen@2x/img-zen-12@2x-min.png"
+                                alt="Android high-fidelity mockups" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="project-section high-fi-Android">
+            <section class="project-section zen-next">
                 <div class="container">
-                    <h3 id="zen-hifi-android">High fidelity: Android</h3>
-
-                    <div class="flex-container">
-                        <a href="https://www.figma.com/proto/Rb9akdInOnROUxSUXyWFQC/Zenvelopes-Androind-high-fidelity-prototype?type=design&node-id=155-6433&t=Z5JvH7j0xoaezpmn-0&scaling=scale-down&page-id=155%3A6262&starting-point-node-id=155%3A6433"
-                            target="_blank" class="button">Try the Android prototype</a>
+                    <div class="row">
+                        <h3 id="zen-next">Next steps</h3>
+                        <div class="col-md-6 col-lg-6">
+                            <h4>MVP</h4>
+                            <p>
+                                The immediate next steps include developing the 'Track' and
+                                'Reflect' flows as well as implementing a secure user
+                                registration and login flow. Additional testing would follow.
+                                I'd like to integrate an onboarding process to introduce users
+                                to the Kakeibo system and how to get the most of the app's
+                                features. Finally I would plan a strategic MVP launch to
+                                gather valuable user feedback for further refinements.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <h4>Potential business model</h4>
+                            <p>
+                                The app's business model could involve a freemium approach,
+                                offering basic features for free while charging for advanced
+                                features such as custom reporting or expert financial advice.
+                                Additionally, partnerships with financial institutions for
+                                integrated services could provide revenue streams.
+                            </p>
+                        </div>
                     </div>
-                    <img src="img/zenvelopes/img-zen@2x/img-zen-11@2x-min.png" alt="Android high-fidelity mockups">
-                    <img src="img/zenvelopes/img-zen@2x/img-zen-12@2x-min.png" alt="Android high-fidelity mockups">
                 </div>
             </section>
 
-            <section class="project-section thanks">
-                <h3>Thanks for looking!</h3>
+            <section class="project-section">
+                <div class="container">
+                    <div class="row">
+                        <h3 id="zen-learnings">Key learnings</h3>
+                        <ol>
+                            <div class="col-md-6 col-lg-6">
+                                <li>
+                                    <h4>Native app design</h4>
+                                    <p>
+                                        To ensure an intuitive user experience, I had to strike a
+                                        balance between creativity and adhering to platform
+                                        conventions. I came away with deep knowledge of iOS and
+                                        Android design guidelines. I also learned how constraints
+                                        can boost creativity and drive innovation.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>Cultural insights</h4>
+                                    <p>
+                                        The Kakeibo-inspired mindfulness integration met with a
+                                        positive response from users during testing. This showed
+                                        me that cross-cultural insights can offer unique solutions
+                                        that work.
+                                    </p>
+                                </li>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <li>
+                                    <h4>Time constraints</h4>
+                                    <p>
+                                        This project did not allow time or budget for initial user
+                                        research and competitive analysis. Adapting to this was a
+                                        valuable experience because it showed me that I can gather
+                                        considerable insight in a few short hours, by leveraging
+                                        my network and relevant research done by others.
+                                    </p>
+                                </li>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
             </section>
-
+            <section class="project-section" id="zen-thanks">
+                <h3>Thanks for reading!</h3>
+            </section>
         </main>
 
-        <footer id="contact">
-            <div class="container" style="background-image: url(./img/bg/bg-black-min.png);">
-                <h2>
-
-                    Contact
-
-                </h2>
-                <p>
-                    email me at dianovahello [at] gmail (dot) com
-                </p>
-                <div class="flex-container">
-                    <a href="mailto:dianovahello@gmail.com" class="button">Email me</a>
-                </div>
+        <footer id="contact" style="background-image: url(./img/bg/bg-black-min.png)">
+            <div class="container">
+                <h2 class="hello-animate">say HELLO</h2>
+                <p><span class="sub-span">dianovahello@gmail.com</span></p>
                 <div class="social-links">
                     <ul>
                         <li>
@@ -411,6 +521,11 @@
                                 <i class="fa-brands fa-behance fa-xl"></i>
                             </a>
                         </li>
+                        <li>
+                            <a href="mailto:dianovahello@gmail.com" class="button-contact">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <p>Copyright Diana Ivanova 2023-2024</p>
@@ -421,7 +536,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
