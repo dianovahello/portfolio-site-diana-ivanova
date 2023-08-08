@@ -2,26 +2,23 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diana Ivanova</title>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <script src="https://kit.fontawesome.com/f7ab72f41f.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body id="about-me" class="body-background">
-
     <div class="wrapper">
-
         <header id="top">
             <div class="container">
                 <div class="navtoggle" id="myNavtoggle">
@@ -34,8 +31,10 @@
                                 <a href="#contact"
                                     onclick="if (window.matchMedia('(max-width: 639px)').matches) menuToggle()">Contact</a>
                             </li>
-                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"
-                                        id="hamburger-icon"></i></a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"
+                                        id="hamburger-icon"></i></a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -43,96 +42,126 @@
         </header>
 
         <main>
-            <div class="container">
-                <div>
-                    <h1>About</h1>
-                </div>
-
-                <div>
-                    <picture>
-                        <source srcset="img/about-me/img-about-me@1x/img-about-me@1x.png" media="(max-width:767px)">
-                        <img src="img/about-me/img-about-me@2x/img-about-me@2x.png"
-                            alt="a photo of diana looking smart and fun">
-                    </picture>
+            <section id="about-intro" class="project-section">
+                <div class="container">
                     <div class="row">
-                        <div class="column">
-                            <h2>My story</h2>
-                            <p>
-                                Bulgarian-born and Brooklyn-based by way of Paris and Tel Aviv, I am an adventurous
-                                big-picture thinker with a passion for working across disciplines, and borders.
-                            </p>
-                            <p>
-                                My practice of media art has given me the chance to collaborate with a wide range of
-                                people: architects, animators, a software engineer, a composer - and address the
-                                anxieties
-                                and
-                                dreams people experience as they interact with technology. I create conceptual video and
-                                audio objects, as well as immersive installations.
-                            </p>
-                            <p>
-                                I started practicing graphic design in 2016, by creating the visual identity for a print
-                                dossier and promotional materials for a theater project. I found great satisfaction in
-                                applying my skills to solve a clear practical problem for clients. Today I&#39;ve worked
-                                on print, package, poster, custom illustrations, logos and brand guides, icon sets, and
-                                UI.
-                            </p>
-                            <p>
-                                As an experience designer I strive to craft meaningful, functional, and beautiful
-                                products.
-                                I leverage my education in visual art from Pratt Institute and the University of Paris,
-                                my expertise as a graphic designer and freelancer in Paris and Tel Aviv, my skills in
-                                collaboration and project management related to my art practice, and skills related to
-                                developing language workshops for professional adults in Paris: empathy, problem-solving
-                                in real time, and applying design thinking to develop a product that helps people
-                                achieve
-                                their goals.
-                            </p>
-                            <div class="flex-container">
-                                <a href="files/cv-placeholder.pdf" target="_blank" class="button">download my cv</a>
-                            </div>
+                        <h1 class="hidden">About</h1>
+                        <div class="col-md-6 col-lg-6">
+                            <picture>
+                                <source srcset="img/about-me/img-about-me@1x/img-about-me@1x.png"
+                                    media="(max-width:767px)" />
+                                <img src="img/about-me/img-about-me@2x/img-about-me@2x.png"
+                                    alt="a photo of diana looking smart and fun" />
+                            </picture>
                         </div>
-                        <div class="row">
-                            <h2>Skills and tools</h2>
-                            <div>
-                                <div class="col-md-6 col-lg-8">
-                                    <h3>Relevant skills</h3>
-                                    <ul>
-                                        <li>UX: research, personas, user flows, wireframing, rapid prototyping</li>
-                                        <li>UI: responsive design, design systems, high-fidelity prototypes</li>
-                                        <li>frontend development</li>
-
-                                    </ul>
+                        <div class="col-md-6 col-lg-6">
+                            <h2>My story</h2>
+                            <div id="about-blurb">
+                                <p>
+                                    <span class="italic-span">
+                                        Bulgarian-born and Brooklyn-based by way of Paris and Tel
+                                        Aviv, I am an adventurous big-picture thinker with a
+                                        passion for working across disciplines, and borders.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="buttons-group">
+                                <div class="flex-container">
+                                    <a href="files/cv-placeholder.pdf" target="_blank" class="button">download my cv</a>
                                 </div>
-                                <div class="col-md-6 col-lg-8">
-                                    <h3>Tools I like to use</h3>
-                                    <ul>
-                                        <li>Sharpie marker</li>
-                                        <li>Figma</li>
-                                        <li>InVision</li>
-                                        <li>Adobe Creative Suite</li>
-                                        <li>Visual Studio Code</li>
-                                    </ul>
+                                <div class="flex-container">
+                                    <a href="#skills-and-tools" class="button-tertiary">Skills and Tools</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="my-story" class="project-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <h4>Graphic design</h4>
+                            <p>
+                                I started practicing graphic design in 2016 by styling a print
+                                dossier and creating promotional material for a theater
+                                project. I liked applying my skills to solve a clear practical
+                                problem for clients.
+                            </p>
+                            <p>
+                                Today I&#39;ve worked on logos and brand guides, icon sets,
+                                UI, print, poster, custom illustrations and more. Freelancing
+                                helps me stay curious about design tools while honing my
+                                communication skills.
+                            </p>
+                            <h4>Media Art</h4>
+                            <p>
+                                My practice of media art has let me collaborate with a wide
+                                range of people on a number of international projects:
+                                architects, animators, a software engineer, a composer. I
+                                create conceptual video and audio objects and immersive
+                                installations. This is a great way to practice critical
+                                thinking, solve unique problems, and create experiences with
+                                the viewer in mind.
+                            </p>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6">
+                            <h4>Product Design</h4>
+                            <p>
+                                I am a graduate of CareerFoundry&#39;s UI design program with
+                                a specialization in Front-end Development. I gained a range of
+                                key skills there including User Research and Competitive
+                                Analysis, Prototyping and Wireframing, Interaction Design,
+                                Usability Testing and more. I learned the basics of web
+                                development including html, CSS, and JavaScript.
+                            </p>
+                            <p>
+                                <span class="bold-span">
+                                    What I enjoy most about this field is</span>
+                                that I can draw on all my experiences &#8208; visual,
+                                technical, and soft &#8208; to create something functional,
+                                meaningful, and beautiful.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills-and-tools" class="project-section">
+                <div class="container">
+                    <div class="row">
+                        <h2>Skills and tools</h2>
+                        <div class="col-md-6 col-lg-6">
+                            <h4>Relevant skills</h4>
+                            <ul>
+                                <li>User Research</li>
+                                <li>Prototyping and Mockups</li>
+                                <li>Graphic Design</li>
+                                <li>Usability Testing</li>
+                                <li>HTML, CSS, JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <h4>Tools I like to use</h4>
+                            <ul>
+                                <li>Sharpie</li>
+                                <li>Figma</li>
+                                <li>Adobe Creative Suite</li>
+                                <li>InVision</li>
+                                <li>Visual Studio Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer id="contact">
-            <div class="container" style="background-image: url(./img/bg/bg-black-min.png);">
-                <h2>
-                   
-                        Contact
-                  
-                </h2>
-                <p>
-                    email me at dianovahello [at] gmail (dot) com
-                </p>
-                <div class="flex-container">
-                    <a href="mailto:dianovahello@gmail.com" class="button">Email me</a>
-                </div>
+        <footer id="contact" style="background-image: url(./img/bg/bg-black-min.png)">
+            <div class="container">
+                <h2 class="hello-animate">say HELLO</h2>
+                <p><span class="sub-span">dianovahello@gmail.com</span></p>
                 <div class="social-links">
                     <ul>
                         <li>
@@ -147,18 +176,21 @@
                                 <i class="fa-brands fa-behance fa-xl"></i>
                             </a>
                         </li>
+                        <li>
+                            <a href="mailto:dianovahello@gmail.com" class="button-contact">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <p>Copyright Diana Ivanova 2023-2024</p>
             </div>
         </footer>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
