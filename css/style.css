@@ -3,7 +3,7 @@ Colors used:
 white: #fbfbfb; rgba(251, 251, 251, 0.5)
 black: #080808; rgba(8, 8, 8, 0.5)
 light grey: #E4E5E6; rgba(23, 27, 39, 0.1);
-accent/pink: 
+accent/pink: rgb(252, 72, 255)
 accent/blue:  rgba(71, 240, 255, 0.2);
 */
 
@@ -13,7 +13,7 @@ accent/blue:  rgba(71, 240, 255, 0.2);
 
 body {
     background-color: rgba(23, 27, 39, 0.05);
-    font-family: 'Archivo', sans-serif;
+    font-family: "Archivo", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -71,13 +71,6 @@ h4 {
     font-weight: 400;
 }
 
-.italic-span {
-    display: block;
-    font-size: 1em;
-    font-weight: 400;
-    font-style: italic;
-}
-
 /* styling for links */
 
 a {
@@ -110,7 +103,6 @@ a:active {
     background: none;
     border: none;
 }
-
 
 /* Styling for icons */
 
@@ -212,23 +204,22 @@ nav ul li a {
 .button:visited {
     display: inline-block;
     width: 100%;
-    background-color: #FACDFB;
+    background-color: #facdfb;
     color: #080808;
     font-weight: 400;
     text-decoration: none;
     padding: 8px 16px;
-    border: 2px solid #FC48FF;
+    border: 2px solid #fc48ff;
     text-align: center;
     border-radius: 40px;
     transition: 0.2s color;
-
 }
 
 .button-secondary,
 .button-secondary:visited {
     display: inline-block;
     width: 100%;
-    background-color: #E4E5E6;
+    background-color: #e4e5e6;
     color: #080808;
     border: 2px solid #080808;
     font-weight: 400;
@@ -270,23 +261,23 @@ nav ul li a {
 .button:hover,
 .button-secondary:focus,
 .button-secondary:hover {
-    background: #FBA1FD;
+    background: #fba1fd;
     color: #080808;
     padding: 8px 16px;
-    border: 2px solid #FC48FF;
+    border: 2px solid #fc48ff;
 }
 
 .button-contact:focus,
 .button-contact:hover {
-    background-color: #FC48FF;
+    background-color: #fc48ff;
 }
 
 .button:active,
 .button-secondary:active {
-    background-color: #FC48FF;
+    background-color: #fc48ff;
     color: #080808;
     padding: 8px 16px;
-    border: 2px solid #FC48FF;
+    border: 2px solid #fc48ff;
 }
 
 .buttons-group {
@@ -402,6 +393,7 @@ header {
     display: inline-block;
     text-decoration: none;
     padding: 8px 8px 8px 0;
+    cursor: pointer;
 }
 
 .sidenav-closed {
@@ -432,7 +424,6 @@ header {
     box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
 }
 
-
 /* styling for table of contents*/
 
 .table-contents {
@@ -443,20 +434,17 @@ header {
 .table-contents h4 {
     text-align: unset;
     padding: 8px 8px 8px 24px;
-    border-bottom: 2px solid rgba(23, 27, 39, 0.1);
-
+    /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
 }
 
 .table-contents a {
     display: block;
     text-decoration: none;
+    font-size: 18px;
     padding: 8px 8px 8px 24px;
     border-radius: 0;
-    border-bottom: 2px solid rgba(23, 27, 39, 0.1);
+    /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
 }
-
-
-
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -473,7 +461,23 @@ header {
     border-bottom: none;
 }
 
+/* Styling for table of contents process overview */
 
+.process-early {
+    background-color: rgba(23, 27, 39, 0.01);
+}
+
+.process-mid {
+    background-color: rgba(23, 27, 39, 0.025);
+}
+
+.process-late {
+    background-color: rgba(23, 27, 39, 0.05);
+}
+
+.process-next {
+    background-color: rgba(23, 27, 39, 0.1);
+}
 
 /* styling for main */
 
@@ -495,7 +499,7 @@ main {
 
 @keyframes hero-color {
     0% {
-        color: #FC48FF;
+        color: #fc48ff;
     }
 
     /* 50% {
@@ -503,7 +507,7 @@ main {
     } */
 
     100% {
-        color: #47F0FF;
+        color: #47f0ff;
     }
 }
 
@@ -531,7 +535,6 @@ main {
 
 .hello-animate {
     animation: 4s hero-color infinite alternate linear;
-
 }
 
 .body-background {
@@ -543,12 +546,12 @@ main {
 footer {
     text-align: center;
     color: #fbfbfb;
+    padding: 24px 0;
 }
-
 
 [class*="col-"] {
     float: left;
-    padding: 8px;
+    padding: 0 8px;
 }
 
 .row::after {
@@ -559,22 +562,64 @@ footer {
 
 /* Styling for project pages*/
 
-
 .project-blurb {
     padding: 16px;
-
 }
 
 .project-section {
-    padding: 16px 0;
-    border-bottom: 1px solid #e4e5e6;
+    padding: 16px 0 0 0;
 }
 
 #zen-home {
     padding-top: 44px;
 }
 
+/* Styling for key learnings list*/
 
+.project-section ol {
+    padding: 0;
+    margin: 0;
+}
+
+.project-section ol li{
+    padding: 16px 0;
+    
+}
+
+.project-section ol h4{
+    text-align: unset;
+}
+
+.project-section ol p{
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for About page */
+
+#about-blurb {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* #skills-and-tools {
+    border-top: 24px solid rgba(23, 27, 39, 0.04);
+    padding-top: 16px;
+    
+} */
+
+#skills-and-tools ul {
+    padding: 8px 0 8px 40px;
+    /* background-color: rgba(23, 27, 39, 0.025); */
+    list-style-type: square;
+}
+
+#skills-and-tools ul li {
+    width: 100%;
+}
 
 /* Styling for classes */
 
@@ -584,6 +629,51 @@ footer {
 
 .inline-block {
     display: inline-block;
+}
+
+.italic-span {
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.bold-span {
+    font-weight: 700;
+}
+
+/* Styling for Under Construction page */
+
+#under-construction main {
+    text-align: center;
+}
+
+#under-construction .wrapper {
+    background-color: transparent;
+}
+
+#under-construction main {
+    background-color: transparent;
+}
+
+#construction-icons{
+    padding-top: 16px;
+}
+
+#construction-icons ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+#construction-icons li {
+    display:inline-block;
+    padding: 16px;
+}
+
+#construction-heading{
+    padding: 32px 0 16px 0;
 }
 
 
@@ -603,7 +693,6 @@ footer {
 }
 
 @media only screen and (min-width: 640px) {
-
     header {
         text-align: unset;
     }
@@ -641,6 +730,8 @@ footer {
     }
 
     .text-block {
+        width: 100%;
+        margin:auto;
         max-width: 800px;
     }
 
@@ -655,7 +746,6 @@ footer {
     }
 
     h2 {
-
         font-size: 37px;
         line-height: 59px;
         font-weight: 700;
@@ -702,8 +792,21 @@ footer {
         margin: auto;
     }
 
-    @media only screen and (min-width: 1024px) {
+    /* Styling for About page 640px min viewport */
 
+    #about-blurb {
+        width: 75%;
+    }
+
+    #cropped-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: auto;
+
+    }
+
+    @media only screen and (min-width: 1024px) {
         .col-lg-3 {
             width: 25%;
         }
@@ -718,6 +821,14 @@ footer {
 
         .col-lg-7 {
             width: 58.33%;
+        }
+
+        #my-story .col-lg-6 {
+            padding: 16px;
+        }
+
+        #zen .col-lg-6 {
+            padding: 16px;
         }
 
         /* styling for headings lg 1024px */
@@ -763,8 +874,6 @@ footer {
         }
 
         @media only screen and (min-width: 1440px) {
-
-
             header {
                 max-width: 1200px;
                 margin-left: auto;
@@ -805,6 +914,5 @@ footer {
                 font-weight: 700;
             }
         }
-
     }
 }
