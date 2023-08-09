@@ -547,6 +547,7 @@ footer {
     text-align: center;
     color: #fbfbfb;
     padding: 24px 0;
+    background-color: rgba(8, 8, 8, 0.9);
 }
 
 [class*="col-"] {
@@ -645,13 +646,11 @@ footer {
 
 #under-construction .wrapper {
     background-color: transparent;
-    /* height: 100vh; */
-    box-shadow: none;
+    /* box-shadow: none; */
 }
 
-#under-construction .col-lg-6,
-#under-construction .col-md-6 {
-    padding: 0 8px;
+#under-construction img {
+    margin-bottom: 16px;
 }
 
 #construction-icon {
@@ -676,11 +675,7 @@ footer {
     padding-top: 16px;
 }
 
-#under-construction footer {
-    color: #ffffff;
-    padding: 0;
-    background-color: rgba(8, 8, 8, 0.9);
-}
+
 
 #under-construction footer .button-tertiary,
 #under-construction footer .button-tertiary:visited {
@@ -822,17 +817,9 @@ footer {
 
     /* Styling for Under Construction page 640px min viewport */
 
-    #under-construction .col-lg-6,
-    #under-construction .col-md-6 {
-        padding: 0 24px;
-    }
-
     #under-construction img {
-        max-height: 600px;
-        width: auto;
-        margin: auto;
+        margin-bottom: 24px;
     }
-
 
     #under-construction .flex-container {
         padding: 32px 0;
@@ -919,16 +906,13 @@ footer {
 
         /* Styling for Under Construction page 1024px min viewport */
 
-        #under-construction .col-lg-6,
-        #under-construction .col-md-6 {
-            padding: 0 32px;
-        }
-
         #under-construction img {
-            width: 100%;
-            max-height: unset;
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+            margin: auto;
         }
-
+        
         #under-construction .flex-container {
             padding: 32px 0;
         }
@@ -943,6 +927,10 @@ footer {
 
         #under-construction h3 {
             margin-top: 0;
+        }
+
+        #under-construction footer {
+            margin-top: 40px;
         }
 
         @media only screen and (min-width: 1440px) {
