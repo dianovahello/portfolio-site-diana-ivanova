@@ -589,6 +589,10 @@ footer {
     padding: 16px 0 0 0;
 }
 
+.project-section h3:focus {
+    outline: none;
+}
+
 #zen-home {
     padding-top: 44px;
 }
