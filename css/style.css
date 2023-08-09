@@ -89,6 +89,10 @@ a:active {
     text-decoration: none;
 }
 
+a:focus {
+    outline: auto; 
+}
+
 .logo {
     max-width: 150px;
     font-weight: 700;
@@ -180,7 +184,7 @@ nav ul li a {
 }
 
 .icon:focus {
-    background-color: #fbfbfb;
+    outline: auto; 
 }
 
 .navtoggle-responsive nav {
@@ -272,6 +276,12 @@ nav ul li a {
     background-color: #fc48ff;
 }
 
+.button:focus,
+.button-secondary:focus
+.button-contact:focus {
+outline: auto;
+}
+
 .button:active,
 .button-secondary:active {
     background-color: #fc48ff;
@@ -323,6 +333,10 @@ img {
 .tab button:hover {
     background-color: rgba(23, 27, 39, 0.1);
     border-radius: 40px;
+}
+
+.tab button:focus {
+    outline: auto;
 }
 
 /* Create an active/current tablink class */
@@ -394,6 +408,10 @@ header {
     text-decoration: none;
     padding: 8px 8px 8px 0;
     cursor: pointer;
+}
+
+.subheader a:focus {
+    outline: auto;
 }
 
 .sidenav-closed {
