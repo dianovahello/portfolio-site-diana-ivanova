@@ -335,13 +335,16 @@ img {
     border-radius: 40px;
 }
 
-.tab button:focus {
+/* .tab button:focus {
     outline: auto;
-}
+} */
 
 /* Create an active/current tablink class */
+
 .tab button.active {
     background-color: rgba(71, 240, 255, 0.2);
+    border: none;
+    outline: none;
 }
 
 /* Style the tab content */
