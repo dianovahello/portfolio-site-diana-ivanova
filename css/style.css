@@ -90,7 +90,7 @@ a:active {
 }
 
 a:focus {
-    outline: auto; 
+    outline: auto;
 }
 
 .logo {
@@ -184,7 +184,7 @@ nav ul li a {
 }
 
 .icon:focus {
-    outline: auto; 
+    outline: auto;
 }
 
 .navtoggle-responsive nav {
@@ -277,9 +277,8 @@ nav ul li a {
 }
 
 .button:focus,
-.button-secondary:focus
-.button-contact:focus {
-outline: auto;
+.button-secondary:focus .button-contact:focus {
+    outline: auto;
 }
 
 .button:active,
@@ -464,8 +463,16 @@ header {
     text-decoration: none;
     font-size: 18px;
     padding: 8px 8px 8px 24px;
+    font-weight: 600;
+    text-transform: lowercase;
     border-radius: 0;
     /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
+}
+
+.table-contents .sub-item {
+    /* padding: 8px 8px 8px 32px; */
+    font-weight: 400;
+    font-style: italic;    
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -597,11 +604,114 @@ footer {
     outline: none;
 }
 
+/* Styling for Portfolio site case study 320px */
+
+#sitecs p {
+    margin: 0;
+}
+
+/* Headings */
+
+#sitecs h1,
+#sitecs h2,
+#sitecs h3 {
+    margin: 16px 0;
+}
+
+
+#sitecs h4 {
+    margin: 8px 0;
+}
+
+#site-constraints h3 {
+    margin: 16px 0 0 0;
+}
+
+.constraints-flex {
+
+    width: 100%;
+    text-align: center;
+    padding: 20px 40px 0 40px;
+
+}
+
+/* Lists */
+
+#sitecs ol {
+    margin: 8px 0 0 0;
+}
+
+#sitecs ol li:not(:last-child) {
+    padding-bottom: 16px;
+}
+
+#sitecs ol li:last-child {
+    padding: 0;
+}
+
+/* fig tag 320px */
+
+#sitecs figure {
+    margin: 0;
+}
+
+#sitecs figure img {
+    padding: 8px 16px 16px 16px;
+}
+
+figcaption,
+figcaption a {
+    font-size: 14px;
+    color: rgba(8, 8, 8, 0.8);
+    text-align: center;
+}
+
+/* logo list site case study 320px */
+
+.logo-list {
+    width: 100%;
+    padding: 0;
+}
+
+#logo-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 0;
+    margin-top: 24px;
+}
+
+#logo-list li {
+    flex: 1;
+    display: flex;
+}
+
+#logo-list li i {
+    margin: auto;
+}
+
+.sub-section {
+    padding-top: 0;
+}
+
+.in-section-img {
+    padding: 24px 0 0 0;
+}
+
+#sitecs-thanks {
+        text-align: center;
+        padding-bottom: 16px;
+}
+
+
+
+/* Styling for Zenvelopes */
+
 #zen-home {
     padding-top: 44px;
 }
-
-/* Styling for key learnings list*/
 
 .zen-learnings h3 {
     margin-bottom: 16px;
@@ -623,13 +733,6 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
-
-/* #skills-and-tools {
-    border-top: 24px solid rgba(23, 27, 39, 0.04);
-    padding-top: 16px;
-    
-} */
 
 #skills-and-tools ul {
     padding: 8px 0 8px 40px;
@@ -716,7 +819,7 @@ footer {
 
 /* media queries */
 
-/* On smaller screens height < 450px, change sidenav style (less padding and a smaller font size) */
+/* On smaller screens height < 450px, change sidenav style (less padding + smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -726,6 +829,9 @@ footer {
         font-size: 18px;
     }
 }
+
+
+
 
 @media only screen and (min-width: 640px) {
     header {
@@ -764,11 +870,6 @@ footer {
         line-height: 31px;
     }
 
-    .text-block {
-        width: 100%;
-        margin: auto;
-        max-width: 800px;
-    }
 
     /* styling for headings med 640px */
 
@@ -841,26 +942,79 @@ footer {
 
     }
 
-    /* Styling for Under Construction page 640px min viewport */
 
-    #under-construction img {
-        margin-bottom: 24px;
-    }
 
-    #under-construction .flex-container {
-        padding: 32px 0;
-    }
+    /* Styling for portfolio site case study page med 640px */
 
-    #under-construction .buttons-group {
-        padding-top: 8px;
-    }
+    @media only screen and (min-width: 640px) {
 
-    #under-construction .buttons-group .flex-container {
-        padding: 8px 0;
-    }
+        #sitecs h1 {
+            margin: 16px 0 32px 0;
+        }
 
-    #under-construction h3 {
-        margin-top: 24px;
+        #constraints-flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .constraints-flex {
+            width: 50%;
+        }
+
+
+        #logo-list {
+            margin-top: 8px;
+            margin-bottom: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 400px;
+        }
+
+        #sitecs figure {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        #sitecs figure img {
+            padding: 1em;
+        }
+
+        /* fig tag 320px */
+
+        #sitecs figure img {
+            padding: 8px 16px 0 16px;
+        }
+
+        figcaption,
+        figcaption a {
+            font-size: 16px;
+            color: rgba(8, 8, 8, 0.8);
+            text-align: center;
+        }
+
+        /* Styling for Under Construction page 640px min viewport */
+
+        #under-construction img {
+            margin-bottom: 24px;
+        }
+
+        #under-construction .flex-container {
+            padding: 32px 0;
+        }
+
+        #under-construction .buttons-group {
+            padding-top: 8px;
+        }
+
+        #under-construction .buttons-group .flex-container {
+            padding: 8px 0;
+        }
+
+        #under-construction h3 {
+            margin-top: 24px;
+        }
+
     }
 
     @media only screen and (min-width: 1024px) {
@@ -887,6 +1041,17 @@ footer {
         #zen .col-lg-6 {
             padding: 16px;
         }
+
+        .text-block {
+            width: 100%;
+            margin: auto;
+            max-width: 688px;
+        }
+
+
+
+
+
 
         /* styling for headings lg 1024px */
 
@@ -938,7 +1103,7 @@ footer {
             height: auto;
             margin: auto;
         }
-        
+
         #under-construction .flex-container {
             padding: 32px 0;
         }
@@ -959,46 +1124,63 @@ footer {
             margin-top: 40px;
         }
 
-        @media only screen and (min-width: 1440px) {
-            header {
-                max-width: 1200px;
-                margin-left: auto;
-                margin-right: auto;
-            }
+        /* Styling for Portfolio site case study lg 1024px */
 
-            .container {
-                max-width: 1200px;
-                margin-left: auto;
-                margin-right: auto;
-            }
+        #sitecs .col-lg-6 {
+            width: 100%;
+        }
 
-            /* styling for headings xl 1440px */
+        #site-constraints .constraints-flex {
+            width: 50%;
+        }
 
-            h1 {
-                font-size: 47px;
-                line-height: 79px;
-                font-weight: 700;
-                text-align: center;
-            }
 
-            h2 {
-                font-size: 37px;
-                line-height: 65px;
-                font-weight: 700;
-                text-align: center;
-            }
+        #sitecs h1,
+        #sitecs h2 {
+            margin: 24px 0;
+        }
 
-            h3 {
-                font-size: 29px;
-                line-height: 53px;
-                font-weight: 700;
-            }
+    }
 
-            h4 {
-                font-size: 23px;
-                line-height: 44px;
-                font-weight: 700;
-            }
+    @media only screen and (min-width: 1440px) {
+        header {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* styling for headings xl 1440px */
+
+        h1 {
+            font-size: 47px;
+            line-height: 79px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 37px;
+            line-height: 65px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 29px;
+            line-height: 53px;
+            font-weight: 700;
+        }
+
+        h4 {
+            font-size: 23px;
+            line-height: 44px;
+            font-weight: 700;
         }
     }
 }
