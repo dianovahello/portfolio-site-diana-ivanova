@@ -736,10 +736,18 @@ figcaption a {
     justify-content: center;
 }
 
+#skills-and-tools h2 {
+    margin-bottom: 8px;
+}
+
+#skills-and-tools h4 {
+    text-align: unset;
+}
+
 #skills-and-tools ul {
     padding: 8px 0 8px 40px;
-    /* background-color: rgba(23, 27, 39, 0.025); */
     list-style-type: square;
+    margin: 0;
 }
 
 #skills-and-tools ul li {
