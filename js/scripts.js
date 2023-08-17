@@ -42,7 +42,8 @@ $('a[href*="#"]')
   .not('[href="#0"]')
   .on("click", function (event) {
     if (
-      location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") &&
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
@@ -53,7 +54,6 @@ $('a[href*="#"]')
       }
     }
   });
-
 
 // Subnav tabs
 
@@ -89,3 +89,8 @@ function sideNavToggle() {
     element.className = "sidenav-closed";
   }
 }
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+  // closeButton: true,
+});
