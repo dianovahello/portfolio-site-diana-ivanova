@@ -93,6 +93,11 @@ a:focus {
     outline: auto;
 }
 
+#myNavtoggle>a.project-nav-bars {
+    outline: none;
+    background-color: transparent;
+}
+
 .logo {
     max-width: 150px;
     font-weight: 700;
@@ -204,6 +209,10 @@ nav ul li a {
 
 .navtoggle-responsive li:last-child {
     padding: 10px 0 0;
+}
+
+#myNavtoggle>nav>ul>li:nth-child(3)>a {
+    padding-right: 0;
 }
 
 /* styling for buttons */
@@ -399,6 +408,20 @@ header {
     box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
 }
 
+header .fa-arrow-left {
+    padding: 0 8px 0 0;
+}
+
+header .fa-bars,
+#myNavtoggle > a.project-nav-bars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /* styling for side nav table of contents in project */
 
 .sub-header {
@@ -467,8 +490,8 @@ header {
     text-decoration: none;
     font-size: 18px;
     padding: 8px 8px 8px 24px;
-    font-weight: 600;
-    text-transform: lowercase;
+    /* font-weight: 600; */
+    text-transform: capitalize;
     border-radius: 0;
     /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
 }
@@ -476,7 +499,7 @@ header {
 .table-contents .sub-item {
     /* padding: 8px 8px 8px 32px; */
     font-weight: 400;
-    font-style: italic;    
+    font-style: italic;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -492,24 +515,6 @@ header {
     margin-left: 50px;
     padding: 8px;
     border-bottom: none;
-}
-
-/* Styling for table of contents process overview */
-
-.process-early {
-    background-color: rgba(23, 27, 39, 0.01);
-}
-
-.process-mid {
-    background-color: rgba(23, 27, 39, 0.025);
-}
-
-.process-late {
-    background-color: rgba(23, 27, 39, 0.05);
-}
-
-.process-next {
-    background-color: rgba(23, 27, 39, 0.1);
 }
 
 /* styling for main */
@@ -570,6 +575,11 @@ main {
     animation: 4s hero-color infinite alternate linear;
 }
 
+#hero > div > h1 > span.hello-animate {
+    padding: 8px 16px;
+    background: rgba(8, 8, 8, 0.9)
+}
+
 .body-background {
     animation: 4s body-background infinite alternate linear;
 }
@@ -609,23 +619,21 @@ footer {
 }
 
 .project-section-home {
-    padding-top: 44px;
+    padding-top: 16px;
 }
 
-/* Styling for Portfolio site case study 320px */
-
-#sitecs p {
-    margin: 0;
+.project-section-home h1 {
+    padding-bottom: 16px;
 }
 
-/* Headings */
 
-#sitecs h1,
-#sitecs h2,
-#sitecs h3 {
+.project-main h1,
+.project-main h2,
+.project-main h3 {
     margin: 16px 0;
 }
 
+/* Styling for Portfolio site case study 320px */
 
 #sitecs h4 {
     margin: 8px 0;
@@ -711,8 +719,8 @@ figcaption a {
 }
 
 #sitecs-thanks {
-        text-align: center;
-        padding-bottom: 16px;
+    text-align: center;
+    padding-bottom: 16px;
 }
 
 
@@ -729,6 +737,10 @@ figcaption a {
 
 .zen-learnings p {
     margin-top: 0;
+}
+
+#zen .project-section {
+    padding: 8px 0;
 }
 
 /* Styling for About page */
@@ -882,6 +894,10 @@ figcaption a {
     main {
         font-size: 18px;
         line-height: 31px;
+    }
+
+    body {
+        font-size: 18px;
     }
 
 

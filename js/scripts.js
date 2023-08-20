@@ -15,7 +15,7 @@ function menuToggle() {
 
 // Smooth scrolling function
 function smoothScrollTo(target) {
-  var headerOffset = 108;
+  var headerOffset = 44;
 
   $("html, body").animate(
     {
