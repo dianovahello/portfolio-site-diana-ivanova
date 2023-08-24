@@ -94,3 +94,15 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
   // closeButton: true,
 });
+
+
+// Counter
+let counts = setInterval(updated);
+let upto = 0;
+function updated() {
+    let count = document.getElementById("counter");
+    count.innerHTML = ++upto;
+    if (upto === 681) {
+        clearInterval(counts);
+    }
+}

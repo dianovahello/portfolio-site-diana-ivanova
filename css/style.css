@@ -8,16 +8,16 @@ accent/blue:  rgba(71, 240, 255, 0.2);
 */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgba(23, 27, 39, 0.05);
-    font-family: "Archivo", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #080808;
+  background-color: rgba(23, 27, 39, 0.05);
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #080808;
 }
 
 /* styling for headings mobile 320px */
@@ -26,84 +26,84 @@ h1,
 h2,
 h3,
 h4 {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    font-size: 42px;
-    line-height: 64px;
-    font-weight: 700;
-    text-align: center;
+  font-size: 42px;
+  line-height: 64px;
+  font-weight: 700;
+  text-align: center;
 }
 
 h2 {
-    font-size: 33px;
-    line-height: 51px;
-    font-weight: 700;
-    text-align: center;
+  font-size: 33px;
+  line-height: 51px;
+  font-weight: 700;
+  text-align: center;
 }
 
 h3 {
-    font-size: 26px;
-    line-height: 41px;
-    font-weight: 700;
-    text-align: center;
+  font-size: 26px;
+  line-height: 41px;
+  font-weight: 700;
+  text-align: center;
 }
 
 h4 {
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: 700;
-    text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .intro-span {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 41px;
-    display: block;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 41px;
+  display: block;
 }
 
 .sub-span {
-    display: block;
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: 400;
+  display: block;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 /* styling for links */
 
 a {
-    color: #080808;
-    padding: 4px;
-    /* font-weight: 600; */
-    text-decoration: underline;
-    transition: 0.2s color;
-    border-radius: 40px;
+  color: #080808;
+  padding: 4px;
+  /* font-weight: 600; */
+  text-decoration: underline;
+  transition: 0.2s color;
+  border-radius: 40px;
 }
 
 a:focus,
 a:hover,
 a:active {
-    background-color: rgba(23, 27, 39, 0.1);
-    text-decoration: none;
+  background-color: rgba(23, 27, 39, 0.1);
+  text-decoration: none;
 }
 
 a:focus {
-    outline: auto;
+  outline: auto;
 }
 
-#myNavtoggle>a.project-nav-bars {
-    outline: none;
-    background-color: transparent;
+#myNavtoggle > a.project-nav-bars {
+  outline: none;
+  background-color: transparent;
 }
 
 .logo {
-    max-width: 150px;
-    font-weight: 700;
-    text-decoration: none;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  max-width: 150px;
+  font-weight: 700;
+  text-decoration: none;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .img-link,
@@ -111,734 +111,747 @@ a:focus {
 .img-link:active,
 .img-link:focus,
 .img-link:visited {
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    outline: none;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 /* Styling for icons */
 
 i {
-    color: #080808;
-    padding: 0 8px;
+  color: #080808;
+  padding: 0 8px;
 }
 
 #hamburger-icon {
-    padding: 0;
+  padding: 0;
 }
 
 .social-links {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
-.social-links>ul {
-    list-style-type: none;
-    padding: 0;
+.social-links > ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.social-links>ul>li {
-    display: inline-block;
-    padding: 0 8px;
+.social-links > ul > li {
+  display: inline-block;
+  padding: 0 8px;
 }
 
 .social-links i {
-    padding: 8px;
-    color: #fbfbfb;
+  padding: 8px;
+  color: #fbfbfb;
 }
 
 .social-links a:focus,
 .social-links a:hover {
-    background: transparent;
-    text-decoration: none;
+  background: transparent;
+  text-decoration: none;
 }
 
 /* styling for nav */
 
-nav>ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li a {
-    padding: 8px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
+  padding: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .navtoggle li:not(:last-child) {
-    display: none;
+  display: none;
 }
 
 .navtoggle,
 .navtoggle-responsive {
-    position: relative;
+  position: relative;
 }
 
 .navtoggle li .icon {
-    padding: 0;
-    font-size: 20px;
-    margin: 0;
+  padding: 0;
+  font-size: 20px;
+  margin: 0;
 }
 
 .icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 20px;
-    padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  padding: 0;
 }
 
 .icon:focus {
-    outline: auto;
+  outline: auto;
 }
 
 .navtoggle-responsive nav {
-    padding: 16px 0 0;
-    z-index: 4;
+  padding: 16px 0 0;
+  z-index: 4;
 }
 
 .navtoggle-responsive li {
-    display: block;
-    padding: 10px 0;
-    border-top: 1px solid #e4e5e6;
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #e4e5e6;
 }
 
 .navtoggle-responsive li:last-child {
-    padding: 10px 0 0;
+  padding: 10px 0 0;
 }
 
-#myNavtoggle>nav>ul>li:nth-child(3)>a {
-    padding-right: 0;
+#myNavtoggle > nav > ul > li:nth-child(3) > a {
+  padding-right: 0;
 }
 
 /* styling for buttons */
 
 .button,
 .button:visited {
-    display: inline-block;
-    width: 100%;
-    background-color: #facdfb;
-    color: #080808;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 8px 16px;
-    border: 2px solid #fc48ff;
-    text-align: center;
-    border-radius: 40px;
-    transition: 0.2s color;
+  display: inline-block;
+  width: 100%;
+  background-color: #facdfb;
+  color: #080808;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid #fc48ff;
+  text-align: center;
+  border-radius: 40px;
+  transition: 0.2s color;
 }
 
 .button-secondary,
 .button-secondary:visited {
-    display: inline-block;
-    width: 100%;
-    background-color: #e4e5e6;
-    color: #080808;
-    border: 2px solid #080808;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 40px;
-    text-align: center;
-    transition: 0.2s color;
+  display: inline-block;
+  width: 100%;
+  background-color: #e4e5e6;
+  color: #080808;
+  border: 2px solid #080808;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 40px;
+  text-align: center;
+  transition: 0.2s color;
 }
 
 .button-tertiary,
 .button-tertiary:visited {
-    display: inline-block;
-    width: 100%;
-    color: #080808;
-    font-weight: 400;
-    padding: 8px;
-    border-radius: 40px;
-    text-align: center;
-    transition: 0.2s color;
+  display: inline-block;
+  width: 100%;
+  color: #080808;
+  font-weight: 400;
+  padding: 8px;
+  border-radius: 40px;
+  text-align: center;
+  transition: 0.2s color;
 }
 
 .button-contact,
 .button-contact:visited {
-    display: inline-block;
-    width: 100%;
-    background-color: rgba(8, 8, 8, 0.5);
-    color: #fbfbfb;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 8px 16px;
-    border: 2px solid #fbfbfb;
-    text-align: center;
-    border-radius: 40px;
-    transition: 0.2s color;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(8, 8, 8, 0.5);
+  color: #fbfbfb;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid #fbfbfb;
+  text-align: center;
+  border-radius: 40px;
+  transition: 0.2s color;
 }
 
 .button:focus,
 .button:hover,
 .button-secondary:focus,
 .button-secondary:hover {
-    background: #fba1fd;
-    color: #080808;
-    padding: 8px 16px;
-    border: 2px solid #fc48ff;
+  background: #fba1fd;
+  color: #080808;
+  padding: 8px 16px;
+  border: 2px solid #fc48ff;
 }
 
 .button-contact:focus,
 .button-contact:hover {
-    background-color: #fc48ff;
+  background-color: #fc48ff;
 }
 
 .button:focus,
 .button-secondary:focus .button-contact:focus {
-    outline: auto;
+  outline: auto;
 }
 
 .button:active,
 .button-secondary:active {
-    background-color: #fc48ff;
-    color: #080808;
-    padding: 8px 16px;
-    border: 2px solid #fc48ff;
+  background-color: #fc48ff;
+  color: #080808;
+  padding: 8px 16px;
+  border: 2px solid #fc48ff;
 }
 
 .buttons-group {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .project-img {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 /* styling for subnav */
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    background-color: #fbfbfb;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  overflow: hidden;
+  background-color: #fbfbfb;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Style the buttons inside the tab */
 
 .tab button {
-    background-color: inherit;
-    float: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 16px;
-    transition: 0.2s;
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 40px;
+  background-color: inherit;
+  float: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px;
+  transition: 0.2s;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 40px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:focus,
 .tab button:hover {
-    background-color: rgba(23, 27, 39, 0.1);
-    border-radius: 40px;
+  background-color: rgba(23, 27, 39, 0.1);
+  border-radius: 40px;
 }
 
 .tab button:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 /* Create an active/current tablink class */
 
 .tab button.active {
-    background-color: rgba(71, 240, 255, 0.2);
-    border: none;
-    outline: none;
+  background-color: rgba(71, 240, 255, 0.2);
+  border: none;
+  outline: none;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
 
 /* Activate the design tab by default */
 .tabcontent.default-active {
-    display: block;
+  display: block;
 }
 
 /* layout styling */
 
 .container {
-    padding: 0 16px;
+  padding: 0 16px;
 }
 
 .flex-container {
-    display: flex;
-    width: 100%;
-    padding: 8px 0;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: 8px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab {
-    padding: 16px 0;
+  padding: 16px 0;
 }
 
 .row {
-    width: 100%;
+  width: 100%;
 }
 
 #work .row {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 header {
-    background-color: #fbfbfb;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    width: 100%;
-    box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
+  background-color: #fbfbfb;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
 }
 
 header .fa-arrow-left {
-    padding: 0 8px 0 0;
+  padding: 0 8px 0 0;
 }
 
 header .fa-bars,
 #myNavtoggle > a.project-nav-bars {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0;
-    font-size: 20px;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* styling for side nav table of contents in project */
 
 .sub-header {
-    background-color: #fbfbfb;
-    color: #080808;
-    position: fixed;
-    z-index: 2;
-    padding: 8px 16px;
-    width: 100%;
+  background-color: #fbfbfb;
+  color: #080808;
+  position: fixed;
+  z-index: 2;
+  padding: 8px 16px;
+  width: 100%;
 }
 
 .sub-header a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 8px 8px 8px 0;
-    cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 8px 8px 0;
+  cursor: pointer;
 }
 
 .subheader a:focus {
-    outline: auto;
+  outline: auto;
 }
 
 .sidenav-closed {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    background-color: #fbfbfb;
-    overflow-x: hidden;
-    padding-top: 40px;
-    transition: 0.25s;
-    box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #fbfbfb;
+  overflow-x: hidden;
+  padding-top: 40px;
+  transition: 0.25s;
+  box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
 }
 
 .sidenav-250px {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    background-color: #fbfbfb;
-    overflow-x: hidden;
-    padding-top: 40px;
-    transition: 0.25s;
-    box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #fbfbfb;
+  overflow-x: hidden;
+  padding-top: 40px;
+  transition: 0.25s;
+  box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
 }
 
 /* styling for table of contents*/
 
 .table-contents {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .table-contents h4 {
-    text-align: unset;
-    padding: 8px 8px 8px 24px;
-    /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
+  text-align: unset;
+  padding: 8px 8px 8px 24px;
+  /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
 }
 
 .table-contents a {
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 8px 8px 24px;
-    /* font-weight: 600; */
-    text-transform: capitalize;
-    border-radius: 0;
-    /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 8px 8px 24px;
+  /* font-weight: 600; */
+  text-transform: capitalize;
+  border-radius: 0;
+  /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
 }
 
 .table-contents .sub-item {
-    /* padding: 8px 8px 8px 32px; */
-    font-weight: 400;
-    font-style: italic;
+  /* padding: 8px 8px 8px 32px; */
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    background-color: #e4e5e6;
+  background-color: #e4e5e6;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav-250px .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-left: 50px;
-    padding: 8px;
-    border-bottom: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 50px;
+  padding: 8px;
+  border-bottom: none;
 }
 
 /* styling for main */
 
 main {
-    padding-top: 44px;
-    background-color: #fbfbfb;
+  padding-top: 44px;
+  background-color: #fbfbfb;
 }
 
 .project-main {
-    padding-top: 42px;
+  padding-top: 42px;
 }
 
 #hero {
-    display: inline-block;
-    background-color: #fbfbfb;
-    padding: 0;
-    width: 100%;
+  display: inline-block;
+  background-color: #fbfbfb;
+  padding: 0;
+  width: 100%;
 }
 
 @keyframes hero-color {
-    0% {
-        color: #fc48ff;
-    }
+  0% {
+    color: #fc48ff;
+  }
 
-    /* 50% {
+  /* 50% {
         color: #8AFF23;
     } */
 
-    100% {
-        color: #47f0ff;
-    }
+  100% {
+    color: #47f0ff;
+  }
 }
 
 @keyframes body-background {
-    0% {
-        background-color: rgba(252, 72, 255, 0.1);
-    }
+  0% {
+    background-color: rgba(252, 72, 255, 0.1);
+  }
 
-    /* 50% {
+  /* 50% {
         color: #8AFF23;
     } */
 
-    100% {
-        background-color: rgba(71, 240, 255, 0.1);
-    }
+  100% {
+    background-color: rgba(71, 240, 255, 0.1);
+  }
 }
 
 #hero h1 {
-    font-size: 110px;
-    line-height: 150%;
-    background-color: transparent;
-    padding-bottom: 8px;
-    margin: 0 8px;
+  font-size: 110px;
+  line-height: 150%;
+  background-color: transparent;
+  padding-bottom: 8px;
+  margin: 0 8px;
 }
 
 .hello-animate {
-    animation: 4s hero-color infinite alternate linear;
+  animation: 4s hero-color infinite alternate linear;
 }
 
 #hero > div > h1 > span.hello-animate {
-    background: rgba(8, 8, 8, 0.9)
+  background: rgba(8, 8, 8, 0.9);
 }
 
 .body-background {
-    animation: 4s body-background infinite alternate linear;
+  animation: 4s body-background infinite alternate linear;
+}
+
+/* Styling for World section donation amount counter*/
+
+
+#counter-block,
+#counter-block > p,
+#counter {
+  display: inline;
+}
+
+#counter-block{
+    width: 100%;
+    margin:auto;
+    align-self: center;
+}
+
+#counter {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* styling for footer */
 
 footer {
-    text-align: center;
-    color: #fbfbfb;
-    padding: 24px 0;
-    background-color: rgba(8, 8, 8, 0.9);
+  text-align: center;
+  color: #fbfbfb;
+  padding: 24px 0;
+  background-color: rgba(8, 8, 8, 0.9);
 }
 
 [class*="col-"] {
-    float: left;
-    padding: 0 8px;
+  float: left;
+  padding: 0 8px;
 }
 
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Styling for project pages*/
 
 .project-blurb {
-    padding: 16px;
+  padding: 16px;
 }
 
 .project-section {
-    padding: 16px 0 0 0;
+  padding: 16px 0 0 0;
 }
 
 .project-section h3:focus {
-    outline: none;
+  outline: none;
 }
 
 .project-section-home {
-    padding-top: 16px;
+  padding-top: 16px;
 }
 
 .project-section-home h1 {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
-
 
 .project-main h1,
 .project-main h2,
 .project-main h3 {
-    margin: 16px 0;
+  margin: 16px 0;
 }
 
 /* Styling for Portfolio site case study 320px */
 
 #sitecs h4 {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 #site-constraints h3 {
-    margin: 16px 0 0 0;
+  margin: 16px 0 0 0;
 }
 
 .constraints-flex {
-
-    width: 100%;
-    text-align: center;
-    padding: 20px 40px 0 40px;
-
+  width: 100%;
+  text-align: center;
+  padding: 20px 40px 0 40px;
 }
 
 /* Lists */
 
 #sitecs ol {
-    margin: 8px 0 0 0;
-    padding-left: 16px;
-    list-style-type: none;
+  margin: 8px 0 0 0;
+  padding-left: 16px;
+  list-style-type: none;
 }
 
 #sitecs ol li:not(:last-child) {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 #sitecs ol li:last-child {
-    padding: 0;
+  padding: 0;
 }
 
 /* fig tag 320px */
 
 #sitecs figure {
-    margin: 0;
+  margin: 0;
 }
 
 #sitecs figure img {
-    padding: 8px 16px 16px 16px;
+  padding: 8px 16px 16px 16px;
 }
 
 figcaption,
 figcaption a {
-    font-size: 14px;
-    color: rgba(8, 8, 8, 0.8);
-    text-align: center;
+  font-size: 14px;
+  color: rgba(8, 8, 8, 0.8);
+  text-align: center;
 }
 
 /* logo list site case study 320px */
 
 .logo-list {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 #logo-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 8px 0;
-    margin-top: 24px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 0;
+  margin-top: 24px;
 }
 
 #logo-list li {
-    flex: 1;
-    display: flex;
+  flex: 1;
+  display: flex;
 }
 
 #logo-list li i {
-    margin: auto;
+  margin: auto;
 }
 
 .sub-section {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .in-section-img {
-    padding: 24px 0 0 0;
+  padding: 24px 0 0 0;
 }
 
 #sitecs-thanks {
-    text-align: center;
-    padding-bottom: 16px;
+  text-align: center;
+  padding-bottom: 16px;
 }
-
-
 
 /* Styling for Zenvelopes */
 
 .zen-learnings h3 {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .zen-learnings h4 {
-    text-align: unset;
+  text-align: unset;
 }
 
 .zen-learnings p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #zen .project-section {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 
 /* Styling for About page */
 
 #about-blurb {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #skills-and-tools h2 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 #skills-and-tools h4 {
-    text-align: unset;
+  text-align: unset;
 }
 
 #skills-and-tools ul {
-    padding: 8px 0 8px 40px;
-    list-style-type: square;
-    margin: 0;
+  padding: 8px 0 8px 40px;
+  list-style-type: square;
+  margin: 0;
 }
 
 #skills-and-tools ul li {
-    width: 100%;
+  width: 100%;
 }
 
 /* Styling for classes */
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .inline-block {
-    display: inline-block;
+  display: inline-block;
 }
 
 .italic-span {
-    display: block;
-    font-size: 1em;
-    font-weight: 400;
-    font-style: italic;
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .bold-span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* Styling for Under Construction page */
 
 #under-construction main {
-    text-align: center;
-    background-color: transparent;
-    padding: 24px 0;
+  text-align: center;
+  background-color: transparent;
+  padding: 24px 0;
 }
 
 #under-construction .wrapper {
-    background-color: transparent;
-    /* box-shadow: none; */
+  background-color: transparent;
+  /* box-shadow: none; */
 }
 
 #under-construction img {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 #construction-icon {
-    padding: 16px;
-    font-size: 1.5em;
+  padding: 16px;
+  font-size: 1.5em;
 }
 
 #under-construction .sub-span {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 
 #under-construction .flex-container {
-    padding: 8px 0 16px 0;
+  padding: 8px 0 16px 0;
 }
 
 #under-construction .buttons-group .flex-container {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 
 #under-construction h3 {
-    margin-top: 24px;
-    padding-top: 16px;
+  margin-top: 24px;
+  padding-top: 16px;
 }
-
-
 
 #under-construction footer .button-tertiary,
 #under-construction footer .button-tertiary:visited {
-    color: #ffffff;
-    font-size: 1.2em;
-    text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-decoration: none;
 }
-
-
 
 /*--css animation can go here--*/
 
@@ -846,370 +859,353 @@ figcaption a {
 
 /* On smaller screens height < 450px, change sidenav style (less padding + smaller font size) */
 @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
+  .sidenav {
+    padding-top: 15px;
+  }
 
-    .sidenav a {
-        font-size: 18px;
-    }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
-
-
-
 @media only screen and (min-width: 640px) {
-    header {
-        text-align: unset;
+  header {
+    text-align: unset;
+  }
+
+  .logo {
+    max-width: 250px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .tab {
+    float: inherit;
+  }
+
+  main {
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  /* styling for headings med 640px */
+
+  h1 {
+    font-size: 47px;
+    line-height: 74px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 37px;
+    line-height: 59px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 29px;
+    line-height: 47px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 23px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  #about-me h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .button,
+  .button:visited,
+  .button:focus,
+  .button:hover,
+  .button-secondary:focus,
+  .button-secondary:hover,
+  .button:active,
+  .button-secondary:active,
+  .button-secondary,
+  .button-tertiary,
+  .button-tertiary:visited {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  /* Styling for About page 640px min viewport */
+
+  #about-blurb {
+    width: 75%;
+  }
+
+  #cropped-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  /* Styling for portfolio site case study page med 640px */
+
+  @media only screen and (min-width: 640px) {
+    #sitecs h1 {
+      margin: 16px 0 32px 0;
     }
 
-    .logo {
-        max-width: 250px;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+    #constraints-flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
-    nav {
-        width: auto;
-        float: right;
+    .constraints-flex {
+      width: 50%;
     }
 
-    nav ul li {
-        display: inline-block;
+    #logo-list {
+      margin-top: 8px;
+      margin-bottom: 24px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
     }
 
-    .navtoggle li:not(:last-child) {
-        display: inline-block;
+    #sitecs figure {
+      max-width: 400px;
+      margin: auto;
     }
 
-    .navtoggle li:last-child {
-        display: none;
+    #sitecs figure img {
+      padding: 1em;
     }
 
-    .tab {
-        float: inherit;
+    /* fig tag 320px */
+
+    #sitecs figure img {
+      padding: 8px 16px 0 16px;
     }
 
-    main {
-        font-size: 18px;
-        line-height: 31px;
+    figcaption,
+    figcaption a {
+      font-size: 16px;
+      color: rgba(8, 8, 8, 0.8);
+      text-align: center;
     }
 
-    body {
-        font-size: 18px;
+    /* Styling for Under Construction page 640px min viewport */
+
+    #under-construction img {
+      margin-bottom: 24px;
     }
 
+    #under-construction .flex-container {
+      padding: 32px 0;
+    }
 
-    /* styling for headings med 640px */
+    #under-construction .buttons-group {
+      padding-top: 8px;
+    }
+
+    #under-construction .buttons-group .flex-container {
+      padding: 8px 0;
+    }
+
+    #under-construction h3 {
+      margin-top: 24px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .col-lg-3 {
+      width: 25%;
+    }
+
+    .col-lg-5 {
+      width: 41.66%;
+    }
+
+    .col-lg-6 {
+      width: 50%;
+    }
+
+    .col-lg-7 {
+      width: 58.33%;
+    }
+
+    #my-story .col-lg-6 {
+      padding: 16px;
+    }
+
+    #zen .col-lg-6 {
+      padding: 16px;
+    }
+
+    .text-block {
+      width: 100%;
+      margin: auto;
+      max-width: 688px;
+    }
+
+    /* styling for headings lg 1024px */
 
     h1 {
-        font-size: 47px;
-        line-height: 74px;
-        font-weight: 700;
-        text-align: center;
-        margin-top: 0;
+      font-size: 47px;
+      line-height: 76px;
+      font-weight: 700;
+      text-align: center;
     }
 
     h2 {
-        font-size: 37px;
-        line-height: 59px;
-        font-weight: 700;
-        text-align: center;
+      font-size: 37px;
+      line-height: 62px;
+      font-weight: 700;
+      text-align: center;
     }
 
     h3 {
-        font-size: 29px;
-        line-height: 47px;
-        font-weight: 700;
+      font-size: 29px;
+      line-height: 50px;
+      font-weight: 700;
     }
 
     h4 {
-        font-size: 23px;
-        line-height: 38px;
-        font-weight: 700;
+      font-size: 23px;
+      line-height: 41px;
+      font-weight: 700;
     }
 
-    #hero {
-        text-align: center;
+    .wrapper {
+      background-color: #fbfbfb;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
     }
 
-    .col-md-6 {
-        width: 100%;
+    .tab,
+    header,
+    .sub-header {
+      max-width: 1200px;
     }
 
-    #about-me h3 {
-        margin-top: 0;
-        margin-bottom: 0;
+    /* Styling for Under Construction page 1024px min viewport */
+
+    #under-construction img {
+      width: 80%;
+      max-width: 600px;
+      height: auto;
+      margin: auto;
     }
 
-    .button,
-    .button:visited,
-    .button:focus,
-    .button:hover,
-    .button-secondary:focus,
-    .button-secondary:hover,
-    .button:active,
-    .button-secondary:active,
-    .button-secondary,
-    .button-tertiary,
-    .button-tertiary:visited {
-        max-width: 400px;
-        margin: auto;
+    #under-construction .flex-container {
+      padding: 32px 0;
     }
 
-    /* Styling for About page 640px min viewport */
-
-    #about-blurb {
-        width: 75%;
+    #under-construction .buttons-group {
+      padding-top: 8px;
     }
 
-    #cropped-img {
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin: auto;
-
+    #under-construction .buttons-group .flex-container {
+      padding: 8px 0;
     }
 
-
-
-    /* Styling for portfolio site case study page med 640px */
-
-    @media only screen and (min-width: 640px) {
-
-        #sitecs h1 {
-            margin: 16px 0 32px 0;
-        }
-
-        #constraints-flex {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .constraints-flex {
-            width: 50%;
-        }
-
-
-        #logo-list {
-            margin-top: 8px;
-            margin-bottom: 24px;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 400px;
-        }
-
-        #sitecs figure {
-            max-width: 400px;
-            margin: auto;
-        }
-
-        #sitecs figure img {
-            padding: 1em;
-        }
-
-        /* fig tag 320px */
-
-        #sitecs figure img {
-            padding: 8px 16px 0 16px;
-        }
-
-        figcaption,
-        figcaption a {
-            font-size: 16px;
-            color: rgba(8, 8, 8, 0.8);
-            text-align: center;
-        }
-
-        /* Styling for Under Construction page 640px min viewport */
-
-        #under-construction img {
-            margin-bottom: 24px;
-        }
-
-        #under-construction .flex-container {
-            padding: 32px 0;
-        }
-
-        #under-construction .buttons-group {
-            padding-top: 8px;
-        }
-
-        #under-construction .buttons-group .flex-container {
-            padding: 8px 0;
-        }
-
-        #under-construction h3 {
-            margin-top: 24px;
-        }
-
+    #under-construction h3 {
+      margin-top: 0;
     }
 
-    @media only screen and (min-width: 1024px) {
-        .col-lg-3 {
-            width: 25%;
-        }
-
-        .col-lg-5 {
-            width: 41.66%;
-        }
-
-        .col-lg-6 {
-            width: 50%;
-        }
-
-        .col-lg-7 {
-            width: 58.33%;
-        }
-
-        #my-story .col-lg-6 {
-            padding: 16px;
-        }
-
-        #zen .col-lg-6 {
-            padding: 16px;
-        }
-
-        .text-block {
-            width: 100%;
-            margin: auto;
-            max-width: 688px;
-        }
-
-
-
-
-
-
-        /* styling for headings lg 1024px */
-
-        h1 {
-            font-size: 47px;
-            line-height: 76px;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 37px;
-            line-height: 62px;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        h3 {
-            font-size: 29px;
-            line-height: 50px;
-            font-weight: 700;
-        }
-
-        h4 {
-            font-size: 23px;
-            line-height: 41px;
-            font-weight: 700;
-        }
-
-        .wrapper {
-            background-color: #fbfbfb;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
-        }
-
-        .tab,
-        header,
-        .sub-header {
-            max-width: 1200px;
-        }
-
-        /* Styling for Under Construction page 1024px min viewport */
-
-        #under-construction img {
-            width: 80%;
-            max-width: 600px;
-            height: auto;
-            margin: auto;
-        }
-
-        #under-construction .flex-container {
-            padding: 32px 0;
-        }
-
-        #under-construction .buttons-group {
-            padding-top: 8px;
-        }
-
-        #under-construction .buttons-group .flex-container {
-            padding: 8px 0;
-        }
-
-        #under-construction h3 {
-            margin-top: 0;
-        }
-
-        #under-construction footer {
-            margin-top: 40px;
-        }
-
-        /* Styling for Portfolio site case study lg 1024px */
-
-        #sitecs .col-lg-6 {
-            width: 100%;
-        }
-
-        #site-constraints .constraints-flex {
-            width: 50%;
-        }
-
-
-        #sitecs h1,
-        #sitecs h2 {
-            margin: 24px 0;
-        }
-
+    #under-construction footer {
+      margin-top: 40px;
     }
 
-    @media only screen and (min-width: 1440px) {
-        header {
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    /* Styling for Portfolio site case study lg 1024px */
 
-        .container {
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* styling for headings xl 1440px */
-
-        h1 {
-            font-size: 47px;
-            line-height: 79px;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 37px;
-            line-height: 65px;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        h3 {
-            font-size: 29px;
-            line-height: 53px;
-            font-weight: 700;
-        }
-
-        h4 {
-            font-size: 23px;
-            line-height: 44px;
-            font-weight: 700;
-        }
+    #sitecs .col-lg-6 {
+      width: 100%;
     }
+
+    #site-constraints .constraints-flex {
+      width: 50%;
+    }
+
+    #sitecs h1,
+    #sitecs h2 {
+      margin: 24px 0;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    header {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* styling for headings xl 1440px */
+
+    h1 {
+      font-size: 47px;
+      line-height: 79px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 37px;
+      line-height: 65px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 29px;
+      line-height: 53px;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-size: 23px;
+      line-height: 44px;
+      font-weight: 700;
+    }
+  }
 }
