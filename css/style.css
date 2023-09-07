@@ -491,7 +491,7 @@ header .fa-bars,
   font-size: 18px;
   padding: 8px 8px 8px 24px;
   /* font-weight: 600; */
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   border-radius: 0;
   /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
 }
@@ -653,6 +653,10 @@ footer {
   margin: 16px 0;
 }
 
+.img-section {
+  padding-top: 32px;
+}
+
 /* Styling for Portfolio site case study 320px */
 
 #sitecs h4 {
@@ -669,20 +673,30 @@ footer {
   padding: 20px 40px 0 40px;
 }
 
+.constraints-flex-img {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
 /* Lists */
 
-#sitecs ol {
+.numberless {
   margin: 8px 0 0 0;
   padding-left: 16px;
   list-style-type: none;
 }
 
-#sitecs ol li:not(:last-child) {
+.numberless li:not(:last-child) {
   padding-bottom: 16px;
 }
 
-#sitecs ol li:last-child {
+.numberless li:last-child {
   padding: 0;
+}
+
+.numberless p {
+  margin: 0;
 }
 
 /* fig tag 320px */
@@ -758,6 +772,11 @@ figcaption a {
 #zen .project-section {
   padding: 8px 0;
 }
+
+/* Styling for Wild Bloom */
+
+
+
 
 /* Styling for About page */
 
@@ -867,6 +886,11 @@ figcaption a {
     font-size: 18px;
   }
 }
+
+
+
+
+
 
 @media only screen and (min-width: 640px) {
   header {
@@ -1052,6 +1076,10 @@ figcaption a {
   @media only screen and (min-width: 1024px) {
     .col-lg-3 {
       width: 25%;
+    }
+
+    .col-lg-4 {
+      width: 33.33%;
     }
 
     .col-lg-5 {
