@@ -2,16 +2,16 @@ console.log("sup I'm JavaScript");
 
 // hamburger menu
 
-function menuToggle() {
-  const element = document.getElementById("myNavtoggle");
+// function menuToggle() {
+//   const element = document.getElementById("myNavtoggle");
 
-  if (element.className === "navtoggle") {
-    element.classList.remove("navtoggle");
-    element.classList.add("navtoggle-responsive");
-  } else {
-    element.className = "navtoggle";
-  }
-}
+//   if (element.className === "navtoggle") {
+//     element.classList.remove("navtoggle");
+//     element.classList.add("navtoggle-responsive");
+//   } else {
+//     element.className = "navtoggle";
+//   }
+// }
 
 // Smooth scrolling function
 function smoothScrollTo(target) {
@@ -96,13 +96,13 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 
-// Counter
-let counts = setInterval(updated);
-let upto = 0;
-function updated() {
-    let count = document.getElementById("counter");
-    count.innerHTML = ++upto;
-    if (upto === 681) {
-        clearInterval(counts);
-    }
-}
+// // Counter moved to <script> tag in index.html because it was causing an error
+// let counts = setInterval(updated);
+// let upto = 0;
+// function updated() {
+//     let count = document.getElementById("counter");
+//     count.innerHTML = ++upto;
+//     if (upto === 681) {
+//         clearInterval(counts);
+//     }
+// }

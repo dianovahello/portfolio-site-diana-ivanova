@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Diana Ivanova</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body id="cookshop" class="body-background">
+    <div class="wrapper">
+      <header id="top">
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <a href="./index.html" class="logo"
+              ><i class="fa-solid fa-arrow-left"></i>Portfolio</a
+            >
+            <a
+              tabindex="0"
+              onkeydown="sideNavToggle()"
+              onclick="sideNavToggle()"
+              class="project-nav-bars"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </div>
+        </div>
+      </header>
+
+      <main class="project-main">
+        <div id="sub-header">
+          <div id="mySideNav" class="sidenav-closed">
+            <ul class="table-contents">
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="sideNavToggle()"
+                  ><i class="fa-solid fa-xmark"></i
+                ></a>
+              </li>
+              <li>
+                <h4>Contents</h4>
+              </li>
+              <li>
+                <a href="#cookshop-overview" onclick="sideNavToggle()"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a href="#cookshop-ux" onclick="sideNavToggle()">UX process</a>
+              </li>
+              <li>
+                <a href="#cookshop-ui" onclick="sideNavToggle()"
+                  >UI process</a
+                >
+              </li>
+              <li>
+                <a href="#cookshop-hifi" onclick="sideNavToggle()"
+                  >High fidelity</a
+                >
+              </li>
+              <li>
+                <a href="#cookshop-takeaway" onclick="sideNavToggle()"
+                  >Learnings and next steps</a
+                >
+              </li>
+              <li>
+                <h4>Site</h4>
+              </li>
+              <li>
+                <a href="./index.html" onclick="sideNavToggle()"
+                  >Work</a
+                >
+              </li>
+              <li>
+                <a href="./about.html" onclick="sideNavToggle()">About</a>
+              </li>
+              <li>
+                <a href="#contact" onclick="sideNavToggle()">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="project-section-home overview" id="cookshop-home">
+          <div class="container">
+            <h1>
+              Cookshop
+              <span class="sub-span"
+                >Designing a responsive recipes app for men.</span
+              >
+            </h1>
+
+            <div class="text-block" id="cookshop-overview">
+              <a
+                data-fancybox
+                href="img/cookshop/img-cookshop@2x/cookshop-3mock-min.png"
+                class="img-link"
+              >
+                <img
+                  src="img/cookshop/img-cookshop@2x/cookshop-3mock-min.png"
+                  alt="A high-fidelity mockup showing a screen from the Wild Bloom app."
+                />
+              </a>
+            </div>
+
+            <div class="row">
+              <div class="text-block">
+                <h2 id="">Project overview</h2>
+                <p>
+                  <span class="bold-span">The objective </span> was to design a
+                  recipes app for men who cook at home. I conducted primary and
+                  secondary research to assess the unique needs of male home
+                  cooks, if any, and the extent to which these needs are met or
+                  unmet by existing products.
+                </p>
+                <p>
+                  <span class="bold-span">Two interesting questions </span>arose
+                  during the design process. The first relates to my own
+                  assumptions about recipe content online: is it written for
+                  women, is this an obstacle for male cooks, and how? The second
+                  question felt simple but wasn&#39;t: what exactly is
+                  "masculine" UI?
+                </p>
+                <p>
+                  <span class="bold-span">The outcome </span>of the design
+                  process was a recipes app for desktop and mobile that helps an
+                  underserved group of male cooks express themselves reliably in
+                  the kitchen, inspired by a product that feels bold, exciting,
+                  and elegant.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section constraints">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h2 id="wb-goals">Goals</h2>
+                <ol class="numberless">
+                  <li>
+                    <p>
+                      1. Design a recipes app to answer the unique needs of men
+                      who cook at home.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      2. Develop a responsive interface for the recipes app that
+                      will appeal to the target audience.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section cookshop-constraints">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h2 id="wb-constraints" class="hidden">Constraints</h2>
+                <div>
+                  <div class="col-lg-4 col-md-6 constraints-flex-img">
+                    <h3>My role</h3>
+                    <span>UX and UI designer</span>
+                  </div>
+                  <div class="col-lg-4 col-md-6 constraints-flex-img">
+                    <h3>Timeframe</h3>
+                    <span>15 weeks</span>
+                  </div>
+                  <div class="col-lg-4 col-md-6 constraints-flex-img">
+                    <h3>Tools</h3>
+                    <span>Figma</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section cookshop-context">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h2 id="cookshop-ux">Process</h2>
+                <h3>Understanding the context</h3>
+                <p>
+                  I began by conducting secondary research into home cooking
+                  trends and outcomes, paying particular attention to any
+                  differences by gender, in order to understand the unique
+                  context of home cooks who identify as male. I collected four
+                  important takeaways:
+                </p>
+                <ol class="numberless">
+                  <li>
+                    1.
+                    <span class="bold-span"
+                      >Cooking at home is good for you.</span
+                    >
+                    It leads to improved diet and health, greater happiness, and
+                    a longer life. Women and married men have so far benefited
+                    the most.
+                  </li>
+                  <li>
+                    2. <span class="bold-span">Men love to cook. </span>Studies
+                    have shown that 82% of men enjoy home cooking, compared to
+                    just 75% of women.
+                  </li>
+                  <li>
+                    3. In spite of this,
+                    <span class="bold-span">women cook much more than men</span>
+                    in all countries. In 2020, only 1/3 of the meals cooked at
+                    home were prepared by men.
+                  </li>
+                  <li>
+                    4.
+                    <span class="bold-span">Men are cooking more often. </span
+                    >Still, young men continue to experience lower skills and
+                    confidence in cooking than young women at the stage of
+                    living on their own for the first time.
+                  </li>
+                </ol>
+                <p>
+                  My hypothesis was that access to male-targeted recipe material
+                  can help. Male home cooks require material that is
+                  interesting, relevant, and reliable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section cookshop-research">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3>Understanding the landscape</h3>
+                <p>
+                  I conducted <span class="bold-span">market research</span> to
+                  find out what solutions exist, and how they address the needs
+                  of male home cooks. I found that while a variety of recipe
+                  apps appear to be neutrally-targeted, their branding and tone
+                  may be biased towards a feminine assumption. Explicitly
+                  male-oriented material was overwhelmingly focused on fitness
+                  and health objectives. There was little to no recipe material
+                  addressing an audience of men who cook for pleasure.
+                </p>
+                <a
+                  data-fancybox
+                  href="img/cookshop/img-cookshop@2x/cookshop-competitors-min.png"
+                  class="img-link"
+                >
+                  <img
+                    src="img/cookshop/img-cookshop@2x/cookshop-competitors-min.png"
+                    alt="Bubble representation of competitors"
+                  /> </a
+                ><a
+                  data-fancybox
+                  href="img/cookshop/img-cookshop@2x/cookshop-competitors2-min.png"
+                  class="img-link"
+                >
+                  <img
+                    src="img/cookshop/img-cookshop@2x/cookshop-competitors2-min.png"
+                    alt="Summary of competitive analysis"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section cookshop-research">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3>Understanding the user</h3>
+                <p>
+                  <span class="bold-span">Primary research</span> in the form of
+                  5 in-person qualitative interviews and 1 quantitative survey
+                  of 75 tech-savvy male home cooks, helped me gain insight into
+                  my target users. The testing objective was to understand their
+                  cooking habits, motivations, pain points, and positive
+                  feelings about cooking. I found that
+                </p>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <span class="bold-span">Users like</span>
+                    <ul>
+                      <li>feeling inspired</li>
+                      <li>building their skills</li>
+                      <li>cooking for others</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <span class="bold-span">Users dislike</span>
+                    <ul>
+                      <li>irrelevant content</li>
+                      <li>unreliable recipes</li>
+                      <li>grocery shopping</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section cookshop-mvp">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h4>Important surprises</h4>
+                <ol class="numberless">
+                  <li>
+                    1. Subjects were a lot more motivated by creativity and
+                    cooking for others than anything else (health, independence,
+                    or the achievement of mastering a life skill).
+                  </li>
+                  <li>
+                    2. None of the subjects said: “I don&#39;t like recipe
+                    blogs, because they sound like they are written for girls
+                    and women,” nor “the visuals on recipe sites are too
+                    feminine”.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3>So, are recipes written for women?</h3>
+                <p>
+                  I found no evidence to directly support my assumption that
+                  recipe content is overtly and overly focused on a female
+                  audience, nor that this alienates men from using recipes and
+                  cooking at home.
+                </p>
+                <p>
+                  Certain frustrations shared by users, such as<span
+                    class="bold-span"
+                  >
+                    “too much fluff,” “missing steps,” and “everything takes
+                    longer than the estimate,” </span
+                  >could be interpreted as the result of feminizing bias in
+                  recipe writing, but this is irrelevant to my design process.
+                  What matters is that these are needs and desires unmet by
+                  existing recipe products.
+                </p>
+                <p>
+                  My design process would focus on addressing those, rather than
+                  the simplistic assumptions I started out with.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section cookshop-perso">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h4>Personas</h4>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 constraints-flex">
+                    <a
+                      data-fancybox="gallery1"
+                      href="img/cookshop/img-cookshop@2x/cookshop-perso-1.png"
+                      class="img-link"
+                    >
+                      <img
+                        src="img/cookshop/img-cookshop@2x/cookshop-perso-1.png"
+                        alt="User persona detail."
+                      />
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-6 constraints-flex">
+                    <a
+                      data-fancybox="gallery1"
+                      href="img/cookshop/img-cookshop@2x/cookshop-perso-2.png"
+                      class="img-link"
+                    >
+                      <img
+                        src="img/cookshop/img-cookshop@2x/cookshop-perso-2.png"
+                        alt="User persona detail."
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 constraints-flex">
+                    <a
+                      data-fancybox="gallery1"
+                      href="img/cookshop/img-cookshop@2x/cookshop-perso-3.png"
+                      class="img-link"
+                    >
+                      <img
+                        src="img/cookshop/img-cookshop@2x/cookshop-perso-3.png"
+                        alt="User persona detail."
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section cookshop-mvp">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3>MVP</h3>
+                <p>
+                  A comparative analysis of user and competitor research
+                  revealed an underserved niche. To fill it I would:
+                </p>
+                <ul>
+                  <li>
+                    Support users who cook for pleasure and self-expression via
+                    intuitive recipe discovery and supported experimentation.
+                  </li>
+                  <li>
+                    Support users who require clarity and information by
+                    providing reliable data.
+                  </li>
+                  <li>
+                    Support users who cook for others by integrating easy
+                    measures adjustment, social features, and shopping list.
+                  </li>
+                </ul>
+                <div class="flex-container">
+                  <a
+                    href="files/cookshop-MVP.pdf"
+                    target="_blank"
+                    class="button"
+                    >download the MVP document</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section wb-branding-contents">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3>Paper prototype</h3>
+                <figure>
+                  <a
+                    data-fancybox
+                    href="img/cookshop/img-cookshop@2x/cookshop-lofi-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-lofi-min.png"
+                      alt="Low fidelity wireframes"
+                    />
+                  </a>
+                  <figcaption>Early wireframes</figcaption>
+                </figure>
+                <p>
+                  I prototyped the core experiences of search, shop, cook, and
+                  share, and performed a round of usability testing with the
+                  objective of assessing the navigation and structure.
+                  Participants performed six tasks in a controlled environment:
+                </p>
+                <figure>
+                  <a
+                    data-fancybox
+                    href="img/cookshop/img-cookshop@2x/cookshop-testing-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-testing-min.png"
+                      alt="Testing scenarios"
+                    />
+                  </a>
+                  <figcaption>Usability testing scenarios</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="text-block">
+                <p>
+                  I was able to streamline several flows, simplify the
+                  navigation bar, and create a clearer rating screen.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="text-block">
+                <div class="col-md-6 col-lg-6">
+                  <figure>
+                    <a
+                      data-fancybox
+                      href="img/cookshop/img-cookshop@2x/cookshop-iteration-min.png"
+                      class="img-link"
+                    >
+                      <img
+                        src="img/cookshop/img-cookshop@2x/cookshop-iteration-min.png"
+                        alt="Before and after screen"
+                      />
+                    </a>
+                    <figcaption>Combining Search and Browse</figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <figure>
+                    <a
+                      data-fancybox
+                      href="img/cookshop/img-cookshop@2x/cookshop-iteration2-min.png"
+                      class="img-link"
+                    >
+                      <img
+                        src="img/cookshop/img-cookshop@2x/cookshop-iteration2-min.png"
+                        alt="Before and after screen"
+                      />
+                    </a>
+                    <figcaption>Improving the Rate prompt</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3 id="cookshop-ui">Designing UI "for men"</h3>
+                <p>
+                  The second interesting question in this design process was:
+                  what will make this product look and feel like a masculine
+                  recipes app? I started out with two potential directions.
+                </p>
+                <h4>"The Gatsby"</h4>
+                <figure>
+                  <a
+                    data-fancybox
+                    href="img/cookshop/img-cookshop@2x/cookshop-moodboard03-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-moodboard04-min.png"
+                      alt="moodboard"
+                    />
+                  </a>
+                  <figcaption>Tap to view Gatsby moodboard</figcaption>
+                </figure>
+                <p>
+                  The first direction is inspired by Jay Gatsby, titular
+                  character of F. Scott Fitzgerald&#39;s classic novel: a
+                  self-made gentleman, admired as a brilliant host. It&#39;s a
+                  pared-down Art Deco style with a touch of French countryside
+                  to bring the feeling of effortless elegance and coolness to
+                  the kitchen. It expresses two core Cookshop values:
+                  independence, and the chance to shine effortlessly as a host.
+                </p>
+                <h4>"The Bond"</h4>
+                <figure>
+                  <a
+                    data-fancybox
+                    href="img/cookshop/img-cookshop@2x/cookshop-moodboard01-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-moodboard02-min.png"
+                      alt="moodboard"
+                    />
+                  </a>
+                  <figcaption>Tap to view Bond moodboard</figcaption>
+                </figure>
+                <p>
+                  This direction combines the calm and classic masculine style
+                  of a vintage cigar lounge with the sleek, ultramodern surfaces
+                  of the Aston Martin. It defines an elegant space that could
+                  house the recipe content with warmth and authority, resulting
+                  in a smooth and pleasant experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3>So, what is masculine UI? (re)Defining the rules</h3>
+                <p>
+                  Cookshop's visual identity should be resonant and
+                  well-grounded in the real world. I dove into visual research
+                  of male-oriented brands to identify themes and zero in on the
+                  precise conditions that cause an interface to feel masculine.
+                  I discovered two:
+                </p>
+                <ol class="numberless">
+                  <li><span class="bold-span">1. Bold typography</span></li>
+                  <li>
+                    <span class="bold-span">2. Dark background.</span>
+                  </li>
+                </ol>
+
+                <p>
+                  Because Cookshop is a recipes app, two more conditions must be
+                  met:
+                </p>
+                <ol class="numberless">
+                  <li>
+                    <span class="bold-span"
+                      >3. It must look like a recipe app.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="bold-span">
+                      4. Text must be legible from a distance.</span
+                    >
+                  </li>
+                </ol>
+                <h4>The answer</h4>
+                <p>
+                  The question of creating a "masculine recipes UI" became
+                  irrelevant. The visual identity should not rely on
+                  stereotypical representations of masculinity. It should
+                  resonate with the target audience, support and inspire them to
+                  cook, host, and "show off their skills." After preference
+                  testing and additional peer feedback, I added three more
+                  conditions to my list. The visual identity must be:
+                </p>
+                <ol class="numberless">
+                  <li>
+                    <span class="bold-span">5. Attractive</span>
+                  </li>
+                  <li>
+                    <span class="bold-span"> 6. Appetizing</span>
+                  </li>
+                  <li>
+                    <span class="bold-span"> 7. Exciting</span>
+                  </li>
+                </ol>
+                <figure>
+                  <a
+                    data-fancybox
+                    href="img/cookshop/img-cookshop@2x/cookshop-shame-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-shame-min.png"
+                      alt="Iterations"
+                    />
+                  </a>
+                  <figcaption>Early iterations of the brand</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3>Style guide</h3>
+                <p>
+                  The style guide for Cookshop is the result of a deliberate
+                  effort to craft an identity that is grounded in research, so
+                  it can move beyond rigid stereotypes. Rather than flatly
+                  "masculine" it is warm, elegant, bold, exciting, and offers a
+                  visually engaging and inclusive experience.
+                </p>
+                <a
+                  data-fancybox="gallery"
+                  href="img/cookshop/img-cookshop@2x/cookshop-mock-min.png"
+                  class="img-link"
+                >
+                  <img
+                    src="img/cookshop/img-cookshop@2x/cookshop-mock-min.png"
+                    alt="Mockup showing a chef taking a mobile device out of their pocket."
+                  />
+                </a>
+
+                <figure>
+                  <figcaption>Typography</figcaption>
+                  <a
+                    data-fancybox="gallery"
+                    href="img/cookshop/img-cookshop@2x/cookshop-typography-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-typography-min.png"
+                      alt="Typography"
+                    />
+                  </a>
+                </figure>
+
+                <figure>
+                  <figcaption>Color palette</figcaption>
+                  <a
+                    data-fancybox="gallery"
+                    href="img/cookshop/img-cookshop@2x/cookshop-colors-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-colors-min.png"
+                      alt="Color palette"
+                    />
+                  </a>
+                </figure>
+
+                <figure>
+                  <figcaption>Logo and reduction</figcaption>
+                  <a
+                    data-fancybox="gallery"
+                    href="img/cookshop/img-cookshop@2x/cookshop-logo-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-logo-min.png"
+                      alt="Logo"
+                    />
+                  </a>
+                </figure>
+
+                <figure>
+                  <figcaption>Selected components</figcaption>
+                  <a
+                    data-fancybox="gallery"
+                    href="img/cookshop/img-cookshop@2x/cookshop-components-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-components-min.png"
+                      alt="Components"
+                    />
+                  </a>
+                </figure>
+
+                <figure>
+                  <figcaption>Custom icon set</figcaption>
+                  <a
+                    data-fancybox="gallery"
+                    href="img/cookshop/img-cookshop@2x/cookshop-icons-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img/cookshop/img-cookshop@2x/cookshop-icons-min.png"
+                      alt="Custom icons"
+                    />
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3 id="cookshop-hifi">The outcome: research and design in action</h3>
+                <a
+                  data-fancybox
+                  href="img/cookshop/img-cookshop@2x/cookshop-hifi-min.png"
+                  class="img-link"
+                >
+                  <img
+                    src="img/cookshop/img-cookshop@2x/cookshop-hifi-min.png"
+                    alt="High fidelity screens"
+                  />
+                </a>
+                <a
+                  data-fancybox
+                  href="img/cookshop/img-cookshop@2x/cookshop-responsive-min.png"
+                  class="img-link"
+                >
+                  <img
+                    src="img/cookshop/img-cookshop@2x/cookshop-responsive-min.png"
+                    alt="High fidelity responsive screens"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3 id="cookshop-takeaway">Key learnings</h3>
+                <ol class="numberless">
+                  <li>
+                    <span class="bold-span"
+                      >1. Challenging assumptions through research.</span
+                    >
+                    <p>
+                      In this project, I had to question my preconceived notions
+                      about gender bias in recipe content. Through thorough
+                      primary and secondary research, I gathered empirical data
+                      that enabled me to make design decisions grounded in real
+                      insights rather than assumptions.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="bold-span">2. Designing for inclusivity.</span>
+                    <p>
+                      The challenge of designing a "masculine recipe brand"
+                      meant creating a visual identity that speaks to my target
+                      audience without relying on gender stereotypes. I met this
+                      challenge by grounding decisions in research, exploring a
+                      wide range of masculine identities, and digging deeper to
+                      get the core principles that cause a design to feel
+                      "masculine."
+                    </p>
+                  </li>
+                  <li>
+                    <span class="bold-span"
+                      >3. Embracing an iterative approach.</span
+                    >
+                    <p>
+                      Throughout this project, I resisted the urge to "perfect"
+                      my own wireframes without testing them. I relied on
+                      testing and feedback to make incremental improvements. I
+                      learned the value of this approach.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="container">
+            <div class="row">
+              <div class="text-block">
+                <h3>Next Steps</h3>
+                <ol class="numberless">
+                  <li>
+                    <span class="bold-span"
+                      >1. Prototype interactions and test.</span
+                    >
+                    <p>
+                      A high-fidelity prototype and second round of usability
+                      testing will help validate the improvements made after
+                      round one, and to address new issues arising from the
+                      application of the brand.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="bold-span">
+                      2. Conduct an Accessibility Audit.</span
+                    >
+                    <p>
+                      Following usability testing, a thorough accessibility
+                      audit will ensure the app complies with accessibility
+                      standards and address any issues discovered.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="bold-span">
+                      3. Consider monetization strategies.</span
+                    >
+                    <p>
+                      A subscription model can offer premium features such as
+                      exclusive recipes or personalized meal planning. Strategic
+                      e-commerce integration for ingredient purchases can
+                      provide affiliate commissions. This would contribute to
+                      revenue generation as well as enhance the user experience:
+                      a dislike for shopping was prevalent among users.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section" id="wb-thanks">
+          <h3>Thanks for reading!</h3>
+        </section>
+      </main>
+
+      <footer id="contact">
+        <div class="container">
+          <h2 class="hello-animate">say HELLO</h2>
+          <p><span class="sub-span">dianovahello@gmail.com</span></p>
+          <div class="social-links">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/thediana/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="button-contact"
+                >
+                  <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.behance.net/dianaivanova15"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="button-contact"
+                >
+                  <i class="fa-brands fa-behance fa-xl"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:dianovahello@gmail.com" class="button-contact">
+                  <i class="fa-regular fa-envelope fa-xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p>Copyright Diana Ivanova 2023-2024</p>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f7ab72f41f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

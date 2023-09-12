@@ -3,7 +3,7 @@ Colors used:
 white: #fbfbfb; rgba(251, 251, 251, 0.5)
 black: #080808; rgba(8, 8, 8, 0.5)
 light grey: #E4E5E6; rgba(23, 27, 39, 0.1);
-accent/pink: rgb(252, 72, 255)
+accent/pink: rgba(252, 72, 255, 0.1) 
 accent/blue:  rgba(71, 240, 255, 0.2);
 */
 
@@ -85,7 +85,7 @@ a {
 a:focus,
 a:hover,
 a:active {
-  background-color: rgba(23, 27, 39, 0.1);
+  background-color: rgba(23, 27, 39, 0.05);
   text-decoration: none;
 }
 
@@ -221,12 +221,14 @@ nav ul li a {
 .button:visited {
   display: inline-block;
   width: 100%;
-  background-color: #facdfb;
+  /* background-color: rgba(252, 72, 255, 0.25); */
+  background-color: rgba(23, 27, 39, 0.05);
   color: #080808;
   font-weight: 400;
   text-decoration: none;
   padding: 8px 16px;
-  border: 2px solid #fc48ff;
+  /* border: 2px solid #fc48ff; */
+  border: 2px solid rgba(8, 8, 8, 0.5);
   text-align: center;
   border-radius: 40px;
   transition: 0.2s color;
@@ -238,7 +240,7 @@ nav ul li a {
   width: 100%;
   background-color: #e4e5e6;
   color: #080808;
-  border: 2px solid #080808;
+  border: 2px solid rgba(8, 8, 8, 0.05);
   font-weight: 400;
   text-decoration: none;
   padding: 8px 16px;
@@ -278,7 +280,8 @@ nav ul li a {
 .button:hover,
 .button-secondary:focus,
 .button-secondary:hover {
-  background: #fba1fd;
+  /* background: #fba1fd; */
+  background: rgba(252, 72, 255, 0.1);
   color: #080808;
   padding: 8px 16px;
   border: 2px solid #fc48ff;
@@ -340,10 +343,10 @@ img {
   border-radius: 40px;
 }
 
-/* Change background color of buttons on hover */
+/* Change background color of tab buttons on hover */
 .tab button:focus,
 .tab button:hover {
-  background-color: rgba(23, 27, 39, 0.1);
+  background-color: rgba(23, 27, 39, 0.05);
   border-radius: 40px;
 }
 
@@ -355,7 +358,7 @@ img {
 /* Create an active/current tablink class */
 
 .tab button.active {
-  background-color: rgba(71, 240, 255, 0.2);
+  background-color: rgba(23, 27, 39, 0.05);
   border: none;
   outline: none;
 }
@@ -450,7 +453,7 @@ header .fa-bars,
   position: fixed;
   z-index: 5;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #fbfbfb;
   overflow-x: hidden;
   padding-top: 40px;
@@ -464,7 +467,7 @@ header .fa-bars,
   position: fixed;
   z-index: 5;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #fbfbfb;
   overflow-x: hidden;
   padding-top: 40px;
@@ -508,9 +511,9 @@ header .fa-bars,
 .sidenav-250px .closebtn {
   position: absolute;
   top: 0;
-  right: 0;
-  margin-left: 50px;
-  padding: 8px;
+  left: 0;
+  /* margin-left: 50px; */
+  padding: 8px 8px 8px 16px;
   border-bottom: none;
 }
 
@@ -564,7 +567,7 @@ main {
   font-size: 110px;
   line-height: 150%;
   background-color: transparent;
-  padding-bottom: 8px;
+  padding: 24px 16px 16px 16px;
   margin: 0 8px;
 }
 
@@ -607,7 +610,7 @@ main {
 footer {
   text-align: center;
   color: #fbfbfb;
-  padding: 24px 0;
+  padding: 24px 0 80px 0;
   background-color: rgba(8, 8, 8, 0.9);
 }
 
@@ -715,29 +718,6 @@ figcaption a {
 
 /* logo list site case study 320px */
 
-.logo-list {
-  width: 100%;
-  padding: 0;
-}
-
-#logo-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 8px 0;
-  margin-top: 24px;
-}
-
-#logo-list li {
-  flex: 1;
-  display: flex;
-}
-
-#logo-list li i {
-  margin: auto;
-}
 
 .sub-section {
   padding-top: 0;
@@ -784,8 +764,12 @@ figcaption a {
   justify-content: center;
 }
 
+#skills-and-tools{
+  padding-bottom: 16px;
+}
+
 #skills-and-tools h2 {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 #skills-and-tools h4 {
@@ -794,7 +778,7 @@ figcaption a {
 
 #skills-and-tools ul {
   padding: 8px 0 8px 40px;
-  list-style-type: square;
+  /* list-style-type: square; */
   margin: 0;
 }
 
@@ -983,7 +967,7 @@ figcaption a {
   .button-secondary,
   .button-tertiary,
   .button-tertiary:visited {
-    max-width: 400px;
+    max-width: 350px;
     margin: auto;
   }
 
@@ -998,6 +982,10 @@ figcaption a {
     width: 100%;
     height: auto;
     margin: auto;
+  }
+
+  #skills-and-tools .col-md-6 {
+    width: 50%;
   }
 
   /* Styling for portfolio site case study page med 640px */
