@@ -23,11 +23,12 @@
 
   <body id="wb" class="body-background">
     <div class="wrapper">
-      <header id="top">
+      <!-- <header id="top" class="project-header">
         <div class="container">
+          <div class="text-block">
           <div class="navtoggle" id="myNavtoggle">
             <a href="./index.html" class="logo"
-              ><i class="fa-solid fa-arrow-left"></i>Portfolio</a
+              ><i class="fa-solid fa-arrow-left"></i>home</a
             >
             <a
               tabindex="0"
@@ -38,10 +39,36 @@
             ></a>
           </div>
         </div>
+      </div>
+      </header> -->
+
+      <header id="top" class="project-header">
+        <div class="container">
+          <div class="text-block">
+            <div>
+              <nav class="main-nav">
+                <ul>
+                  <li>
+                    <a href="./index.html"><span class=""><i class="fa-solid fa-arrow-left"></i></span></a>
+                  </li>
+                  <li>
+                    <a
+                      tabindex="0"
+                      onkeydown="sideNavToggle()"
+                      onclick="sideNavToggle()"
+                      class="project-nav-bars"
+                      ><i class="fa-solid fa-bars"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </header>
 
       <main class="project-main">
-        <div id="sub-header">
+        <div id="nav-drawer">
           <div id="mySideNav" class="sidenav-closed">
             <ul class="table-contents">
               <li>
@@ -56,55 +83,40 @@
                 <h4>Contents</h4>
               </li>
               <li>
-                <a href="#wb-overview" onclick="sideNavToggle()">Overview</a>
-              </li>
-              <li>
-                <a href="#wb-prototype" onclick="sideNavToggle()">Prototype</a>
+                <a href="#wb-overview" onclick="sideNavToggle()">overview</a>
               </li>
               <li>
                 <a href="#wb-brand-overview" onclick="sideNavToggle()"
-                  >Phase one: develop a brand</a
+                  >branding process</a
                 >
               </li>
               <li>
                 <a href="#wb-ui-process-overview" onclick="sideNavToggle()"
-                  >Phase two: design an online store</a
+                  >UX process</a
                 >
               </li>
               <li>
-                <a href="#wb-takeaways" onclick="sideNavToggle()"
-                  >Takeaway and next steps</a
-                >
+                <a href="#wb-takeaways" onclick="sideNavToggle()">next steps</a>
               </li>
               <li>
                 <h4>Site</h4>
               </li>
               <li>
-                <a href="./index.html" onclick="sideNavToggle()"
-                  >Work</a
-                >
+                <a href="./index.html" onclick="sideNavToggle()">work</a>
               </li>
               <li>
-                <a href="./about.html" onclick="sideNavToggle()">About</a>
+                <a href="./about.html" onclick="sideNavToggle()">about</a>
               </li>
               <li>
-                <a href="#contact" onclick="sideNavToggle()">Contact</a>
+                <a href="#contact" onclick="sideNavToggle()">contact</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <section class="project-section-home overview" id="wb-home">
+        <section class="project-section" id="hero">
           <div class="container">
-            <h1>
-              Wild Bloom
-              <span class="sub-span"
-                >Developing an ethical luxury brand and designing an online
-                store for a tea company.</span
-              >
-            </h1>
-
-            <div class="text-block" id="wb-overview">
+            <div class="text-block">
               <a
                 data-fancybox
                 href="img/wild-bloom/img-wb@2x/wb-3mock-min.png"
@@ -115,10 +127,21 @@
                   alt="A high-fidelity mockup showing a screen from the Wild Bloom app."
                 />
               </a>
+              <h1>
+                <span class="sub-span bold-span">Wild Bloom</span>
+                <span class="sub-span">
+                  Branding process and UX design for the online store of a
+                  luxury tea company with an ethical mission.
+                </span>
+              </h1>
             </div>
+          </div>
+        </section>
 
-            <div class="row">
-              <div class="text-block">
+        <section class="project-section overview" id="wb-home">
+          <div class="container">
+            <div class="text-block">
+              <div class="row" id="wb-overview">
                 <h2 id="">Project overview</h2>
                 <p>
                   <span class="bold-span">Wild Bloom </span> is a contemporary
@@ -148,13 +171,12 @@
 
         <section class="project-section prototype" id="wb-prototype">
           <div class="container">
-            <h3>Try the prototype</h3>
             <div class="flex-container">
               <a
                 href="https://www.figma.com/proto/OIfd4MNWtrZwoVRPGkOOlt/Wild-Bloom?type=design&node-id=216-3331&t=NeogeIqGR5cotInT-0&scaling=scale-down&page-id=133%3A996&starting-point-node-id=216%3A3331"
                 target="_blank"
                 class="button"
-                >Go to Figma</a
+                >Figma prototype</a
               >
             </div>
           </div>
@@ -176,9 +198,9 @@
                   </li>
                   <li>
                     <p>
-                      2. Design an intuitive and usable online store for Wild
-                      Bloom. Ensure it optimizes the online shopping experience
-                      and effectively communicates company values.
+                      2. Design an intuitive shopping experience for Wild Bloom.
+                      Ensure it effectively communicates company values without
+                      sacrificing usability.
                     </p>
                   </li>
                 </ol>
@@ -194,15 +216,15 @@
                 <h2 id="wb-constraints" class="hidden">Constraints</h2>
                 <div>
                   <div class="col-lg-4 col-md-6 constraints-flex-img">
-                    <h3>My role</h3>
-                    <span>Art director, UX/UI Designer</span>
+                    <h3><span class="sub-span bold-span">My role</span></h3>
+                    <span>Creative direction, visual and UX Design</span>
                   </div>
                   <div class="col-lg-4 col-md-6 constraints-flex-img">
-                    <h3>Timeframe</h3>
+                    <h3><span class="sub-span bold-span">Timeframe</span></h3>
                     <span>2 weeks</span>
                   </div>
                   <div class="col-lg-4 col-md-6 constraints-flex-img">
-                    <h3>Tools</h3>
+                    <h3><span class="sub-span bold-span">Tools</span></h3>
                     <span>Figma, Adobe Creative Suite</span>
                   </div>
                 </div>
@@ -215,38 +237,37 @@
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h2 id="wb-brand-overview">Phase one</h2>
-                <h3>Developing a visual identity</h3>
+                <h2 id="wb-brand-overview">Branding process</h2>
+                <h3>Overview</h3>
                 <p>
                   The brand development process began with research. I dove into
                   company materials and the web to fully understand their ethos,
-                  unique offering, client base and competitors. I used research
-                  insights to refine a brand concept and strategy that
-                  positioned Wild Bloom as a provider of “simplicity, luxury,
-                  and positive impact.” With this in mind, I crafted a visual
-                  identity inspired by the Victorian era and the famous wit of
-                  Oscar Wilde. The outcome of this process was the documentation
-                  of the brand into a detailed Brand Guide. Read on to discover
-                  the details of the branding journey, or
-                  <a href="#wb-ui-process-overview">Skip to Phase Two</a> of
-                  this project, in which I designed an e-commerce platform for
-                  Wild Bloom.
+                  unique offering, client base and competitors. This helped me
+                  refine a brand concept and strategy that positioned Wild Bloom
+                  as a provider of “simplicity, luxury, and positive impact.” To
+                  express this unique positioning, I crafted a visual identity
+                  inspired by the Victorian era and the famous wit of Oscar
+                  Wilde. The outcome of this process was the documentation of
+                  the brand into a comprehensive Brand Guide. Read on to
+                  discover the details of the branding journey, or
+                  <a href="#wb-ui-process-overview">skip to phase two</a>, in
+                  which I designed an e-commerce platform for Wild Bloom.
                 </p>
                 <h3>Company profile</h3>
                 <p>
-                  Who are Wild Bloom? They are a modern tea company operating at
-                  the intersection of luxury, ethics, and innovation. Champions
-                  of a wild-picked product, their signature line of “nude tea”
-                  is sourced in micro-quantities around the world and packaged
-                  with zero processing or additives. Each flavor is handled
-                  separately, while blend-lovers can follow unique recipes.
+                  Who are Wild Bloom? Champions of a wild-picked product, their
+                  signature line of “nude tea” is sourced in micro-quantities
+                  around the world and packaged with zero processing or
+                  additives. Each flavor is handled separately, while
+                  blend-lovers can follow unique recipes. This is a modern tea
+                  company operating at the intersection of ethics, innovation,
+                  and luxury.
                 </p>
                 <h3>Target audience</h3>
                 <p>
                   Wild Bloom caters to a demographic of sophisticated
                   eco-conscious urbanites who enjoy premium experiences and
-                  unique, ethically sourced products that blend luxury and
-                  sustainability.
+                  unique products that blend luxury and sustainability.
                 </p>
                 <div class="row">
                   <div>
@@ -366,8 +387,8 @@
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h2 id="wb-brand-elements">Brand elements</h2>
-                <h3>Typography</h3>
+                <h3 id="wb-brand-elements">Outcome</h3>
+                <h4>Typography</h4>
                 <p>
                   The first specific branding element I defined was typography.
                   This choice defines which style of imagery, textures, and
@@ -402,7 +423,7 @@
                   as intended, and legibility was suffering. I made the change,
                   then came back to update the brand guide.
                 </p>
-                <h3>Voice</h3>
+                <h4>Voice</h4>
                 <p>
                   In true Oscar Wilde fashion, Wild Bloom&#39;s brand voice must
                   have intelligence, wit, sophistication. The product line
@@ -419,7 +440,7 @@
                     alt="Victorian male fashion plate with speech bubbles that read playful messages like #drinknude"
                   />
                 </a>
-                <h3>Logo</h3>
+                <h4>Logo</h4>
                 <p>
                   In the logo I sought a balance between a historical,
                   handcrafted pictorial language and modern usability
@@ -442,7 +463,7 @@
                     alt="Logo illustration for Wild Bloom."
                   />
                 </a>
-                <!-- <h3>Iconography</h3>
+                <!-- <h4>Iconography</h4>
                 <p>
                   I used Material icons throughout the project. They have a
                   friendly, sleek and legible style, and are crafted to a high
@@ -458,7 +479,7 @@
                     alt="A collection of Material icons."
                   />
                 </a> -->
-                <h3>Color Palette</h3>
+                <h4>Color Palette</h4>
                 <p>
                   I built a complementary palette of rich hues that evoke
                   Victorian grandeur and adventurous tea voyages. Backgrounds,
@@ -475,7 +496,7 @@
                     alt="Color swatches showing the brand palette"
                   />
                 </a>
-                <h3>Image Guidelines</h3>
+                <h4>Image Guidelines</h4>
                 <p>
                   I defined image guidelines for illustrations, photography, and
                   humans.These guidelines should cover every image use within
@@ -495,25 +516,24 @@
                 </a>
                 <h3>Validation and next steps</h3>
                 <p>
-                  A clear and consistent visual identity can be evaluated by how
-                  well it resonates with the target audience, and how
-                  effectively it communicates the company&#39;s values. The
-                  well-crafted and consistently applied brand ultimately leads
-                  to increased engagement, higher conversion rates, and stronger
-                  customer loyalty.
-                </p>
-                <p>
-                  To assess interest and engagement levels, I consulted members
-                  of the target audience and met with positive responses. A
-                  comprehensive testing phase is preferred, however, so in
-                  future the brand identity can be validated and iterated on
-                  with the help of A/B testing or a Brand Perception Survey.
+                  A visual identity is evaluated by how well it resonates with
+                  the target audience, and how effectively it communicates the
+                  company&#39;s values.To assess interest and engagement levels,
+                  I consulted members of the target audience and met with
+                  positive responses. A comprehensive testing phase is
+                  preferable, and in future the brand identity can be validated
+                  and iterated on with the help a Brand Perception Survey.
                 </p>
                 <p>
                   I documented the visual guidelines in a living Brand
                   Guidelines document that will serve as a reference and ensure
                   consistent brand representation across various touchpoints
                   over time.
+                </p>
+                <p>
+                  The well-crafted and consistently applied brand will lead to
+                  increased engagement, higher conversion rates, and stronger
+                  customer loyalty.
                 </p>
               </div>
             </div>
@@ -524,12 +544,11 @@
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h2 id="wb-ui-process-overview">Phase Two</h2>
-                <h3>Designing an e-commerce platform</h3>
+                <h2 id="wb-ui-process-overview">UX design process</h2>
                 <p>
                   With the Brand Guide in place, I turned my attention to
-                  designing Wild Bloom&#39;s online store. Curious about Phase
-                  One, in which I designed a brand identity?
+                  designing Wild Bloom&#39;s e-commerce platform. Curious about
+                  phase one, in which I designed a brand identity?
                   <a href="#wb-brand-overview">Read about it above.</a>
                 </p>
               </div>
@@ -619,10 +638,9 @@
                 <p>
                   The project brief dictated some specific user stories that I
                   needed to address. From these, combined with research
-                  insights, I extracted key features like guest browsing, a
-                  well-organized cart, and a secure checkout process. Building
-                  upon this foundation, I sketched out flows and key wireframes
-                  for the platform.
+                  insights, I extracted the features I would focus on: a
+                  browsing and checkout flow with a guest browsing option,
+                  well-organized cart, a secure checkout process.
                 </p>
                 <a
                   data-fancybox="gallery3"
@@ -645,11 +663,15 @@
               <div class="text-block">
                 <h3>Develop</h3>
                 <p>
-                  I tested a first iteration of the shopping experience with 5
-                  participants using one scenario: “Pick a product, place it in
-                  your cart, then go through the checkout steps to complete the
-                  purchase.” Scroll down for notes on the feedback I received,
-                  the revisions I made, and those I didn&#39;t.
+                  To develop my chosen features, I sketched out flows and
+                  wireframes for the platform. A first iteration of the shopping
+                  experience was tested with 5 participants using one scenario:
+                  <span class="bold-span"
+                    >“Pick a product, place it in your cart, then go through the
+                    checkout steps to complete the purchase.”</span
+                  >
+                  Scroll on for notes on the feedback I received, the revisions
+                  I made, and those I didn&#39;t.
                 </p>
                 <figure>
                   <a
@@ -701,8 +723,8 @@
               <div class="text-block">
                 <h3>Deliver</h3>
                 <p>
-                  After refining the wireframes, I applied the visual brand. I
-                  did this carefully and with my
+                  After applying adjustments per testing outcomes, I applied the
+                  visual brand. I did this carefully and with my
                   <span class="bold-span">second key challenge</span> in mind: I
                   had to maintain high usability at small screen sizes and still
                   communicate the Victorian-inspired visual identity. Three
@@ -735,10 +757,12 @@
                 </figure>
                 <h4>High fidelity</h4>
                 <p>
-                  I prepared mockups of the Home page, Product page, and
-                  Checkout flow. I built a high-fidelity prototype to give a
-                  fuller sense of the shopping experience. I also created a
-                  Desktop version of the UI to define its responsive behavior.
+                  I built a high-fidelity prototype to give a fuller sense of
+                  the interactivity throughout the shopping experience,
+                  especially in the accordion menus that house the
+                  information structure of the product screens and shopping
+                  cart. I also created a Desktop version of the UI to define its
+                  responsive behavior.
                 </p>
                 <figure>
                   <a
@@ -794,20 +818,7 @@
                   </li>
                   <li>
                     <span class="bold-span"
-                      >2. Creating a playful brand voice</span
-                    >
-                    <p>
-                      The challenge lay in crafting a brand voice that captured
-                      the right blend of humor and sophistication. To meet this
-                      challenge I channeled the wit and style of Oscar Wilde,
-                      using taglines like "We make tea nude" and playful
-                      hashtags to convey the brand&#39;s personality within the
-                      bounds of decorum.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="bold-span"
-                      >3. Presenting lots of information within a clean and
+                      >2. Presenting lots of information within a clean and
                       appealing UI</span
                     >
                     <p>
@@ -821,13 +832,26 @@
                       overwhelm.
                     </p>
                   </li>
+                  <li>
+                    <span class="bold-span"
+                      >3. Creating a playful brand voice</span
+                    >
+                    <p>
+                      The challenge lay in crafting a brand voice that captured
+                      the right blend of humor and sophistication. To meet this
+                      challenge I channeled the wit and style of Oscar Wilde,
+                      using taglines like "We make tea nude" and playful
+                      hashtags to convey the brand&#39;s personality within the
+                      bounds of decorum.
+                    </p>
+                  </li>
                 </ol>
               </div>
             </div>
           </div>
         </section>
 
-        <section>
+        <section class="project-section">
           <div class="container">
             <div class="row">
               <div class="text-block">
@@ -835,27 +859,26 @@
                 <ol class="numberless">
                   <li>
                     <p>
-                      1. I would like to conduct further testing to validate the
-                      brand strategy and ensure the second iteration of the UI
-                      meets user expectations and needs.
+                      1. Conduct further testing to validate the brand strategy
+                      and second iteration of the UI, and address any new
+                      usability problems.
                     </p>
                   </li>
                   <li>
                     <p>
-                      2. It would be useful to collaborate with a dedicated
-                      content strategist to ensure that the textual content
-                      aligns seamlessly with the visual brand identity and user
-                      experience. This would enhance the platform&#39;s message
-                      clarity and establish a compelling narrative throughout
-                      the user journey.
+                      2. Collaborate with a dedicated content strategist to
+                      ensure that the textual content aligns seamlessly with the
+                      visual brand identity and user experience. This would
+                      enhance the platform&#39;s message clarity and establish a
+                      compelling narrative throughout the user journey.
                     </p>
                   </li>
                   <li>
                     <p>
-                      3. Thirdly, I would create a comprehensive design system
-                      to centralize visual and UI components, fostering
-                      consistency and efficiency across design and development
-                      efforts, and ensuring the project is scalable.
+                      3. Create a comprehensive design system to centralize
+                      visual and UI components, fostering consistency and
+                      efficiency across design and development efforts, and
+                      ensuring the project is scalable.
                     </p>
                   </li>
                 </ol>
@@ -864,8 +887,20 @@
           </div>
         </section>
 
-        <section class="project-section" id="wb-thanks">
-          <h3>Thanks for reading!</h3>
+        <section class="project-section thankyou-section" id="wb-thanks">
+          <div class="container">
+            <div class="text-block">
+              <h2>
+                <span>Thank you for reading!</span>
+              </h2>
+
+              <span class="sub-span"
+                ><a href="./cookshop.html"
+                  >Next: designing a recipes app for men
+                  <i class="fa-solid fa-arrow-right"></i></a
+              ></span>
+            </div>
+          </div>
         </section>
       </main>
 

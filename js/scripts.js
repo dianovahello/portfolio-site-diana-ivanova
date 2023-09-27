@@ -13,9 +13,11 @@ console.log("sup I'm JavaScript");
 //   }
 // }
 
+
+
 // Smooth scrolling function
 function smoothScrollTo(target) {
-  var headerOffset = 44;
+  var headerOffset = 70;
 
   $("html, body").animate(
     {
@@ -54,6 +56,7 @@ $('a[href*="#"]')
       }
     }
   });
+
 
 // Subnav tabs
 
@@ -96,7 +99,7 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 
-// // Counter moved to <script> tag in index.html because it was causing an error
+// // The Counter was moved to a <script> tag in file index.html because it was causing an error on other pages
 // let counts = setInterval(updated);
 // let upto = 0;
 // function updated() {

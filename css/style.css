@@ -1,10 +1,18 @@
 /*
+
 Colors used:
+
 white: #fbfbfb; rgba(251, 251, 251, 0.5)
-black: #080808; rgba(8, 8, 8, 0.5)
+black footer: #080808; rgba(8, 8, 8, 0.9)
+black text: rgba(23, 27, 39, 0.9);
+
 light grey: #E4E5E6; rgba(23, 27, 39, 0.1);
+
 accent/pink: rgba(252, 72, 255, 0.1) 
 accent/blue:  rgba(71, 240, 255, 0.2);
+
+Typescale: major third 1.250
+
 */
 
 * {
@@ -17,7 +25,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #080808;
+  color: rgba(23, 27, 39, 0.9);
 }
 
 /* styling for headings mobile 320px */
@@ -27,59 +35,55 @@ h2,
 h3,
 h4 {
   margin: 0;
+  text-align: center;
 }
 
 h1 {
-  font-size: 42px;
-  line-height: 64px;
-  font-weight: 700;
-  text-align: center;
+  font-size: 39px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 33px;
-  line-height: 51px;
-  font-weight: 700;
-  text-align: center;
+  font-size: 31px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 26px;
-  line-height: 41px;
-  font-weight: 700;
-  text-align: center;
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 20px;
-  line-height: 32px;
-  font-weight: 700;
-  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 .intro-span {
   font-size: 26px;
-  font-weight: 700;
-  line-height: 41px;
+  font-weight: 600;
   display: block;
 }
 
 .sub-span {
   display: block;
   font-size: 20px;
-  line-height: 32px;
   font-weight: 400;
 }
+
+
 
 /* styling for links */
 
 a {
-  color: #080808;
+  color: rgba(23, 27, 39, 0.9);
   padding: 4px;
-  /* font-weight: 600; */
   text-decoration: underline;
   transition: 0.2s color;
-  border-radius: 40px;
+  border-radius: 24px;
 }
 
 a:focus,
@@ -93,19 +97,6 @@ a:focus {
   outline: auto;
 }
 
-#myNavtoggle > a.project-nav-bars {
-  outline: none;
-  background-color: transparent;
-}
-
-.logo {
-  max-width: 150px;
-  font-weight: 700;
-  text-decoration: none;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 .img-link,
 .img-link:hover,
 .img-link:active,
@@ -117,14 +108,12 @@ a:focus {
   outline: none;
 }
 
+
+
 /* Styling for icons */
 
 i {
-  color: #080808;
-  padding: 0 8px;
-}
-
-#hamburger-icon {
+  color: rgba(23, 27, 39, 0.9);
   padding: 0;
 }
 
@@ -154,46 +143,91 @@ i {
   text-decoration: none;
 }
 
-/* styling for nav */
+.fa-arrow-right{
+  padding-left: 8px;
+}
+
+.fa-arrow-left{
+  padding-right: 8px;
+}
+
+/* styling for header */
+
+header {
+  background-color: #fbfbfb;
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  height: auto;
+  min-height: 56px;
+  width: 100%;
+}
+
+header .fa-bars,
+#myNavtoggle > a.project-nav-bars,
+#myNavtoggle > nav > ul > li:nth-child(4) > a {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0; */
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+
+/* styling for main nav navigation in header */
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 4px 0 4px 0;
 }
 
 nav ul li a {
-  padding: 8px;
-  text-transform: uppercase;
   text-decoration: none;
-  font-weight: 700;
+  border-radius: 24px;
 }
+
+.main-nav > ul > li > a {
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: 0.2s;
+  font-size: 20px;
+  margin: 0;
+}
+
+.main-nav > ul > li > a:focus,
+.main-nav > ul > li > a:hover {
+  background-color: rgba(23, 27, 39, 0.05);
+}
+
+.main-nav > ul > li > a:focus {
+  outline: none;
+  border: none;
+}
+
+.main-nav > ul > li > a.nav-button-active {
+  color: #fbfbfb;
+  background-color: rgba(23, 27, 39, 0.9);
+  outline: none;
+}
+
+
+/* Styling for main nav toggle function */
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
+.navtoggle li:last-child a {
+  padding-left: 0; 
+}
+
 .navtoggle,
 .navtoggle-responsive {
   position: relative;
-}
-
-.navtoggle li .icon {
-  padding: 0;
-  font-size: 20px;
-  margin: 0;
-}
-
-.icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 20px;
-  padding: 0;
-}
-
-.icon:focus {
-  outline: auto;
 }
 
 .navtoggle-responsive nav {
@@ -211,9 +245,160 @@ nav ul li a {
   padding: 10px 0 0;
 }
 
-#myNavtoggle > nav > ul > li:nth-child(3) > a {
-  padding-right: 0;
+
+
+/* styling for main nav in project pages */
+
+.project-header > div > div > div > nav > ul > li {
+  display:inline-block;
 }
+
+.project-header > div > div > div > nav > ul > li > a {
+  padding: 8px;
+}
+
+
+/* styling for side nav subnav drawer table of contents */
+
+.nav-drawer {
+  background-color: #fbfbfb;
+  color: rgba(23, 27, 39, 0.9);
+  position: fixed;
+  z-index: 2;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.nav-drawer a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 8px 8px 0;
+  cursor: pointer;
+}
+
+.subheader a:focus {
+  outline: auto;
+}
+
+.sidenav-closed {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #fbfbfb;
+  overflow-x: hidden;
+  padding-top: 40px;
+  transition: 0.25s;
+  box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
+}
+
+.sidenav-250px {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #fbfbfb;
+  overflow-x: hidden;
+  padding-top: 40px;
+  transition: 0.25s;
+  box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
+}
+
+/* styling for table of contents*/
+
+.table-contents {
+  list-style-type: none;
+  padding: 0;
+}
+
+.table-contents h4 {
+  text-align: unset;
+  padding: 8px 8px 8px 24px;
+}
+
+.table-contents a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 8px 8px 24px;
+  border-radius: 0;
+}
+
+.sidenav a:hover {
+  background-color: #e4e5e6;
+}
+
+/* styling for close button */
+
+.sidenav-250px .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 16px;
+  border-bottom: none;
+  font-size: 20px;
+}
+
+
+
+/* styling for subnav secondary navigation tab bar switcher */
+
+.tab {
+  overflow: hidden;
+  background-color: #fbfbfb;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab button {
+  background-color: inherit;
+  float: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: 0.2s;
+  font-size: 20px;
+  border-radius: 24px;
+}
+
+.tab button:focus,
+.tab button:hover {
+  background-color: rgba(23, 27, 39, 0.05);
+}
+
+.tab button:focus {
+  outline: none;
+  border: none;
+}
+
+.tab button.active {
+  background-color: rgba(23, 27, 39, 0.04);
+  border: none;
+  outline: none;
+}
+
+
+
+/* Styling for tab content */
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+/* Activate the chosen tab by default */
+.tabcontent.default-active {
+  display: block;
+}
+
+
 
 /* styling for buttons */
 
@@ -221,13 +406,11 @@ nav ul li a {
 .button:visited {
   display: inline-block;
   width: 100%;
-  /* background-color: rgba(252, 72, 255, 0.25); */
   background-color: rgba(23, 27, 39, 0.05);
-  color: #080808;
+  color: rgba(23, 27, 39, 0.9);
   font-weight: 400;
   text-decoration: none;
   padding: 8px 16px;
-  /* border: 2px solid #fc48ff; */
   border: 2px solid rgba(8, 8, 8, 0.5);
   text-align: center;
   border-radius: 40px;
@@ -239,8 +422,7 @@ nav ul li a {
   display: inline-block;
   width: 100%;
   background-color: #e4e5e6;
-  color: #080808;
-  border: 2px solid rgba(8, 8, 8, 0.05);
+  color: rgba(23, 27, 39, 0.9);
   font-weight: 400;
   text-decoration: none;
   padding: 8px 16px;
@@ -253,7 +435,7 @@ nav ul li a {
 .button-tertiary:visited {
   display: inline-block;
   width: 100%;
-  color: #080808;
+  color: rgba(23, 27, 39, 0.9);
   font-weight: 400;
   padding: 8px;
   border-radius: 40px;
@@ -282,7 +464,7 @@ nav ul li a {
 .button-secondary:hover {
   /* background: #fba1fd; */
   background: rgba(252, 72, 255, 0.1);
-  color: #080808;
+  color: rgba(23, 27, 39, 0.9);
   padding: 8px 16px;
   border: 2px solid #fc48ff;
 }
@@ -300,7 +482,7 @@ nav ul li a {
 .button:active,
 .button-secondary:active {
   background-color: #fc48ff;
-  color: #080808;
+  color: rgba(23, 27, 39, 0.9);
   padding: 8px 16px;
   border: 2px solid #fc48ff;
 }
@@ -308,6 +490,10 @@ nav ul li a {
 .buttons-group {
   margin: 1em 0;
 }
+
+
+
+/* Styling for images */
 
 img {
   width: 100%;
@@ -317,65 +503,9 @@ img {
   max-width: 600px;
 }
 
-/* styling for subnav */
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  background-color: #fbfbfb;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-/* Style the buttons inside the tab */
-
-.tab button {
-  background-color: inherit;
-  float: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 16px;
-  transition: 0.2s;
-  font-size: 17px;
-  font-weight: 600;
-  border-radius: 40px;
-}
-
-/* Change background color of tab buttons on hover */
-.tab button:focus,
-.tab button:hover {
-  background-color: rgba(23, 27, 39, 0.05);
-  border-radius: 40px;
-}
-
-.tab button:focus {
-  outline: none;
-  border: none;
-}
-
-/* Create an active/current tablink class */
-
-.tab button.active {
-  background-color: rgba(23, 27, 39, 0.05);
-  border: none;
-  outline: none;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border-top: none;
-}
-
-/* Activate the design tab by default */
-.tabcontent.default-active {
-  display: block;
-}
-
-/* layout styling */
+/* Styling for layout */
 
 .container {
   padding: 0 16px;
@@ -401,126 +531,11 @@ img {
   padding-bottom: 16px;
 }
 
-header {
-  background-color: #fbfbfb;
-  padding: 10px 0;
-  position: fixed;
-  top: 0;
-  z-index: 3;
-  width: 100%;
-  box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
-}
-
-header .fa-arrow-left {
-  padding: 0 8px 0 0;
-}
-
-header .fa-bars,
-#myNavtoggle > a.project-nav-bars {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-/* styling for side nav table of contents in project */
-
-.sub-header {
-  background-color: #fbfbfb;
-  color: #080808;
-  position: fixed;
-  z-index: 2;
-  padding: 8px 16px;
-  width: 100%;
-}
-
-.sub-header a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 8px 8px 8px 0;
-  cursor: pointer;
-}
-
-.subheader a:focus {
-  outline: auto;
-}
-
-.sidenav-closed {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  right: 0;
-  background-color: #fbfbfb;
-  overflow-x: hidden;
-  padding-top: 40px;
-  transition: 0.25s;
-  box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
-}
-
-.sidenav-250px {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  right: 0;
-  background-color: #fbfbfb;
-  overflow-x: hidden;
-  padding-top: 40px;
-  transition: 0.25s;
-  box-shadow: 0 2px 4px 0 rgba(23, 27, 39, 0.1);
-}
-
-/* styling for table of contents*/
-
-.table-contents {
-  list-style-type: none;
-  padding: 0;
-}
-
-.table-contents h4 {
-  text-align: unset;
-  padding: 8px 8px 8px 24px;
-  /* border-bottom: 2px solid rgba(23, 27, 39, 0.1); */
-}
-
-.table-contents a {
-  display: block;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 8px 8px 8px 24px;
-  border-radius: 0;
-}
-
-.table-contents .sub-item {
-  /* padding: 8px 8px 8px 32px; */
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  background-color: #e4e5e6;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav-250px .closebtn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* margin-left: 50px; */
-  padding: 8px 8px 8px 16px;
-  border-bottom: none;
-}
-
 /* styling for main */
 
 main {
-  padding-top: 44px;
+  padding-top: 70px;
+  padding-bottom: 40px;
   background-color: #fbfbfb;
 }
 
@@ -531,18 +546,18 @@ main {
 #hero {
   display: inline-block;
   background-color: #fbfbfb;
-  padding: 0;
+  padding: 0 0 16px 0;
   width: 100%;
+}
+
+#hero .bold-span {
+  padding: 8px 0;
 }
 
 @keyframes hero-color {
   0% {
     color: #fc48ff;
   }
-
-  /* 50% {
-        color: #8AFF23;
-    } */
 
   100% {
     color: #47f0ff;
@@ -554,21 +569,14 @@ main {
     background-color: rgba(252, 72, 255, 0.1);
   }
 
-  /* 50% {
-        color: #8AFF23;
-    } */
-
   100% {
     background-color: rgba(71, 240, 255, 0.1);
   }
 }
 
 #hero h1 {
-  font-size: 110px;
-  line-height: 150%;
-  background-color: transparent;
-  padding: 24px 16px 16px 16px;
-  margin: 0 8px;
+  padding: 0;
+  text-align: left;
 }
 
 .hello-animate {
@@ -576,7 +584,7 @@ main {
 }
 
 #hero > div > h1 > span.hello-animate {
-  background: rgba(8, 8, 8, 0.9);
+  background: rgba(23, 27, 39, 0.9);
 }
 
 .body-background {
@@ -585,23 +593,40 @@ main {
 
 /* Styling for World section donation amount counter*/
 
-
 #counter-block,
 #counter-block > p,
 #counter {
   display: inline;
 }
 
-#counter-block{
-    width: 100%;
-    margin:auto;
-    align-self: center;
+#counter-block {
+  width: 100%;
+  margin: auto;
+  align-self: center;
 }
 
 #counter {
   font-size: 20px;
-  line-height: 32px;
-  font-weight: 700;
+  line-height: 1.5;
+  font-weight: 600;
+  text-align: center;
+}
+
+#work p {
+  margin-top: 0;
+}
+
+#work H3 {
+  margin: 16px 0;
+}
+
+#work .flex-container {
+  margin: 24px 0 16px 0;
+}
+
+/* styling for thank you section in project page */
+
+.thankyou-section {
   text-align: center;
 }
 
@@ -614,9 +639,11 @@ footer {
   background-color: rgba(8, 8, 8, 0.9);
 }
 
+/* styling for col- */
+
 [class*="col-"] {
   float: left;
-  padding: 0 8px;
+  padding: 0;
 }
 
 .row::after {
@@ -627,24 +654,16 @@ footer {
 
 /* Styling for project pages*/
 
-.project-blurb {
-  padding: 16px;
-}
-
 .project-section {
-  padding: 16px 0 0 0;
+  padding: 0 0 16px 0;
 }
 
 .project-section h3:focus {
   outline: none;
 }
 
-.project-section-home {
-  padding-top: 16px;
-}
-
-.project-section-home h1 {
-  padding-bottom: 16px;
+.project-main {
+  padding-top: 56px;
 }
 
 .project-main h1,
@@ -655,6 +674,19 @@ footer {
 
 .img-section {
   padding-top: 32px;
+}
+
+/* Styling for fig tag 320px */
+
+#sitecs figure img {
+  padding: 8px 16px 0 16px;
+}
+
+figcaption,
+figcaption a {
+  font-size: 16px;
+  color: rgba(8, 8, 8, 0.8);
+  text-align: right;
 }
 
 /* Styling for Portfolio site case study 320px */
@@ -699,8 +731,7 @@ footer {
   margin: 0;
 }
 
-/* fig tag 320px */
-
+/* sitecs fig tag 320px */
 #sitecs figure {
   margin: 0;
 }
@@ -713,11 +744,10 @@ figcaption,
 figcaption a {
   font-size: 14px;
   color: rgba(8, 8, 8, 0.8);
-  text-align: center;
+  text-align: right;
 }
 
-/* logo list site case study 320px */
-
+/* sitecs logo list 320px */
 
 .sub-section {
   padding-top: 0;
@@ -750,21 +780,20 @@ figcaption a {
   padding: 8px 0;
 }
 
-/* Styling for Wild Bloom */
+/* Styling for Wild Bloom, body id="wb" */
 
-
-
+#wb h2,
+#wb h3 {
+  margin-top:0;
+}
 
 /* Styling for About page */
 
-#about-blurb {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#about-me h2 {
+  text-align: unset;
 }
 
-#skills-and-tools{
+#skills-and-tools {
   padding-bottom: 16px;
 }
 
@@ -777,8 +806,8 @@ figcaption a {
 }
 
 #skills-and-tools ul {
-  padding: 8px 0 8px 40px;
-  /* list-style-type: square; */
+  padding: 8px 0 8px 16px;
+  list-style-type: disc;
   margin: 0;
 }
 
@@ -804,7 +833,7 @@ figcaption a {
 }
 
 .bold-span {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* Styling for Under Construction page */
@@ -871,8 +900,6 @@ figcaption a {
 
 
 
-
-
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -886,7 +913,7 @@ figcaption a {
 
   nav {
     width: auto;
-    float: right;
+    float: left;
   }
 
   nav ul li {
@@ -907,7 +934,7 @@ figcaption a {
 
   main {
     font-size: 18px;
-    line-height: 31px;
+    line-height: 1.5;
   }
 
   body {
@@ -918,37 +945,35 @@ figcaption a {
 
   h1 {
     font-size: 47px;
-    line-height: 74px;
-    font-weight: 700;
+    line-height: 1.5;
+    font-weight: 600;
     text-align: center;
     margin-top: 0;
   }
 
   h2 {
     font-size: 37px;
-    line-height: 59px;
-    font-weight: 700;
+    line-height: 1.5;
+    font-weight: 600;
     text-align: center;
   }
 
   h3 {
     font-size: 29px;
-    line-height: 47px;
-    font-weight: 700;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
   }
 
   h4 {
     font-size: 23px;
-    line-height: 38px;
-    font-weight: 700;
-  }
-
-  #hero {
+    line-height: 1.5;
+    font-weight: 600;
     text-align: center;
   }
 
   .col-md-6 {
-    width: 100%;
+    width: 50%;
   }
 
   #about-me h3 {
@@ -984,9 +1009,14 @@ figcaption a {
     margin: auto;
   }
 
-  #skills-and-tools .col-md-6 {
-    width: 50%;
-  }
+
+  /* Styling for Wild Bloom, body id="wb" 640px min viewport */
+
+#wb h2,
+#wb h3 {
+  margin-top: 16px;
+}
+
 
   /* Styling for portfolio site case study page med 640px */
 
@@ -1005,6 +1035,12 @@ figcaption a {
       width: 50%;
     }
 
+    .constraints-flex-img {
+      width: 100%;
+      text-align: center;
+      padding: 0 20px;
+    }
+
     #logo-list {
       margin-top: 8px;
       margin-bottom: 24px;
@@ -1020,19 +1056,6 @@ figcaption a {
 
     #sitecs figure img {
       padding: 1em;
-    }
-
-    /* fig tag 320px */
-
-    #sitecs figure img {
-      padding: 8px 16px 0 16px;
-    }
-
-    figcaption,
-    figcaption a {
-      font-size: 16px;
-      color: rgba(8, 8, 8, 0.8);
-      text-align: center;
     }
 
     /* Styling for Under Construction page 640px min viewport */
@@ -1059,6 +1082,17 @@ figcaption a {
   }
 
   @media only screen and (min-width: 1024px) {
+    [class*="col-"] {
+      float: left;
+      padding: 0;
+    }
+
+    .constraints-flex-img {
+      width: 100%;
+      text-align: center;
+      padding: 0 20px;
+    }
+
     .col-lg-3 {
       width: 25%;
     }
@@ -1097,28 +1131,28 @@ figcaption a {
 
     h1 {
       font-size: 47px;
-      line-height: 76px;
-      font-weight: 700;
+      line-height: 1.5;
+      font-weight: 600;
       text-align: center;
     }
 
     h2 {
       font-size: 37px;
-      line-height: 62px;
-      font-weight: 700;
+      line-height: 1.5;
+      font-weight: 600;
       text-align: center;
     }
 
     h3 {
       font-size: 29px;
-      line-height: 50px;
-      font-weight: 700;
+      line-height: 1.5;
+      font-weight: 600;
     }
 
     h4 {
       font-size: 23px;
-      line-height: 41px;
-      font-weight: 700;
+      line-height: 1.5;
+      font-weight: 600;
     }
 
     .wrapper {
@@ -1131,7 +1165,7 @@ figcaption a {
 
     .tab,
     header,
-    .sub-header {
+    .nav-drawer {
       max-width: 1200px;
     }
 
@@ -1197,28 +1231,28 @@ figcaption a {
 
     h1 {
       font-size: 47px;
-      line-height: 79px;
-      font-weight: 700;
+      line-height: 1.5;
+      font-weight: 600;
       text-align: center;
     }
 
     h2 {
       font-size: 37px;
-      line-height: 65px;
-      font-weight: 700;
+      line-height: 1.5;
+      font-weight: 600;
       text-align: center;
     }
 
     h3 {
       font-size: 29px;
-      line-height: 53px;
-      font-weight: 700;
+      line-height: 1.5;
+      font-weight: 600;
     }
 
     h4 {
       font-size: 23px;
-      line-height: 44px;
-      font-weight: 700;
+      line-height: 1.5;
+      font-weight: 600;
     }
   }
 }

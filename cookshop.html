@@ -23,7 +23,7 @@
 
   <body id="cookshop" class="body-background">
     <div class="wrapper">
-      <header id="top">
+      <!-- <header id="top">
         <div class="container">
           <div class="navtoggle" id="myNavtoggle">
             <a href="./index.html" class="logo"
@@ -38,10 +38,35 @@
             ></a>
           </div>
         </div>
+      </header> -->
+
+      <header id="top" class="project-header">
+        <div class="container">
+          <div class="text-block">
+            <div>
+              <nav class="main-nav">
+                <ul>
+                  <li>
+                    <a href="./index.html"><span class=""><i class="fa-solid fa-arrow-left"></i></span></a>
+                  </li>
+                  <li>
+                    <a
+                      tabindex="0"
+                      onkeydown="sideNavToggle()"
+                      onclick="sideNavToggle()"
+                      class="project-nav-bars"
+                      ><i class="fa-solid fa-bars"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </header>
 
       <main class="project-main">
-        <div id="sub-header">
+        <div id="nav-drawer">
           <div id="mySideNav" class="sidenav-closed">
             <ul class="table-contents">
               <li>
@@ -57,7 +82,7 @@
               </li>
               <li>
                 <a href="#cookshop-overview" onclick="sideNavToggle()"
-                  >Overview</a
+                  >overview</a
                 >
               </li>
               <li>
@@ -65,47 +90,38 @@
               </li>
               <li>
                 <a href="#cookshop-ui" onclick="sideNavToggle()"
-                  >UI process</a
+                  >visual design</a
                 >
               </li>
               <li>
                 <a href="#cookshop-hifi" onclick="sideNavToggle()"
-                  >High fidelity</a
+                  >mockups</a
                 >
               </li>
               <li>
                 <a href="#cookshop-takeaway" onclick="sideNavToggle()"
-                  >Learnings and next steps</a
+                  >next steps</a
                 >
               </li>
               <li>
                 <h4>Site</h4>
               </li>
               <li>
-                <a href="./index.html" onclick="sideNavToggle()"
-                  >Work</a
-                >
+                <a href="./index.html" onclick="sideNavToggle()">work</a>
               </li>
               <li>
-                <a href="./about.html" onclick="sideNavToggle()">About</a>
+                <a href="./about.html" onclick="sideNavToggle()">about</a>
               </li>
               <li>
-                <a href="#contact" onclick="sideNavToggle()">Contact</a>
+                <a href="#contact" onclick="sideNavToggle()">contact</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <section class="project-section-home overview" id="cookshop-home">
+        <section class="project-section" id="hero">
           <div class="container">
-            <h1>
-              Cookshop
-              <span class="sub-span"
-                >Designing a responsive recipes app for men.</span
-              >
-            </h1>
-
-            <div class="text-block" id="cookshop-overview">
+            <div class="text-block">
               <a
                 data-fancybox
                 href="img/cookshop/img-cookshop@2x/cookshop-3mock-min.png"
@@ -116,35 +132,46 @@
                   alt="A high-fidelity mockup showing a screen from the Wild Bloom app."
                 />
               </a>
+              <h1>
+                <span class="sub-span bold-span">Cookshop</span>
+                <span class="sub-span">
+                  Understanding the needs of male-identifying home cooks and
+                  designing a recipes app to meet them. Exploring gender in UI.
+                </span>
+              </h1>
             </div>
+          </div>
+        </section>
 
-            <div class="row">
-              <div class="text-block">
-                <h2 id="">Project overview</h2>
-                <p>
-                  <span class="bold-span">The objective </span> was to design a
-                  recipes app for men who cook at home. I conducted primary and
-                  secondary research to assess the unique needs of male home
-                  cooks, if any, and the extent to which these needs are met or
-                  unmet by existing products.
-                </p>
-                <p>
-                  <span class="bold-span">Two interesting questions </span>arose
-                  during the design process. The first relates to my own
-                  assumptions about recipe content online: is it written for
-                  women, is this an obstacle for male cooks, and how? The second
-                  question felt simple but wasn&#39;t: what exactly is
-                  "masculine" UI?
-                </p>
-                <p>
-                  <span class="bold-span">The outcome </span>of the design
-                  process was a recipes app for desktop and mobile that helps an
-                  underserved group of male cooks express themselves reliably in
-                  the kitchen, inspired by a product that feels bold, exciting,
-                  and elegant.
-                </p>
-              </div>
+        <section class="project-section-home overview" id="cookshop-overview">
+          <div class="row">
+            <div class="container">
+            <div class="text-block">
+              <h2 id="">Project overview</h2>
+              <p>
+                <span class="bold-span">The objective </span> was to design a
+                recipes app for men who cook at home. I conducted primary and
+                secondary research to assess the unique needs of male home
+                cooks, if any, and the extent to which these needs are met or
+                unmet by existing products.
+              </p>
+              <p>
+                <span class="bold-span">Two interesting questions </span>arose
+                during the design process. The first relates to my own
+                assumptions about recipe content online: is it written for
+                women, is this an obstacle for male cooks, and how? The second
+                question felt simple but wasn&#39;t: what exactly is "masculine"
+                UI?
+              </p>
+              <p>
+                <span class="bold-span">The outcome </span>of the design process
+                was a recipes app for desktop and mobile that helps an
+                underserved group of home cooks express themselves reliably in
+                the kitchen, inspired by a product that feels bold, exciting,
+                and elegant.
+              </p>
             </div>
+          </div>
           </div>
         </section>
 
@@ -200,7 +227,7 @@
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h2 id="cookshop-ux">Process</h2>
+                <h2 id="cookshop-ux">UX process</h2>
                 <h3>Understanding the context</h3>
                 <p>
                   I began by conducting secondary research into home cooking
@@ -327,7 +354,7 @@
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h4>Important surprises</h4>
+                <h4>Surprises</h4>
                 <ol class="numberless">
                   <li>
                     1. Subjects were a lot more motivated by creativity and
@@ -350,7 +377,7 @@
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h3>So, are recipes written for women?</h3>
+                <h4>Conclusions</h4>
                 <p>
                   I found no evidence to directly support my assumption that
                   recipe content is overtly and overly focused on a female
@@ -383,7 +410,7 @@
               <div class="text-block">
                 <h4>Personas</h4>
                 <div class="row">
-                  <div class="col-lg-6 col-md-6 constraints-flex">
+                  <div class="col-lg-4 col-md-6 constraints-flex-img">
                     <a
                       data-fancybox="gallery1"
                       href="img/cookshop/img-cookshop@2x/cookshop-perso-1.png"
@@ -395,7 +422,7 @@
                       />
                     </a>
                   </div>
-                  <div class="col-lg-6 col-md-6 constraints-flex">
+                  <div class="col-lg-4 col-md-6 constraints-flex-img">
                     <a
                       data-fancybox="gallery1"
                       href="img/cookshop/img-cookshop@2x/cookshop-perso-2.png"
@@ -407,9 +434,7 @@
                       />
                     </a>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 constraints-flex">
+                  <div class="col-lg-4 col-md-6 constraints-flex-img">
                     <a
                       data-fancybox="gallery1"
                       href="img/cookshop/img-cookshop@2x/cookshop-perso-3.png"
@@ -783,7 +808,9 @@
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h3 id="cookshop-hifi">The outcome: research and design in action</h3>
+                <h3 id="cookshop-hifi">
+                  The outcome: research and design in action
+                </h3>
                 <a
                   data-fancybox
                   href="img/cookshop/img-cookshop@2x/cookshop-hifi-min.png"
@@ -902,8 +929,22 @@
           </div>
         </section>
 
-        <section class="project-section" id="wb-thanks">
-          <h3>Thanks for reading!</h3>
+        <section class="project-section thankyou-section" id="cookshop-thanks">
+          <div class="container">
+            <div class="text-block">
+              <h2>
+                <span>Thank you for reading!</span>
+              </h2>
+
+              <span class="sub-span"
+                ><a href="./zenvelopes.html"
+                  >Next: designing a budgeting app for people who hate budgeting
+                  <i class="fa-solid fa-arrow-right"></i></a
+              ></span>
+
+
+            </div>
+          </div>
         </section>
       </main>
 

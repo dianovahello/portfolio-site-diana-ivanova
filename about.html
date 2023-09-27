@@ -23,7 +23,7 @@
 
   <body id="about-me" class="body-background">
     <div class="wrapper">
-      <header id="top">
+      <!-- <header id="top">
         <div class="container">
           <div class="navtoggle" id="myNavtoggle">
             <a
@@ -33,15 +33,47 @@
               class="project-nav-bars"
               ><i class="fa-solid fa-bars"></i
             ></a>
-            <a href="./index.html" class="logo"
-              ><i class="fa-solid fa-arrow-left"></i>Portfolio</a
-            >
+          </div>
+        </div>
+      </header> -->
+
+      <header id="top">
+        <div class="container">
+          <div class="text-block">
+            <div class="navtoggle" id="myNavtoggle">
+              <nav class="main-nav">
+                <ul>
+                  <li>
+                    <a href="./index.html">work</a>
+                  </li>
+                  <li>
+                    <a href="./about.html" class="nav-button-active">about</a>
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      onclick="if (window.matchMedia('(max-width: 639px)').matches) menuToggle()"
+                      >contact</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      tabindex="0"
+                      onkeydown="sideNavToggle()"
+                      onclick="sideNavToggle()"
+                      class="project-nav-bars"
+                      ><i class="fa-solid fa-bars"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
 
       <main>
-        <div id="sub-header">
+        <div id="nav-drawer">
           <div id="mySideNav" class="sidenav-closed">
             <ul class="table-contents">
               <li>
@@ -65,21 +97,22 @@
           </div>
         </div>
 
-        <section id="about-intro" class="project-section">
+        <section>
           <div class="container">
             <div class="text-block">
-              <h1 class="hidden">About me</h1>
-
-              <picture>
-                <source
-                  srcset="img/about-me/img-about-me@1x/img-about-me@1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/about-me/img-about-me@2x/img-about-me@2x.png"
-                  alt="a photo of diana"
-                />
-              </picture>
+              <h1>
+                <span class="sub-span bold-span hidden">About me</span>
+              </h1>
+              <a
+                    data-fancybox
+                    href="img\about-me\img-about-me@2x\about-map-min.png"
+                    class="img-link"
+                  >
+                    <img
+                      src="img\about-me\img-about-me@2x\about-map-min.png"
+                      alt="Map showing New York, Paris, Tel Aviv, and Bulgaria"
+                    />
+                  </a>
             </div>
           </div>
         </section>
@@ -87,53 +120,65 @@
         <section id="my-story" class="project-section">
           <div class="container">
             <div class="text-block">
-              <h2>About me</h2>
-              <div class="flex-container">
+              <h2>
+                <span class="sub-span bold-span">How did I get here?</span>
+              </h2>
+              <p>
                 <a
                   href="files/Diana-Ivanova-UXdesigner-CV.pdf"
                   target="_blank"
-                  class="button-secondary"
+                  class=""
                   >download my CV</a
                 >
-              </div>
-              <p>
-                My path to UX and Product design started with art. Since college
-                I&#39;ve had a practice in
-                <span class="bold-span">conceptual and media art.</span>
-                It&#39;s a great way to use critical thinking, solve unique
-                theoretical problems, and create memorable experiences for
-                people.
               </p>
               <p>
-                I started practicing
-                <span class="bold-span">graphic design</span> in 2016, by
-                creating the print dossier and promotional material for a
-                theater project. I liked applying my skills to solve a practical
-                need, so I began helping more small business owners express
-                their values and connect with their audience. Freelancing helps
-                me stay curious about people, design tools, and business needs,
-                and this made me want to learn more about
+                My path to UX design started with
+                <span class="bold-span">conceptual and media art,</span> which
+                has been my passion since university. It&#39;s a great way to
+                use critical thinking, solve unique theoretical problems, and
+                create memorable experiences for people.
+              </p>
+              <p>
+                It&#39;s not a great way to help people achieve their goals. So
+                in 2016, I started practicing
+                <span class="bold-span">graphic design</span> by crafting
+                print and digital material for a theater project. I
+                liked applying my skills to solve a need, so I began helping
+                small businesses express their values and connect with
+                their audience. Freelancing helps me stay curious about people,
+                design tools, and business needs, and it made me want to learn
+                more about
                 <span class="bold-span">UX and Product design.</span> I gained
                 skills in UX research and testing processes, rapid prototyping,
                 interaction design, and the basics of web development at
                 CareerFoundry.
               </p>
               <p>
-                <span class="bold-span"> What I enjoy most </span>in this field
-                is that I can be curious and creative. It engages all the skills
-                I have learned in my life: visual, technical, and soft.
+                Product design lets me be curious and creative in the service of
+                people. It engages all the skills I have learned in my life:
+                visual, technical, and soft.
               </p>
+              <a
+                  data-fancybox
+                  href="img\about-me\img-about-me@2x\img-about-oval-min.png"
+                  class="img-link"
+                >
+                  <img
+                    src="img\about-me\img-about-me@2x\img-about-oval-min.png"
+                    alt="Photo of Diana"
+                  />
+                </a>
             </div>
           </div>
         </section>
 
-        <section id="skills-and-tools" class="project-section">
+        <section id="skills-and-tools" class="">
           <div class="container">
             <div class="text-block">
               <div class="row">
-                <h2>Skills and tools</h2>
+                <h2><span class="sub-span bold-span hidden">Skills and tools</span></h2>
                 <div class="col-md-6 col-lg-6">
-                  <h4>Relevant skills</h4>
+                  <h4><span class="sub-span bold-span">Relevant skills</span></h4>
                   <ul class="">
                     <li>User Research</li>
                     <li>Competitive Analysis</li>
@@ -144,13 +189,12 @@
                   </ul>
                 </div>
                 <div class="col-md-6 col-lg-6">
-                  <h4>Tools I like to use</h4>
+                  <h4><span class="sub-span bold-span">Tools I like to use</span></h4>
                   <ul class="">
+                    <li>Pencil on paper</li>
                     <li>Sharpie markers</li>
                     <li>Figma</li>
-                    <li>Adobe Illustrator, Photoshop</li>
-                    <li>Adobe Premiere Pro</li>
-                    <li>InVision</li>
+                    <li>Adobe Illustrator, Photoshop, Premiere</li>
                     <li>Visual Studio Code</li>
                   </ul>
                 </div>

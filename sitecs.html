@@ -24,6 +24,7 @@
 
   <body id="sitecs" class="body-background">
     <div class="wrapper">
+<!--       
       <header id="top">
         <div class="container">
           <div class="navtoggle" id="myNavtoggle">
@@ -31,10 +32,35 @@
             <a tabindex="0" onkeydown="sideNavToggle()" onclick="sideNavToggle()" class="project-nav-bars"><i class="fa-solid fa-bars"></i></a>
           </div>
         </div>
+      </header> -->
+
+      <header id="top" class="project-header">
+        <div class="container">
+          <div class="text-block">
+            <div>
+              <nav class="main-nav">
+                <ul>
+                  <li>
+                    <a href="./index.html"><span class=""><i class="fa-solid fa-arrow-left"></i></span></a>
+                  </li>
+                  <li>
+                    <a
+                      tabindex="0"
+                      onkeydown="sideNavToggle()"
+                      onclick="sideNavToggle()"
+                      class="project-nav-bars"
+                      ><i class="fa-solid fa-bars"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </header>
 
       <main class="project-main">
-        <div id="sub-header">
+        <div id="nav-drawer">
 
           <div id="mySideNav" class="sidenav-closed">
             <ul class="table-contents">
@@ -50,7 +76,7 @@
                 <h4>Contents</h4>
               </li>
               <li >
-                <a href="#sub-header" onclick="sideNavToggle()">Overview</a>
+                <a href="#nav-drawer" onclick="sideNavToggle()">Overview</a>
               </li>
               <li >
                 <a href="#site-goals" onclick="sideNavToggle()">Goals</a>
