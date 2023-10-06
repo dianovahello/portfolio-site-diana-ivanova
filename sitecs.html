@@ -24,7 +24,7 @@
 
   <body id="sitecs" class="body-background">
     <div class="wrapper">
-<!--       
+      <!--       
       <header id="top">
         <div class="container">
           <div class="navtoggle" id="myNavtoggle">
@@ -41,7 +41,10 @@
               <nav class="main-nav">
                 <ul>
                   <li>
-                    <a href="./index.html"><span class=""><i class="fa-solid fa-arrow-left"></i></span></a>
+                    <a href="./index.html"
+                      ><span class=""
+                        ><i class="fa-solid fa-arrow-left"></i></span
+                    ></a>
                   </li>
                   <li>
                     <a
@@ -61,7 +64,6 @@
 
       <main class="project-main">
         <div id="nav-drawer">
-
           <div id="mySideNav" class="sidenav-closed">
             <ul class="table-contents">
               <li>
@@ -73,243 +75,230 @@
                 ></a>
               </li>
               <li>
-                <h4>Contents</h4>
+                <h4>Project</h4>
               </li>
-              <li >
+              <li>
                 <a href="#nav-drawer" onclick="sideNavToggle()">Overview</a>
               </li>
-              <li >
+              <li>
                 <a href="#site-goals" onclick="sideNavToggle()">Goals</a>
               </li>
-              <li >
+              <li>
                 <a href="#site-process" onclick="sideNavToggle()">Process</a>
               </li>
-
-              <li class="hidden">
-                <a
-                  href="#site-discover"
-                  onclick="sideNavToggle()"
-                  class="sub-item"
-                >
-                  discover</a
+              <li>
+                <a href="#site-takeaway" onclick="sideNavToggle()"
+                  >Next steps</a
                 >
               </li>
-              <li class="hidden">
-                <a
-                  href="#site-define"
-                  onclick="sideNavToggle()"
-                  class="sub-item"
-                >
-                  define</a
-                >
+              <li>
+                <h4>More</h4>
               </li>
-              <li class="hidden">
-                <a
-                  href="#site-develop"
-                  onclick="sideNavToggle()"
-                  class="sub-item"
-                >
-                  develop</a
-                >
+              <li>
+                <a href="./index.html" onclick="sideNavToggle()">work</a>
               </li>
-
-              <li class="hidden">
-                <a
-                  href="#site-deliver"
-                  onclick="sideNavToggle()"
-                  class="sub-item"
-                >
-                  deliver</a
-                >
+              <li>
+                <a href="./about.html" onclick="sideNavToggle()">about</a>
               </li>
-              <li >
-                <a href="#site-takeaway" onclick="sideNavToggle()">Next steps</a>
+              <li>
+                <a href="#contact" onclick="sideNavToggle()">contact</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <section class="project-section-home" id="site-home">
+        <section id="hero">
           <div class="container">
-            <h1>
-              Project Case Study
-              <span class="sub-span"
-                >designing and building a portfolio website</span
-              >
-            </h1>
-
             <div class="text-block">
               <a
                 data-fancybox=""
-                href="img/site/@2x/site-img9-min.png"
+                href="img/site/@2x/sitecs-hero-min.png"
                 data-caption=""
                 class="img-link"
               >
-                <img src="img/site/@2x/site-img9-min.png" alt="mockup" />
+                <img src="img/site/@2x/sitecs-hero-min.png" alt="mockup" />
               </a>
+              <h1>
+                <span class="sub-span bold-span">Portfolio website</span>
+                <span class="sub-span">
+                  Designing a portfolio website to house diverse projects in a
+                  harmonious, scannable format.
+                </span>
+              </h1>
             </div>
+          </div>
+        </section>
 
-            <div class="row">
-              <div class="text-block">
-                <h2 id="sitecs-overview">Overview</h2>
+        <section class="project-section overview" id="site-home">
+          <div class="container">
+            <div class="text-block">
+              <div class="row" id="sitecs-overview">
+                <h2 id="">Project overview</h2>
                 <p>
-                  In this project I aimed to create an impactful portfolio site
-                  that would showcase my UX/UI skills while maintaining a unique
-                  personality. The primary challenge was organizing diverse
-                  projects effectively for design professionals and hiring
-                  managers. The result was a polished, responsive website that
-                  seamlessly navigates users through my work and highlights my
-                  proficiency as both a designer and front-end developer.
+                  <span class="bold-span">This project aimed</span> to create an
+                  impactful portfolio site that would showcase my product design
+                  skills while maintaining a unique personality.
+                  <span class="bold-span">The primary challenge </span>was
+                  organizing diverse projects effectively for design
+                  professionals and hiring managers.
+                  <span class="bold-span">The result </span>was a polished,
+                  responsive website that seamlessly navigates users through my
+                  work and highlights my proficiency as both a designer and
+                  front-end developer.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section >
+        <section class="project-section">
           <div class="container">
-            <div class="row goals">
+            <div class="row">
               <div class="text-block">
-                <h2 id="site-goals">Goals and constraints</h2>
-                <h3>Project goals</h3>
-                <p>
-                  Craft a portfolio site to showcase my UX/UI skills and reflect
-                  my personal style. Cater to design professionals, presenting a
-                  range of projects effectively.
-                </p>
+                <h2 id="site-goals">Goals</h2>
+                <ol class="numberless">
+                  <li>
+                    <p>
+                      1. Design and develop a portfolio site to showcase my
+                      skills in product design and reflect my personal style.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      2. Cater to design professionals and recruiters,
+                      presenting a range of projects in a clear, effective, and
+                      scannable way.
+                    </p>
+                  </li>
+                </ol>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="row" id="site-constraints">
-              <div class="text-block">
-                <h3 id="sitecs-constraints" class="hidden">Constraints</h3>
-
-                <div id="constraints-flex">
-                  <div class="col-lg-6 col-md-6 constraints-flex">
-                    <h4>Role</h4>
-                    <span>UX/UI designer and Front-end developer</span>
-                  </div>
-                  <div class="col-lg-6 col-md-6 constraints-flex">
-                    <h4>Timeframe</h4>
-                    <span>7 weeks design and development</span>
-                  </div>
-                  <div class="col-lg-6 col-md-6 constraints-flex">
-                    <h4>Language</h4>
-                    <span>HTML, CSS, and JavaScript</span>
-                  </div>
-                  <div class="col-lg-6 col-md-6 constraints-flex">
-                    <h4>Tools</h4>
-                    <span>Pencil, Figma, VS Code, GitHub</span>
-                  </div>
+        <section class="project-section constraints">
+          <div class="container">
+            <div class="text-block">
+              <h2 id="site-constraints" class="hidden">Constraints</h2>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 constraints-flex-img">
+                  <h3><span class="sub-span bold-span">My role</span></h3>
+                  <span>UX designer and front-end developer</span>
+                </div>
+                <div class="col-lg-6 col-md-6 constraints-flex-img">
+                  <h3><span class="sub-span bold-span">Timeframe</span></h3>
+                  <span>7 weeks design and development</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 constraints-flex-img">
+                  <h3><span class="sub-span bold-span">Tools</span></h3>
+                  <span>Pencil, Figma, VS Code, GitHub</span>
+                </div>
+                <div class="col-lg-6 col-md-6 constraints-flex-img">
+                  <h3><span class="sub-span bold-span">Language</span></h3>
+                  <span>HTML, CSS, and JavaScript</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="site-process">
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h2 id="site-process">Process</h2>
-                <div class="col-md-6 col-lg-6">
-                  <p>
-                    I used a double diamond framework for this process, which is
-                    characterized by alternating periods of gathering input to
-                    create possibilities (opening up) and narrowing them down by
-                    making decisions to eliminate ineffective solutions (closing
-                    in).
-                  </p>
-                </div>
-
-                <div class="col-md-6 col-lg-6">
-                  <figure>
-                    <a
-                      data-fancybox=""
-                      href="img/site/@2x/site-img4-min.png"
-                      data-caption=""
-                      class="img-link"
+                <h2 id="site-process">Design process</h2>
+                <p>
+                  I used a double diamond framework for this process, which is
+                  characterized by alternating periods of gathering input to
+                  create possibilities (opening up) and narrowing them down by
+                  making decisions to eliminate ineffective solutions (closing
+                  in). This gives rise to four alternating phases:
+                  <span class="bold-span"
+                    >Discover, Define, Develop, Deliver.</span
+                  >
+                </p>
+                <figure>
+                  <a
+                    data-fancybox=""
+                    href="img/site/@2x/site-img4-min.png"
+                    data-caption=""
+                    class="img-link"
+                  >
+                    <img
+                      src="img/site/@2x/site-img4-min.png"
+                      alt="double diamond process image"
+                    />
+                  </a>
+                  <figcaption>
+                    The Double Diamond by the
+                    <a href="https://www.designcouncil.org.uk/" target="_blank"
+                      >Design Council</a
                     >
-                      <img
-                        src="img/site/@2x/site-img4-min.png"
-                        alt="double diamond  figure  with caption"
-                      />
-                    </a>
-                    <figcaption>
-                      The Double Diamond by the
-                      <a
-                        href="https://www.designcouncil.org.uk/"
-                        target="_blank"
-                        >Design Council</a
-                      >
-                      is licensed under a
-                      <a
-                        href="https://creativecommons.org/licenses/by/4.0/"
-                        target="_blank"
-                        >CC BY 4.0 license.</a
-                      >
-                    </figcaption>
-                  </figure>
-                </div>
+                    is licensed under a
+                    <a
+                      href="https://creativecommons.org/licenses/by/4.0/"
+                      target="_blank"
+                      >CC BY 4.0 license.</a
+                    >
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section >
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
                 <h3 id="site-discover">Discover</h3>
-                <div class="col-md-6 col-lg-6">
-                  <p>
-                    In the initial stage, I delved into understanding my own
-                    goals and user expectations. I analyzed the preferences of
-                    design professionals and hiring managers using primary and
-                    secondary research on available platforms like LinkedIn,
-                    Medium, Behance. I identified the need to emphasize both my
-                    skills and unique identity.
-                  </p>
-                </div>
+                <p>
+                  In the initial stage, I delved into understanding my own goals
+                  and user expectations. I analyzed the preferences of design
+                  professionals and hiring managers using primary and secondary
+                  research on available platforms like LinkedIn, Medium,
+                  Behance. I identified the need to emphasize both my skills and
+                  unique identity while telling a story and ensuring content is
+                  concise and scannable.
+                </p>
 
-                <div class="col-md-6 col-lg-6">
-                  <figure>
-                    <a
-                      data-fancybox=""
-                      href="img/site/@2x/site-img12-min.png"
-                      data-caption=""
-                      class="img-link"
-                    >
-                      <img
-                        src="img/site/@2x/site-img12-min.png"
-                        alt="Medium articles proposing advice about junior UX portfolios"
-                      />
-                    </a>
-                    <figcaption></figcaption>
-                  </figure>
-                </div>
+                <figure>
+                  <figcaption>UX portfolio advice on Medium</figcaption>
+                  <a
+                    data-fancybox=""
+                    href="img/site/@2x/site-img12-min.png"
+                    data-caption=""
+                    class="img-link"
+                  >
+                    <img
+                      src="img/site/@2x/site-img12-min.png"
+                      alt="Medium articles proposing advice about junior UX portfolios"
+                    />
+                  </a>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="sub-section">
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
                 <h3 id="site-define">Define</h3>
-                <div class="col-md-6 col-lg-6">
-                  <p>
-                    With a clearer vision, I defined the site&#39;s structure
-                    and content. I established major sections for Work, Contact,
-                    and an About section. Within the Work section I would define
-                    space for UX/UI projects, conceptual art work, and my
-                    textile design initiative. This phase allowed me to outline
-                    the user journey and tailor the design accordingly.
-                  </p>
-                </div>
+                <p>
+                  With a clearer vision, I defined the site&#39;s structure and
+                  content. I established major sections for Work, Contact, and
+                  an About section. Within the Work section I would define space
+                  for UX/UI projects, conceptual art work, and my textile design
+                  initiative. This phase allowed me to outline the user journey
+                  and tailor the design accordingly.
+                </p>
 
-                <div class="col-md-6 col-lg-6">
+                <figure>
+                  <figcaption>User flow sketch</figcaption>
                   <a
                     data-fancybox=""
                     href="img/site/@2x/site-uflow-sketch-min.png"
@@ -321,29 +310,28 @@
                       alt="user flow sketch"
                     />
                   </a>
-                </div>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section >
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
                 <h3 id="site-develop">Develop</h3>
-                <div class="col-md-6 col-lg-6">
-                  <p>
-                    I embraced a mobile-first approach from the outset. I
-                    accounted for 4 breakpoints: min-width 320px, 640px, 1024px,
-                    and 1200px. This allowed me to create a smooth experience
-                    across various devices. When the Home page was laid out with
-                    navigation and basic mockups of the About page and 1 Project
-                    page, I conducted usability testing.
-                  </p>
-                </div>
+                <p>
+                  I embraced a mobile-first approach from the outset. I
+                  accounted for 4 breakpoints: min-width 320px, 640px, 1024px,
+                  and 1200px. This allowed me to create a smooth experience
+                  across various devices. When the Home page was laid out with
+                  navigation and basic mockups of the About page and 1 Project
+                  page, I conducted usability testing.
+                </p>
 
-                <div class="col-md-6 col-lg-6">
+                <figure>
+                  <figcaption>Early responsive screens</figcaption>
                   <a
                     data-fancybox=""
                     href="img/site/@2x/site-img2-min.png"
@@ -355,89 +343,83 @@
                       alt="A mockup showing the Home page across 4 breakpoints"
                     />
                   </a>
-                </div>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section>
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
                 <h4>User Testing and Iteration</h4>
-                <div class="col-md-6 col-lg-6">
-                  <p>
-                    I recruited 5 participants and ran tests face to face on a
-                    variety of devices. Participants were given a starting
-                    situation and a number of tasks to complete, followed by two
-                    or three open-ended questions. Incorporating key feedback
-                    from testing, I refined the design in a second iteration,
-                    enhancing the clarity and visual appeal of the site.
-                  </p>
-                </div>
+                <p>
+                  I recruited 5 participants and ran tests face to face on a
+                  variety of devices. Participants were given a starting
+                  situation and a number of tasks to complete, followed by two
+                  or three open-ended questions. Incorporating key feedback from
+                  testing, I refined the design in a second iteration, enhancing
+                  the clarity and visual appeal of the site.
+                </p>
 
-                <div class="col-md-6 col-lg-6">
-                  <figure>
-                    <a
-                      data-fancybox=""
-                      href="img/site/@2x/site-img7-min.png"
-                      data-caption=""
-                      class="img-link"
-                    >
-                      <img
-                        src="img/site/@2x/site-img7-min.png"
-                        alt="usability report"
-                      />
-                    </a>
-                    <figcaption>Usability report</figcaption>
-                  </figure>
-                </div>
+                <figure>
+                  <figcaption>
+                    Usability report showing ratings and action
+                  </figcaption>
+                  <a
+                    data-fancybox=""
+                    href="img/site/@2x/site-img7-min.png"
+                    data-caption=""
+                    class="img-link"
+                  >
+                    <img
+                      src="img/site/@2x/site-img7-min.png"
+                      alt="usability report"
+                    />
+                  </a>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section >
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
-                <h4>Interactive elements</h4>
-                <div class="col-md-6 col-lg-6">
-                  <p>
-                    I used JavaScript to add interactivity notably enhancing
-                    navigation. At the XS breakpoint, the nav bar collapses into
-                    a hamburger menu to conserve whitespace and good readability
-                    of the links. Smooth scrolling guides users to the footer,
-                    which is where my contact information is found. To enhance
-                    navigation within case studies, I introduced a slide-out
-                    drawer menu with a table of contents. This lets users skipt
-                    to different sections, providing flexibility in exploring
-                    case study content.
-                  </p>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                  <figure>
-                    <a
-                      data-fancybox=""
-                      href="img/site/@2x/site-img8-min.png"
-                      data-caption=""
-                      class="img-link"
-                    >
-                      <img
-                        src="img/site/@2x/site-img8-min.png"
-                        alt="screenshots of mobile devices showing a hamburger menu and in-project table of contents drawer"
-                      />
-                    </a>
-                    <figcaption></figcaption>
-                  </figure>
-                </div>
+                <h4>Interactivity</h4>
+                <p>
+                  I used JavaScript to add interactivity notably enhancing
+                  navigation. At the XS breakpoint, the nav bar collapses into a
+                  hamburger menu to conserve whitespace and good readability of
+                  the links. Smooth scrolling guides users to the footer, which
+                  is where my contact information is found. To enhance
+                  navigation within case studies, I introduced a slide-out
+                  drawer menu with a table of contents. This lets users skip to
+                  different sections, providing flexibility in exploring case
+                  study content.
+                </p>
+                <figure>
+                  <figcaption>Slide-out table of contents</figcaption>
+                  <a
+                    data-fancybox=""
+                    href="img/site/@2x/site-img8-min.png"
+                    data-caption=""
+                    class="img-link"
+                  >
+                    <img
+                      src="img/site/@2x/site-img8-min.png"
+                      alt="screenshots of mobile devices showing a hamburger menu and in-project table of contents drawer"
+                    />
+                  </a>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section >
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
@@ -454,51 +436,51 @@
           </div>
         </section>
 
-        <section >
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
                 <h4>
                   Code validation, cross-browser testing and accessibility
                 </h4>
-                <div class="col-md-6 col-lg-6">
-                  <p>
-                    During this phase I thoroughly assessed the validity of my
-                    code using VS Code plugins and online validators. I
-                    conducted comprehensive cross-browser testing, examining the
-                    website&#39;s behavior and appearance on various platforms
-                    and browsers. I enhanced the keyboard accessibility of the
-                    side navigation drawer and ensure that focus outlines were
-                    consistent and accessible where needed. Finally, I evaluated
-                    color contrasts to ensure adherence to WCAG AA and AAA
-                    standards, prioritizing accessibility and readability for
-                    all users.
-                  </p>
-                </div>
-
-                <div class="col-md-6 col-lg-6">
-
-                  <figure>
-                    <a data-fancybox="" href="img/site/@2x/site-img6-min.png" data-caption=""
-                      class="img-link">
-                      <img src="img/site/@2x/site-img6-min.png"
-                        alt="chart describing the needs and pain points of target users" />
-                    </a>
-                    <figcaption>Cross-browser testing report, pg. 2</figcaption>
-                  </figure>
-
-                </div>
+                <p>
+                  During this phase I thoroughly assessed the validity of my
+                  code using VS Code plugins and online validators. I conducted
+                  comprehensive cross-browser testing, examining the
+                  website&#39;s behavior and appearance on various platforms and
+                  browsers. I enhanced the keyboard accessibility of the side
+                  navigation drawer and ensure that focus outlines were
+                  consistent and accessible where needed. Finally, I evaluated
+                  color contrasts to ensure adherence to WCAG AA and AAA
+                  standards, prioritizing accessibility and readability for all
+                  users.
+                </p>
+                <figure>
+                  <figcaption>
+                    Sample page, cross-browser testing report
+                  </figcaption>
+                  <a
+                    data-fancybox=""
+                    href="img/site/@2x/site-img6-min.png"
+                    data-caption=""
+                    class="img-link"
+                  >
+                    <img
+                      src="img/site/@2x/site-img6-min.png"
+                      alt="chart describing the needs and pain points of target users"
+                    />
+                  </a>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section >
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
                 <h2 id="site-takeaway">Challenges, learnings and next steps</h2>
-
                 <h3 id="challenges-solutions">Challenges and solutions</h3>
                 <ol class="numberless">
                   <li>
@@ -536,19 +518,26 @@
                     </p>
                   </li>
                 </ol>
-                <div class="col-md-6 col-lg-6 hidden">
-                  <img
-                    src="img/site/@2x/site-img11-min.png"
-                    alt="skateboarder holding a mobile device showing the home page"
-                    class="in-section-img"
-                  />
-                </div>
+                <figure>
+                  <figcaption>Early mockup of the home page</figcaption>
+                  <a
+                    data-fancybox=""
+                    href="img/site/@2x/site-img11-min.png"
+                    data-caption=""
+                    class="img-link"
+                  >
+                    <img
+                      src="img/site/@2x/site-img11-min.png"
+                      alt="skateboarder holding a mobile device showing the home page"
+                    />
+                  </a>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        <section >
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
@@ -590,37 +579,38 @@
           </div>
         </section>
 
-        <section >
+        <section class="project-section site-process">
           <div class="container">
             <div class="row">
               <div class="text-block">
                 <h3>Next Steps</h3>
                 <ol class="numberless">
                   <li>
+                    <span class="bold-span">1. Images</span>
                     <p>
-                      1. Implement a shadowbox effect for enlarged image
-                      viewing.
+                      Implement a shadowbox effect for enlarged image viewing
+                      and galleries.
                     </p>
                   </li>
                   <li>
-                    <p>2. Add case study pages for remaining projects.</p>
-                  </li>
-                  <li>
+                    <span class="bold-span">2. Content</span>
                     <p>
-                      3. Populate the "more information" sections of art
-                      projects.
+                      Add case study pages for remaining projects. Populate the
+                      "more information" sections of art projects.
                     </p>
                   </li>
                   <li>
+                    <span class="bold-span">3. Loading time</span>
                     <p>
-                      4. Focus on understanding and improving loading time to
-                      enhance user experience.
+                      4. Assess and improve loading time factors to ensure
+                      optimal experience across devices and connection speeds.
                     </p>
                   </li>
                   <li>
+                    <span class="bold-span">3. Test and iterate</span>
                     <p>
-                      5. Conduct user testing and accessibility audit to
-                      validate new changes.
+                      Seek out feedback and testing to validate new changes.
+                      Conduct accessibility audit of new changes.
                     </p>
                   </li>
                 </ol>
@@ -629,12 +619,15 @@
           </div>
         </section>
 
-        <section  id="sitecs-thanks">
+        <section class="project-section thankyou-section" id="wb-thanks">
           <div class="container">
-            <h3>Thank you for reading</h3>
-            <span class="sub-span"
-              >Thoughts? Feedback? Ideas? My inbox is ready.</span
-            >
+            <div class="text-block">
+              <h3>Thank you for reading!</h3>
+              <a href="./wb.html"
+                >Next: designing an online store for a luxury tea company with a
+                mission. <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
         </section>
       </main>

@@ -34,7 +34,7 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 0;
+  margin: 16px 0;
   text-align: center;
 }
 
@@ -74,7 +74,69 @@ h4 {
   font-weight: 400;
 }
 
+/* Styling for text */
 
+p {
+  margin: 0;
+}
+
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
+/* Styling for lists */
+ul,
+ol {
+  margin: 0;
+}
+
+.padded-list {
+  margin: 16px 0;
+}
+
+.padded-list-top {
+  margin: 16px 0 0 0;
+}
+
+.numberless {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.numberless li:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.numberless li:last-child {
+  padding: 0;
+}
+
+.numberless p {
+  margin: 0;
+}
+
+.constraints {
+  margin: 0 0 16px 0;
+}
+
+/* Styling for fig figure figcaption 320px */
+
+figure {
+  max-width: 80%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+figure > a > img {
+margin: 4px 0;
+}
+
+figcaption,
+figcaption a {
+  font-size: 14px;
+  color: rgba(8, 8, 8, 0.8);
+  text-align: center;
+}
 
 /* styling for links */
 
@@ -125,6 +187,7 @@ i {
 .social-links > ul {
   list-style-type: none;
   padding: 0;
+  margin: 1em 0;
 }
 
 .social-links > ul > li {
@@ -487,13 +550,8 @@ nav ul li a {
   border: 2px solid #fc48ff;
 }
 
-.buttons-group {
-  margin: 1em 0;
-}
 
-
-
-/* Styling for images */
+/* Styling for images img */
 
 img {
   width: 100%;
@@ -501,6 +559,14 @@ img {
 
 .project-img {
   max-width: 600px;
+}
+
+.img-margin {
+  margin: 16px 0;
+}
+
+.img-margin-top {
+  margin: 16px 0 0 0;
 }
 
 
@@ -514,7 +580,7 @@ img {
 .flex-container {
   display: flex;
   width: 100%;
-  padding: 8px 0;
+  margin: 16px 0;
   align-items: center;
   justify-content: center;
 }
@@ -546,12 +612,18 @@ main {
 #hero {
   display: inline-block;
   background-color: #fbfbfb;
-  padding: 0 0 16px 0;
+  padding: 0;
   width: 100%;
 }
 
 #hero .bold-span {
   padding: 8px 0;
+}
+
+#hero h1 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 @keyframes hero-color {
@@ -572,11 +644,6 @@ main {
   100% {
     background-color: rgba(71, 240, 255, 0.1);
   }
-}
-
-#hero h1 {
-  padding: 0;
-  text-align: left;
 }
 
 .hello-animate {
@@ -612,10 +679,6 @@ main {
   text-align: center;
 }
 
-#work p {
-  margin-top: 0;
-}
-
 #work H3 {
   margin: 16px 0;
 }
@@ -625,10 +688,6 @@ main {
 }
 
 /* styling for thank you section in project page */
-
-.thankyou-section {
-  text-align: center;
-}
 
 /* styling for footer */
 
@@ -655,7 +714,7 @@ footer {
 /* Styling for project pages*/
 
 .project-section {
-  padding: 0 0 16px 0;
+  padding: 0;
 }
 
 .project-section h3:focus {
@@ -666,27 +725,8 @@ footer {
   padding-top: 56px;
 }
 
-.project-main h1,
-.project-main h2,
-.project-main h3 {
-  margin: 16px 0;
-}
-
 .img-section {
   padding-top: 32px;
-}
-
-/* Styling for fig tag 320px */
-
-#sitecs figure img {
-  padding: 8px 16px 0 16px;
-}
-
-figcaption,
-figcaption a {
-  font-size: 16px;
-  color: rgba(8, 8, 8, 0.8);
-  text-align: right;
 }
 
 /* Styling for Portfolio site case study 320px */
@@ -709,42 +749,6 @@ figcaption a {
   width: 100%;
   text-align: center;
   padding: 0 20px;
-}
-
-/* Lists */
-
-.numberless {
-  margin: 8px 0 0 0;
-  padding-left: 16px;
-  list-style-type: none;
-}
-
-.numberless li:not(:last-child) {
-  padding-bottom: 16px;
-}
-
-.numberless li:last-child {
-  padding: 0;
-}
-
-.numberless p {
-  margin: 0;
-}
-
-/* sitecs fig tag 320px */
-#sitecs figure {
-  margin: 0;
-}
-
-#sitecs figure img {
-  padding: 8px 16px 16px 16px;
-}
-
-figcaption,
-figcaption a {
-  font-size: 14px;
-  color: rgba(8, 8, 8, 0.8);
-  text-align: right;
 }
 
 /* sitecs logo list 320px */
@@ -780,13 +784,6 @@ figcaption a {
   padding: 8px 0;
 }
 
-/* Styling for Wild Bloom, body id="wb" */
-
-#wb h2,
-#wb h3 {
-  margin-top:0;
-}
-
 /* Styling for About page */
 
 #about-me h2 {
@@ -806,8 +803,8 @@ figcaption a {
 }
 
 #skills-and-tools ul {
-  padding: 8px 0 8px 16px;
-  list-style-type: disc;
+  padding: 0;
+  list-style-type: none;
   margin: 0;
 }
 
@@ -996,34 +993,9 @@ figcaption a {
     margin: auto;
   }
 
-  /* Styling for About page 640px min viewport */
-
-  #about-blurb {
-    width: 75%;
-  }
-
-  #cropped-img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: auto;
-  }
-
-
-  /* Styling for Wild Bloom, body id="wb" 640px min viewport */
-
-#wb h2,
-#wb h3 {
-  margin-top: 16px;
-}
-
-
   /* Styling for portfolio site case study page med 640px */
 
   @media only screen and (min-width: 640px) {
-    #sitecs h1 {
-      margin: 16px 0 32px 0;
-    }
 
     #constraints-flex {
       display: flex;
@@ -1047,15 +1019,6 @@ figcaption a {
       margin-left: auto;
       margin-right: auto;
       max-width: 400px;
-    }
-
-    #sitecs figure {
-      max-width: 400px;
-      margin: auto;
-    }
-
-    #sitecs figure img {
-      padding: 1em;
     }
 
     /* Styling for Under Construction page 640px min viewport */
@@ -1087,12 +1050,16 @@ figcaption a {
       padding: 0;
     }
 
+    .constraints {
+      margin: 16px 0 32px 0;
+    }
+
     .constraints-flex-img {
       width: 100%;
       text-align: center;
       padding: 0 20px;
     }
-
+    
     .col-lg-3 {
       width: 25%;
     }
@@ -1198,20 +1165,6 @@ figcaption a {
       margin-top: 40px;
     }
 
-    /* Styling for Portfolio site case study lg 1024px */
-
-    #sitecs .col-lg-6 {
-      width: 100%;
-    }
-
-    #site-constraints .constraints-flex {
-      width: 50%;
-    }
-
-    #sitecs h1,
-    #sitecs h2 {
-      margin: 24px 0;
-    }
   }
 
   @media only screen and (min-width: 1440px) {
