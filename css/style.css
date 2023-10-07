@@ -1,12 +1,17 @@
-/*
+/*4);
 
 Colors used:
 
 white: #fbfbfb; rgba(251, 251, 251, 0.5)
+
 black footer: #080808; rgba(8, 8, 8, 0.9)
 black text: rgba(23, 27, 39, 0.9);
+button border: rgba(8, 8, 8, 0.5);
 
-light grey: #E4E5E6; rgba(23, 27, 39, 0.1);
+light grey:
+subtle text, i.e. figcaption: rgba(23, 27, 39, 0.7);
+active element bacground: rgba(23, 27, 39, 0.04);
+box shadow: rgba(23, 27, 39, 0.1);
 
 accent/pink: rgba(252, 72, 255, 0.1) 
 accent/blue:  rgba(71, 240, 255, 0.2);
@@ -84,6 +89,7 @@ p {
   margin-bottom: 1em;
 }
 
+
 /* Styling for lists */
 ul,
 ol {
@@ -134,7 +140,7 @@ margin: 4px 0;
 figcaption,
 figcaption a {
   font-size: 14px;
-  color: rgba(8, 8, 8, 0.8);
+  color: rgba(23, 27, 39, 0.7);
   text-align: center;
 }
 
@@ -255,7 +261,7 @@ nav ul li a {
 
 .main-nav > ul > li > a {
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 8px 16px; 
   transition: 0.2s;
   font-size: 20px;
   margin: 0;
@@ -273,6 +279,7 @@ nav ul li a {
 
 .main-nav > ul > li > a.nav-button-active {
   color: #fbfbfb;
+  font-weight: 350;
   background-color: rgba(23, 27, 39, 0.9);
   outline: none;
 }
@@ -318,6 +325,13 @@ nav ul li a {
 
 .project-header > div > div > div > nav > ul > li > a {
   padding: 8px;
+}
+
+.project-header > div > div > div > nav > ul > li > a > span {
+  padding: 0 0 0 8px;
+  font-weight: 400;
+  font-size: 1em;
+  color:rgba(23, 27, 39, 0.5)
 }
 
 
@@ -392,7 +406,7 @@ nav ul li a {
 }
 
 .sidenav a:hover {
-  background-color: #e4e5e6;
+  background-color: rgba(23, 27, 39, 0.1);
 }
 
 /* styling for close button */
@@ -469,7 +483,7 @@ nav ul li a {
 .button:visited {
   display: inline-block;
   width: 100%;
-  background-color: rgba(23, 27, 39, 0.05);
+  background-color: rgba(23, 27, 39, 0.04);
   color: rgba(23, 27, 39, 0.9);
   font-weight: 400;
   text-decoration: none;
@@ -510,7 +524,7 @@ nav ul li a {
 .button-contact:visited {
   display: inline-block;
   width: 100%;
-  background-color: rgba(8, 8, 8, 0.5);
+  background-color: rgba(23, 27, 39, 0.9);
   color: #fbfbfb;
   font-weight: 600;
   text-decoration: none;
@@ -650,10 +664,6 @@ main {
   animation: 4s hero-color infinite alternate linear;
 }
 
-#hero > div > h1 > span.hello-animate {
-  background: rgba(23, 27, 39, 0.9);
-}
-
 .body-background {
   animation: 4s body-background infinite alternate linear;
 }
@@ -695,7 +705,7 @@ footer {
   text-align: center;
   color: #fbfbfb;
   padding: 24px 0 80px 0;
-  background-color: rgba(8, 8, 8, 0.9);
+  background-color: rgba(23, 27, 39, 0.9);
 }
 
 /* styling for col- */
@@ -782,6 +792,10 @@ footer {
 
 #zen .project-section {
   padding: 8px 0;
+}
+
+#wb-home > div > div > div > div:nth-child(6) {
+  margin-bottom: 0;
 }
 
 /* Styling for About page */
