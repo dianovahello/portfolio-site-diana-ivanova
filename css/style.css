@@ -308,7 +308,7 @@ nav ul li a {
 .navtoggle-responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #e4e5e6;
+  border-top: 1px solid rgba(23, 27, 39, 0.1);
 }
 
 .navtoggle-responsive li:last-child {
@@ -331,7 +331,7 @@ nav ul li a {
   padding: 0 0 0 8px;
   font-weight: 400;
   font-size: 1em;
-  color:rgba(23, 27, 39, 0.5)
+  /* color:rgba(23, 27, 39, 0.5) */
 }
 
 
@@ -395,6 +395,7 @@ nav ul li a {
 .table-contents h4 {
   text-align: unset;
   padding: 8px 8px 8px 24px;
+  margin: 0;
 }
 
 .table-contents a {
@@ -403,6 +404,15 @@ nav ul li a {
   font-size: 18px;
   padding: 8px 8px 8px 24px;
   border-radius: 0;
+}
+
+.menu-item-last {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(23, 27, 39, 0.1);;
+}
+
+.menu-item-first {
+  padding-top: 16px;
 }
 
 .sidenav a:hover {
@@ -418,6 +428,7 @@ nav ul li a {
   padding: 8px 16px;
   border-bottom: none;
   font-size: 20px;
+  border-radius: 0 0 0 40px;
 }
 
 
@@ -491,14 +502,14 @@ nav ul li a {
   border: 2px solid rgba(8, 8, 8, 0.5);
   text-align: center;
   border-radius: 40px;
-  transition: 0.2s color;
+  transition: 0.4s color;
 }
 
 .button-secondary,
 .button-secondary:visited {
   display: inline-block;
   width: 100%;
-  background-color: #e4e5e6;
+  background-color: rgba(23, 27, 39, 0.1);;
   color: rgba(23, 27, 39, 0.9);
   font-weight: 400;
   text-decoration: none;
@@ -636,9 +647,10 @@ main {
 
 #hero h1 {
   padding: 0;
-  margin: 0;
+  margin: 24px 0;
   text-align: left;
 }
+
 
 @keyframes hero-color {
   0% {
