@@ -4,7 +4,6 @@ Colors used:
 
 white: #fbfbfb; rgba(251, 251, 251, 0.5)
 
-black footer: #080808; rgba(8, 8, 8, 0.9)
 black text: rgba(23, 27, 39, 0.9);
 button border: rgba(8, 8, 8, 0.5);
 
@@ -133,8 +132,8 @@ figure {
   padding: 1em 0;
 }
 
-figure > a > img {
-margin: 4px 0;
+figure>a>img {
+  margin: 4px 0;
 }
 
 figcaption,
@@ -190,13 +189,13 @@ i {
   width: 100%;
 }
 
-.social-links > ul {
+.social-links>ul {
   list-style-type: none;
   padding: 0;
   margin: 1em 0;
 }
 
-.social-links > ul > li {
+.social-links>ul>li {
   display: inline-block;
   padding: 0 8px;
 }
@@ -212,11 +211,11 @@ i {
   text-decoration: none;
 }
 
-.fa-arrow-right{
+.fa-arrow-right {
   padding-left: 8px;
 }
 
-.fa-arrow-left{
+.fa-arrow-left {
   padding-right: 8px;
 }
 
@@ -234,8 +233,8 @@ header {
 }
 
 header .fa-bars,
-#myNavtoggle > a.project-nav-bars,
-#myNavtoggle > nav > ul > li:nth-child(4) > a {
+#myNavtoggle>a.project-nav-bars,
+#myNavtoggle>nav>ul>li:nth-child(4)>a {
   /* position: absolute;
   top: 0;
   right: 0;
@@ -248,7 +247,7 @@ header .fa-bars,
 
 /* styling for main nav navigation in header */
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 4px 0 4px 0;
@@ -259,25 +258,25 @@ nav ul li a {
   border-radius: 24px;
 }
 
-.main-nav > ul > li > a {
+.main-nav>ul>li>a {
   cursor: pointer;
-  padding: 8px 16px; 
+  padding: 8px 16px;
   transition: 0.2s;
   font-size: 20px;
   margin: 0;
 }
 
-.main-nav > ul > li > a:focus,
-.main-nav > ul > li > a:hover {
+.main-nav>ul>li>a:focus,
+.main-nav>ul>li>a:hover {
   background-color: rgba(23, 27, 39, 0.05);
 }
 
-.main-nav > ul > li > a:focus {
+.main-nav>ul>li>a:focus {
   outline: none;
   border: none;
 }
 
-.main-nav > ul > li > a.nav-button-active {
+.main-nav>ul>li>a.nav-button-active {
   color: #fbfbfb;
   font-weight: 350;
   background-color: rgba(23, 27, 39, 0.9);
@@ -292,7 +291,7 @@ nav ul li a {
 }
 
 .navtoggle li:last-child a {
-  padding-left: 0; 
+  padding-left: 0;
 }
 
 .navtoggle,
@@ -319,15 +318,15 @@ nav ul li a {
 
 /* styling for main nav in project pages */
 
-.project-header > div > div > div > nav > ul > li {
-  display:inline-block;
+.project-header>div>div>div>nav>ul>li {
+  display: inline-block;
 }
 
-.project-header > div > div > div > nav > ul > li > a {
+.project-header>div>div>div>nav>ul>li>a {
   padding: 8px;
 }
 
-.project-header > div > div > div > nav > ul > li > a > span {
+.project-header>div>div>div>nav>ul>li>a>span {
   padding: 0 0 0 8px;
   font-weight: 400;
   font-size: 1em;
@@ -408,7 +407,8 @@ nav ul li a {
 
 .menu-item-last {
   padding-bottom: 16px;
-  border-bottom: 1px solid rgba(23, 27, 39, 0.1);;
+  border-bottom: 1px solid rgba(23, 27, 39, 0.1);
+  ;
 }
 
 .menu-item-first {
@@ -509,7 +509,8 @@ nav ul li a {
 .button-secondary:visited {
   display: inline-block;
   width: 100%;
-  background-color: rgba(23, 27, 39, 0.1);;
+  background-color: rgba(23, 27, 39, 0.1);
+  ;
   color: rgba(23, 27, 39, 0.9);
   font-weight: 400;
   text-decoration: none;
@@ -683,7 +684,7 @@ main {
 /* Styling for World section donation amount counter*/
 
 #counter-block,
-#counter-block > p,
+#counter-block>p,
 #counter {
   display: inline;
 }
@@ -773,6 +774,19 @@ footer {
   padding: 0 20px;
 }
 
+.cookshop-constraints {
+  margin-top: 16px;
+}
+
+.cookshop-constraints i {
+  font-size: 2em;
+}
+
+.cookshop-constraints .constraints-flex-img {
+  margin: 4px;
+  padding: 16px;
+}
+
 /* sitecs logo list 320px */
 
 .sub-section {
@@ -806,7 +820,7 @@ footer {
   padding: 8px 0;
 }
 
-#wb-home > div > div > div > div:nth-child(6) {
+#wb-home>div>div>div>div:nth-child(6) {
   margin-bottom: 0;
 }
 
@@ -1071,6 +1085,7 @@ footer {
   }
 
   @media only screen and (min-width: 1024px) {
+
     [class*="col-"] {
       float: left;
       padding: 0;
@@ -1085,13 +1100,17 @@ footer {
       text-align: center;
       padding: 0 20px;
     }
-    
+
     .col-lg-3 {
       width: 25%;
     }
 
     .col-lg-4 {
       width: 33.33%;
+    }
+
+    .cookshop-constraints .col-lg-4 {
+      width: 31.33%;
     }
 
     .col-lg-5 {
