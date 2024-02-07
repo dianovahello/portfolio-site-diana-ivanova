@@ -644,10 +644,6 @@ nav .fa-xmark,
 
 /* Styling for design */
 
-#design {
-  overflow: hidden;
-}
-
 .design-hero-grid {
   grid-template-areas: "design-hero-text design-hero-text design-hero-text design-hero-text design-hero-text design-hero-text";
 }
@@ -665,8 +661,8 @@ nav .fa-xmark,
   text-align: end;
 }
 
-#design .cards {
-  padding: 0 0 1rem 0;
+#design-cards {
+  padding: 1rem 0;
 }
 
 .cards-grid {
