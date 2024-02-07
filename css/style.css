@@ -418,7 +418,9 @@ nav .fa-xmark,
 .textile-trans-img-2,
 .textile-trans-img-3,
 .textile-trans-img-4,
-.textile-trans-img-5 {
+.textile-trans-img-5,
+.textile-trans-img-6,
+.textile-trans-img-7 {
   background-color: #f3f7fb;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,6 +460,14 @@ nav .fa-xmark,
 
 .textile-trans-img-5 {
   background-image: url(../img/textile/tex-banner-min.png);
+}
+
+.textile-trans-img-6 {
+  background-image: url(../img/textile/bg-divide01-min.png);
+}
+
+.textile-trans-img-7 {
+  background-image: url(../img/textile/bg-divide02-min.png);
 }
 
 /* Styling for hero */
@@ -964,17 +974,6 @@ nav .fa-xmark,
 
 /* Styling for Zen Project Page */
 
-.gradient-zen-prpl {
-  background-image: linear-gradient(
-    to right bottom,
-    #2c2044,
-    #281e3e,
-    #241c38,
-    #201a32,
-    #1d182c
-  );
-}
-
 #zen h1 {
   font-size: 3.6rem;
 }
@@ -1261,7 +1260,9 @@ nav .fa-xmark,
   .textile-trans-img-2,
   .textile-trans-img-3,
   .textile-trans-img-4,
-  .textile-trans-img-5 {
+  .textile-trans-img-5,
+  .textile-trans-img-6,
+  .textile-trans-img-7 {
     height: 44rem;
   }
 
