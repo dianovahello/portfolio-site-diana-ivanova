@@ -986,6 +986,10 @@ nav .fa-xmark,
   );
 }
 
+#zen h1 {
+  font-size: 3.6rem;
+}
+
 #zen .prototype .proj-sec-grid-2 {
   gap: 1rem;
   padding: 1rem;
@@ -1220,6 +1224,10 @@ nav .fa-xmark,
   }
 
   /* media 640 styling for Zen project */
+
+  #zen h1 {
+    font-size: 3.998rem;
+  }
 
   #zen .prototype .buttons .button,
   #zen .prototype .buttons .button-secondary {
