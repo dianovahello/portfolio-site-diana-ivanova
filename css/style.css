@@ -60,7 +60,7 @@ div {
 /* Styling for color themes */
 
 .gradient-blue {
-  background-image: url(../img/bg/noise.svg), linear-gradient(
+  background-image: linear-gradient(
     to right bottom,
     #dbe9f4,
     #d8e7f3,
@@ -71,7 +71,7 @@ div {
 }
 
 .gradient-black {
-  background-image: url(../img/bg/noise-dark.svg), linear-gradient(
+  background-image: linear-gradient(
     to top,
     #111416,
     #15181a,
@@ -95,7 +95,7 @@ div {
 }
 
 .gradient-grey {
-  background-image: url(../img/bg/noise.svg), linear-gradient(
+  background-image: linear-gradient(
     to right bottom,
     #d3e1ec,
     #d1e0ec,
@@ -106,7 +106,7 @@ div {
 }
 
 .gradient-white {
-  background-image: url(../img/bg/noise.svg), linear-gradient(
+  background-image: linear-gradient(
     to right bottom,
     #f3f7fb,
     #f0f5fa,
