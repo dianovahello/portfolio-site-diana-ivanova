@@ -13,11 +13,9 @@ console.log("sup I'm JavaScript");
 //   }
 // }
 
-
-
 // Smooth scrolling function
 function smoothScrollTo(target) {
-  var headerOffset = 70;
+  var headerOffset = 43;
 
   $("html, body").animate(
     {
@@ -38,7 +36,7 @@ function smoothScrollTo(target) {
   );
 }
 
-// Add click event handler to links with hash references
+// Add a click event handler to all links that have hash references
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -87,7 +85,7 @@ function sideNavToggle() {
 
   if (element.className === "sidenav-closed") {
     element.classList.remove("sidenav-closed");
-    element.classList.add("sidenav-250px");
+    element.classList.add("sidenav-open");
   } else {
     element.className = "sidenav-closed";
   }
@@ -97,6 +95,28 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
   // closeButton: true,
 });
+
+
+// Landing page navigation drawer
+
+const menuIcon = document.querySelector(".hamburger-menu");
+const navbar = document.querySelector('.navbar');
+const body = document.querySelector('.body');
+
+menuIcon.addEventListener("click", () => {
+  navbar.classList.toggle('change');
+});
+
+document.addEventListener('click', (event) => {
+  const targetElement = event.target;
+
+  if (!navbar.contains(targetElement)) {
+    navbar.classList.remove('change');
+  }
+});
+
+
+
 
 
 // // The Counter was moved to a <script> tag in file index.html because it was causing an error on other pages

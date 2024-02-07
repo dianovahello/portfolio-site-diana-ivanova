@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Diana Ivanova</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/landingstyle.css" />
+  </head>
+
+  <body class="project gradient-white" id="cook">
+    <header>
+      <div class="wrapper--wide">
+        <nav class="navbar main-nav flex">
+          <div
+            class="hamburger-menu"
+            tabindex="0"
+            onkeydown="navbar.classList.toggle ('change')"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <ul class="nav-list flex">
+            <li class="nav-item" onclick="navbar.classList.toggle ('change')">
+              <a href="landing.html">portfolio</a>
+            </li>
+            <li class="nav-item" onclick="navbar.classList.toggle ('change')">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="gradient-white">
+        <section id="hero">
+          <div class="wrapper">
+            <div class="grid-six hero-grid">
+              <div class="content-six">
+                <h1 id="top">
+                  Cookshop
+                  <span class="body-span"
+                    ><b>How should women design for men?</b> Working on
+                    Cookshop, I got to conduct research to assess the unique
+                    needs of male home cooks (if any), and the extent to which
+                    existing products neglect to serve.<b
+                      >Two interesting questions </b
+                    >arose. The first relates to my own assumptions about recipe
+                    content online: does it really skew to a female default? Is
+                    this an obstacle for male cooks, and how? The second
+                    question felt simple but wasn&#39;t: what is "masculine" UI?
+                    <b>The outcome</b> was a responsive web app that helps an
+                    underserved group of home cooks express themselves reliably
+                    in the kitchen. <b>The bonus</b> is a brand that feels bold,
+                    exciting, and elegant.
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="showcase">
+          <div class="project-hero-img-top">
+            <img
+              class="gradient-blue"
+              src="img/cookshop/img-cookshop@2x/cookshop-3mock-min.png"
+              alt="A high-fidelity mockup showing screens from Cookshop on an iPhone 14 device."
+            />
+          </div>
+        </section>
+      </div>
+
+      <div class="gradient-white">
+        <section class="project-section specs">
+          <div class="grid-six pros-grid">
+            <div class="pro-card pros-1">
+              <h3><i class="fa-solid fa-user"></i></h3>
+              <p>My role: UXR and UI designer</p>
+            </div>
+            <div class="pro-card pros-2">
+              <h3><i class="fa-solid fa-hourglass-half"></i></h3>
+              <p>Timeframe: 15 weeks</p>
+            </div>
+            <div class="pro-card pros-3">
+              <h3><i class="fa-solid fa-screwdriver-wrench"></i></h3>
+              <p>Tools: Spreadsheets, Markers, Figma</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="project-section tech-constraints">
+        <h2>Understanding the context</h2>
+        <div class="">
+          <div class="grid-six project-section-grid process">
+            <div class="p-sec-grid-1">
+              <div>
+                <p>
+                  I began by conducting secondary research into home cooking
+                  trends and outcomes, paying special attention to any
+                  differences by gender. I wanted to understand the unique
+                  context of home cooks who identify as male. I discovered a
+                  surprising trend: men are more likely to say they enjoy
+                  cooking, yet fewer meals are cooked by men.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <div class="wrapper">
+          <div class="grid-six project-section-grid proj-sec-grid-2">
+            <div class="p-sec-grid-1">
+              <p></p>
+              <img
+                class="gradient-white img-sm"
+                src="img/cookshop/img-cookshop@2x/cook-context-img-min.png"
+                alt="A high-fidelity mockup showing screens from Cookshop on an iPhone 14 device."
+              />
+            </div>
+            <div class="p-sec-grid-2">
+              <div>
+                <ol>
+                  <li>
+                    <p>
+                      <b>Men love to cook.</b> Studies have shown that 82% of
+                      men enjoy home cooking, compared to just 75% of women.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      In spite of this,
+                      <b>women cook much more than men</b> in all countries. In
+                      2020, only 1/3 of the meals cooked at home were prepared
+                      by men.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <b>Men are cooking more often.</b> Still, young men
+                      continue to experience lower skills and confidence in
+                      cooking than young women at the stage of living on their
+                      own for the first time.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <b>Cooking at home is good for you.</b> It leads to
+                      improved diet and health, greater happiness, and a longer
+                      life. Women and married men have so far benefited the
+                      most.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="gradient-white">
+        <div class="gradient-white">
+          <section class="project-section showcase">
+            <h2>Understanding the landscape</h2>
+            <div class="grid-six project-section-grid p-sec-grid-img3">
+              <div class="p-sec-grid-1">
+                <div>
+                  <p>
+                    I conducted market research to find out what solutions
+                    exist, and how they address the needs of male home cooks. I
+                    found that while a variety of recipe apps appear to be
+                    neutrally-targeted, their branding and tone may be biased
+                    towards a feminine assumption. Explicitly male-oriented
+                    material was overwhelmingly focused on fitness and health
+                    objectives. There was little to no recipe material
+                    addressing an audience of men who cook for pleasure.
+                  </p>
+                </div>
+              </div>
+              <div class="p-sec-grid-2">
+                <img src="img/zenvelopes/img-zen@2x/zen-mf-3-min.png" alt="" />
+              </div>
+              <div class="p-sec-grid-3">
+                <img src="img/zenvelopes/img-zen@2x/zen-mf-1-min.png" alt="" />
+              </div>
+              <div class="p-sec-grid-4">
+                <img src="img/zenvelopes/img-zen@2x/zen-mf-2-min.png" alt="" />
+              </div>
+            </div>
+          </section>
+
+          <section class="project-section showcase gradient-grey">
+            <h3>Solution</h3>
+            <div class="grid-six project-section-grid proj-sec-grid-2">
+              <div class="p-sec-grid-1">
+                <p>
+                  Minimalist visual design with good contrast and clear
+                  hierarchy: for a lighter and more accessible product, the
+                  bells and whistles are invisible.
+                </p>
+              </div>
+              <div class="p-sec-grid-2">
+                <img
+                  class=""
+                  src="img/zenvelopes/img-zen@2x/zen-light-min.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="project-section showcase gradient-grey">
+            <h3>
+              <span class="body-span-nopad"
+                >Interactions are intuitive: adherence to native platform design
+                guidelines ensures interaction patterns are optimized and
+                familiar.</span
+              >
+            </h3>
+            <div class="">
+              <div class="grid-six project-section-grid proj-sec-grid-2">
+                <div class="p-sec-grid-1"></div>
+                <div class="p-sec-grid-2">
+                  <img
+                    src="img/zenvelopes/img-zen@2x/zen-anx3-min.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="project-section gradient-white">
+        <h2>Monetization</h2>
+        <div class="">
+          <div class="grid-six project-section-grid process">
+            <div class="p-sec-grid-1">
+              <ol>
+                <li>
+                  <p><b>Freemium model</b></p>
+                  <p>
+                    Core features are free while advanced features like custom
+                    reporting, expert financial advice, and some automations are
+                    available as a paid tier.
+                  </p>
+                </li>
+                <li>
+                  <p><b>Partnerships with financial institutions</b></p>
+                  <p>
+                    Partnerships for integrated services could provide revenue
+                    streams while offering partners the opportunity to offer a
+                    unique experience and secure a growing audience of (more on
+                    the target audience later).
+                  </p>
+                </li>
+                <li>
+                  <p><b>Additional services</b></p>
+                  <p>
+                    The brand identity is uniquely scalable, able to grow to
+                    offer coaching and other financial services for (more about
+                    them later).
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section showcase gradient-grey">
+        <div class="">
+          <h3>Solution</h3>
+          <div class="grid-six project-section-grid proj-sec-grid-2">
+            <div class="p-sec-grid-1">
+              <p>
+                <span class="body-span-nopad">
+                  The feature breakdown has something for everyone: new
+                  budgeters can enjoy core features to calm anxiety and build
+                  self-awareness. More confident budgeters can join a Premium
+                  tier for access to powerful automations, financial advice and
+                  more.</span
+                >
+              </p>
+            </div>
+            <div class="p-sec-grid-2">
+              <img
+                class=""
+                src="img/zenvelopes/img-zen@2x/zen-prem-min.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="gradient-white">
+        <section class="project-section gradient-white comps">
+          <h2>Let's talk about the elephant in the room.</h2>
+          <div class="grid-six project-section-grid proj-sec-grid-2">
+            <div class="p-sec-grid-1">
+              <div>
+                <p>
+                  <b>Why build another budgeting app?</b> In addition to asking
+                  the question I set out to understand what offerings exist on
+                  the market and assess potential opportunities for a new
+                  product. I cast a wide net, then zeroed in on Mint,
+                  RocketMoney, and Ally Bank’s “Spending Buckets” feature for a
+                  deeper look.
+                </p>
+              </div>
+            </div>
+            <div class="p-sec-grid-2">
+              <img
+                src="img/zenvelopes/img-zen@2x/zen-comp-min.png"
+                alt="mobile screens of competitor apps: Mint, Rocket Money, Ally Bank's Spending Buckets feature."
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="gradient-white comps">
+          <h3>What are competitors doing right?</h3>
+          <div class="">
+            <div class="grid-six project-section-grid">
+              <div class="p-sec-grid-1">
+                <div></div>
+              </div>
+            </div>
+            <div class="grid-six pros-grid">
+              <div class="pros-1 gradient-white">
+                <h3><i class="fa-regular fa-face-smile"></i></h3>
+                <p>Dynamic data visualizations help users see their status.</p>
+              </div>
+              <div class="pros-2 gradient-white">
+                <h3><i class="fa-regular fa-face-smile"></i></h3>
+                <p>Automatic income and expense tracking is convenient.</p>
+              </div>
+              <div class="pros-3 gradient-white">
+                <h3><i class="fa-regular fa-face-smile"></i></h3>
+                <p>Data ‐driven insights are informative.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section gradient-white comps">
+          <h3>Show me the bad reviews.</h3>
+          <div class="">
+            <div class="grid-six pros-grid">
+              <div class="pros-1 gradient-white">
+                <h3><i class="fa-regular fa-face-frown"></i></h3>
+                <p>Too many features can be confusing.</p>
+              </div>
+              <div class="pros-2 gradient-white">
+                <h3><i class="fa-regular fa-face-frown"></i></h3>
+                <p>Steep learning curves can be discouraging.</p>
+              </div>
+              <div class="pros-3 gradient-white">
+                <h3><i class="fa-regular fa-face-frown"></i></h3>
+                <p>Too much information can be overwhelming.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="project-section gradient-white comps">
+        <h3>What are competitors missing?</h3>
+        <div class="">
+          <div class="grid-six project-section-grid process">
+            <div class="p-sec-grid-1">
+              <div>
+                <p>
+                  By this time, I had used four apps to plan my September
+                  budget, read about eight more, and watched about 4 hours’
+                  worth of in-depth video reviews. As I tallied pros and cons, a
+                  picture started to form. I began to suspect that an important
+                  person was slipping through the cracks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-six pros-grid">
+            <div class="pros-1">
+              <h3><i class="fa-solid fa-chalkboard"></i></h3>
+              <p>
+                They failed to support people with multiple income streams, no
+                income, or negative income.
+              </p>
+            </div>
+            <div class="pros-2">
+              <h3><i class="fa-solid fa-chalkboard"></i></h3>
+              <p>
+                They relied on gamification and aggressive alerts, which can
+                increase financial anxiety.
+              </p>
+            </div>
+            <div class="pros-3">
+              <h3><i class="fa-solid fa-chalkboard"></i></h3>
+              <p>
+                They offered excessive automation features, which can increase
+                feelings of control loss.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="gradient-white">
+          <section class="project-section">
+            <h2>Who is slipping through the cracks?</h2>
+            <div class="">
+              <div class="grid-six project-section-grid">
+                <div class="p-sec-grid-1">
+                  <div>
+                    <p>
+                      I started piecing together a portrait. Beginning with
+                      social media comments and App Store reviews, her budgeting
+                      struggle was shared with me over video chat, phone, and
+                      once in a cat cafe over a cup of tea. From Facebook and
+                      Reddit to real life, individual budgeters struggled with
+                      tools that seemed not built for them.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <div class="saduser">
+              <div class="grid-six project-section-grid p-sec-grid-img3">
+                <div class="p-sec-grid-1">
+                  <div>
+                    <a
+                      data-fancybox="sad-gallery"
+                      href="img/zenvelopes/img-zen@2x/zen-saduser-min.png"
+                      data-caption=""
+                      class="img-link"
+                    >
+                      <img
+                        src="img/zenvelopes/img-zen@2x/zen-saduser-min.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="p-sec-grid-2">
+                  <div>
+                    <a
+                      data-fancybox="sad-gallery"
+                      href="img/zenvelopes/img-zen@2x/zen-saduser1-min.png"
+                      data-caption=""
+                      class="img-link"
+                    >
+                      <img
+                        src="img/zenvelopes/img-zen@2x/zen-saduser1-min.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="p-sec-grid-3">
+                  <div>
+                    <a
+                      data-fancybox="sad-gallery"
+                      href="img/zenvelopes/img-zen@2x/zen-saduser2-min.png"
+                      data-caption=""
+                      class="img-link"
+                    >
+                      <img
+                        src="img/zenvelopes/img-zen@2x/zen-saduser2-min.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="p-sec-grid-4">
+                  <div>
+                    <a
+                      data-fancybox="sad-gallery"
+                      href="img/zenvelopes/img-zen@2x/zen-saduser3-min.png"
+                      data-caption=""
+                      class="img-link"
+                    >
+                      <img
+                        src="img/zenvelopes/img-zen@2x/zen-saduser3-min.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div> -->
+
+      <div class="gradient-white">
+        <section
+          class="project-section zen-usr-theme zen-usr-theme1 gradient-white"
+        >
+          <h3>Theme 1: "Budgeting apps think I live in the 50’s."</h3>
+          <div class="">
+            <div class="grid-six project-section-grid proj-sec-grid-2">
+              <div class="p-sec-grid-1">
+                <div>
+                  <img
+                    src="img/zenvelopes/img-zen@2x/zen-theme1-min.png"
+                    alt="A vintage illustration of a man's face. He is wearing a 50's style fedora. He is grimacing, frustrated."
+                  />
+                </div>
+              </div>
+              <div class="p-sec-grid-2">
+                <div>
+                  <p>
+                    While budgeting tools continue to ask what our income is (as
+                    if there is a simple answer), the workforce is changing.
+                    Makers, nomads, side-hustlers, social media creators, gig
+                    workers and students have multiple streams of unpredictable
+                    or even negative income. Edge cases are quickly becoming the
+                    norm: 1/3 of America is freelancing today, but in just 3
+                    years that figure will go over 1/2!
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    "I needed another app just to calculate what to put into
+                    this app. What's up with that?!"
+                  </p>
+                  <p>Sources: Freelancers Union, Statista, Google Trends.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section showcase gradient-grey">
+          <h3>Solution</h3>
+          <div class="">
+            <div class="grid-six project-section-grid proj-sec-grid-2">
+              <div class="p-sec-grid-1">
+                <p>
+                  <span class="body-span-nopad">
+                    Multiple income streams are a matter of course. Go large,
+                    keep steady or take a break: no judgment ever.</span
+                  >
+                </p>
+              </div>
+              <div class="p-sec-grid-2">
+                <div>
+                  <img
+                    class=""
+                    src="img/zenvelopes/img-zen@2x/zen-multinc-min.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="project-section zen-usr-theme zen-usr-theme2 gradient-white"
+        >
+          <h3>Theme 2: "Budgeting apps are intimidating."</h3>
+          <div class="">
+            <div class="grid-six project-section-grid proj-sec-grid-2">
+              <div class="p-sec-grid-1">
+                <div>
+                  <img
+                    src="img/zenvelopes/img-zen@2x/zen-theme2-min.png"
+                    alt="A vintage illustration of an ancient computer. It look too complex, with a lot of wires and controls. The effect is overwhelming."
+                  />
+                </div>
+                <div>
+                  <p>
+                    "Why does this look like the Matrix?," offered one interview
+                    participant. "If I was a math genius I wouldn’t need this
+                    app in the first place."
+                  </p>
+                </div>
+              </div>
+              <div class="p-sec-grid-2">
+                <div>
+                  <p>
+                    Up to 30% of people report moderate to high levels of math
+                    anxiety. Research shows that some level of math anxiety
+                    affects up to 93% of US adults! By failing to address this,
+                    budgeting apps are failing a huge swath of the population.
+                    (New York Times, Luttenberger et al).
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Bias warning: a popular fallacy states "creative people are
+                    not math people" because of "the left and right side of the
+                    brain." This is a false concept that emerged during
+                    interviews: creative hobbyists and professionals shared they
+                    felt intimidated by charts, graphs, and spreadsheets.
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Creatives are far more likely to freelance, engage in gig
+                    work, or have a side hustle like selling handmade items. 55%
+                    of Entertainment workers freelance, while in Arts and Design
+                    the figure jumps to 75% (Zippia). This means that people
+                    affected by the false right brain/left brain dichotomy are
+                    also more likely to have complex income models.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section showcase gradient-grey">
+          <h3>Solution</h3>
+          <div class="">
+            <div class="grid-six project-section-grid proj-sec-grid-2">
+              <div class="p-sec-grid-1">
+                <div>
+                  <p>
+                    <span class="body-span-nopad">
+                      A simple ritual to calm anxiety: Plan, Track, Reflect,
+                      repeat. Choose to be guided or make your own path.</span
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-sec-grid-2">
+                <img
+                  class=""
+                  src="img/zenvelopes/img-zen@2x/zen-anx1-min.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section zen-usr-theme gradient-white">
+          <h3>Theme 3: "Budgeting apps don’t help me grow."</h3>
+          <div class="">
+            <div class="grid-six project-section-grid proj-sec-grid-2">
+              <div class="p-sec-grid-1">
+                <div>
+                  <img
+                    src="img/zenvelopes/img-zen@2x/zen-theme3-min.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="p-sec-grid-2">
+                <div>
+                  <p>
+                    Users shared a desire to understand spending and money
+                    management and improve their habits. Those who tried a
+                    budgeting app and deleted it, did so because it failed to
+                    provide lasting change. Every notification was an unwanted
+                    reminder that they are failing to stay within budget.
+                  </p>
+                  <p>
+                    "I felt like Pavlov's dog," signed one interview
+                    participant."I don’t want to just connect my bank and get a
+                    bunch of stats - I wanted to
+                    <em>do better.</em>"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="showcase gradient-grey">
+          <section class="project-section">
+            <h3>Solution</h3>
+            <div class="">
+              <div class="grid-six project-section-grid proj-sec-grid-2">
+                <div class="p-sec-grid-1">
+                  <div>
+                    <p>
+                      <span class="body-span-nopad">
+                        Build self-awareness by assigning each of your expenses
+                        to a mindful category: Need, Want, Culture, or the
+                        Unexpected.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="p-sec-grid-2">
+                  <div>
+                    <img
+                      src="img/zenvelopes/img-zen@2x/zen-grw-min.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <div class="grid-six project-section-grid proj-sec-grid-2">
+              <div class="p-sec-grid-1 add-pad">
+                <div>
+                  <p>
+                    Grow accountability by planning your own time to check in:
+                    no automations, and no alarms unless you set one.
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-sec-grid-2">
+                <img src="img/zenvelopes/img-zen@2x/zen-anx2-min.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="project-section gradient-white">
+        <h2>Key learnings</h2>
+        <div class="">
+          <div class="grid-six project-section-grid process">
+            <div class="p-sec-grid-1">
+              <div>
+                <ol>
+                  <li>
+                    <p><b>Native app design.</b></p>
+                    <p>
+                      To ensure an intuitive user experience, I had to strike a
+                      balance between creativity and adhering to platform
+                      conventions. I came away with deep knowledge of iOS and
+                      Android design guidelines. I also learned how constraints
+                      can boost creativity and drive innovation.
+                    </p>
+                  </li>
+                  <li>
+                    <p><b>Cultural insights.</b></p>
+                    <p>
+                      The Kakeibo-inspired mindfulness integration met with a
+                      positive response from users during testing. This showed
+                      me that cross-cultural insights can offer unique solutions
+                      that work.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="gradient-grey">
+        <section class="project-section showcase logo">
+          <h3>Bonus</h3>
+          <div class="">
+            <div class="grid-six project-section-grid proj-sec-grid-2 process">
+              <div class="p-sec-grid-1">
+                <div>
+                  <p class="center">
+                    Here is a breakdown of the Zenvelopes logo. I used a vector
+                    brushstroke asset by
+                    <a
+                      href="https://www.freepik.com/free-vector/ink-brush-stroke-collection_11701402.htm"
+                      >Freepik.</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="p-sec-grid-2">
+                <img src="img/zenvelopes/img-zen@2x/zen-logo-min.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer" class="gradient-black">
+      <section class="project-section showcase gradient-black">
+        <h3 id="contact">Build with me:</h3>
+        <div class="grid-six project-section-grid p-sec-grid-img3">
+          <div class="p-sec-grid-1">
+            <div class="buttons">
+              <ul>
+                <li><p>dianovahello@gmail.com</p></li>
+                <li>
+                  <a href="mailto:dianovahello@gmail.com" class="button"
+                    ><i class="fa-solid fa-envelope"></i>Email</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/thediana/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="button"
+                    ><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.behance.net/dianaivanova15"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="button"
+                    ><i class="fa-brands fa-behance"></i>Behance</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-sec-grid-2">
+            <img
+              class="img-sm"
+              src="img/about-me/img-about-me@2x/img-about-me@2x.png"
+              alt="Photo of Diana"
+            />
+          </div>
+          <div class="p-sec-grid-3">
+            <div class="center">
+              <a href="#top" class=""
+                ><i class="fa-solid fa-chevron-up"></i>Back to top</a
+              >
+            </div>
+          </div>
+          <div class="p-sec-grid-4">
+            <div class="copyright">
+              <p>Copyright Diana Ivanova 2023-2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f7ab72f41f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

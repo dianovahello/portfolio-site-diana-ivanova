@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Diana Ivanova</title>
+    <title>Diana Ivanova | product designer</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -12,346 +12,386 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
   </head>
 
-  <body id="design-work" class="body-background">
-    <div class="wrapper">
-      <!-- <header id="top">
-        <div class="container">
-          <div class="navtoggle" id="myNavtoggle">
-            <a
-              tabindex="0"
-              onkeydown="sideNavToggle()"
-              onclick="sideNavToggle()"
-              class="project-nav-bars"
-              ><i class="fa-solid fa-bars"></i
-            ></a>
+  <body class="body gradient-white" id="home">
+    <header>
+      <div class="wrapper--wide">
+        <nav class="navbar main-nav flex">
+          <div
+            class="hamburger-menu"
+            tabindex="0"
+            onkeydown="navbar.classList.toggle ('change')"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
           </div>
-        </div>
-      </header> -->
 
-      <header id="top">
-        <div class="container">
-          <div class="text-block">
-            <div class="navtoggle" id="myNavtoggle">
-              <nav class="main-nav">
+          <ul class="nav-list flex">
+            <li class="nav-item" onclick="navbar.classList.toggle ('change')">
+              <a href="#work">projects</a>
+            </li>
+            <li class="nav-item" onclick="navbar.classList.toggle ('change')">
+              <a href="#about-me">about</a>
+            </li>
+            <li class="nav-item" onclick="navbar.classList.toggle ('change')">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="wrapper">
+          <div class="grid-six hero-grid gradient-white">
+            <div class="content-six">
+              <h1 id="top">
+                Diana Ivanova
+                <span class="body-span"
+                  >I'm a product designer in Brooklyn. I like sorting
+                  information and building logical structures that everyone can
+                  understand. I help my clients make money by connecting design
+                  decisions to the big picture of their business, and when no
+                  one is looking I make conceptual art.
+                </span>
+              </h1>
+              <div class="buttons">
                 <ul>
                   <li>
-                    <a href="./index.html" class="nav-button-active">work</a>
-                  </li>
-                  <li><a href="./about.html">about</a></li>
-                  <li>
-                    <a
-                      href="#contact"
-                      onclick="if (window.matchMedia('(max-width: 639px)').matches) menuToggle()"
-                      >contact</a
+                    <a href="mailto:dianovahello@gmail.com" class="button"
+                      ><i class="fa-solid fa-envelope"></i>Email</a
                     >
                   </li>
                   <li>
                     <a
-                      tabindex="0"
-                      onkeydown="sideNavToggle()"
-                      onclick="sideNavToggle()"
-                      class="project-nav-bars"
-                      ><i class="fa-solid fa-bars"></i
-                    ></a>
+                      href="https://www.linkedin.com/in/thediana/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="button-secondary"
+                      ><i class="fa-brands fa-linkedin-in"></i>Connect</a
+                    >
                   </li>
                 </ul>
-              </nav>
+              </div>
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
-      <main>
-        <div id="nav-drawer">
-          <div id="mySideNav" class="sidenav-closed">
-            <ul class="table-contents">
-              <li>
+      <div
+        class="textile-trans-img-2"
+        role="img"
+        aria-label="pen and ink drawing of anemone flowers"
+      ></div>
+
+      <div class="gradient-blue">
+        <section id="about">
+          <div class="wrapper">
+            <div class="grid-six about-grid">
+              <div class="about-text">
+                <h2 id="about-me">About</h2>
+                <p>
+                  I spent my first years in a remote Bulgarian village. In
+                  winter, whole days went by with only the sound of footsteps in
+                  snow, dogs barking, and breath rising toward a blue sky. I
+                  look for that silence everywhere.
+                </p>
+              </div>
+              <div class="about-button">
                 <a
-                  href="javascript:void(0)"
-                  class="closebtn"
-                  onclick="sideNavToggle()"
-                  ><i class="fa-solid fa-xmark"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./index.html" onclick="sideNavToggle()">work</a>
-              </li>
-              <li>
-                <a href="./about.html" onclick="sideNavToggle()">about</a>
-              </li>
-              <li>
-                <a href="#contact" onclick="sideNavToggle()">contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <section id="hero">
-          <div class="container">
-            <div class="text-block">
-              <h1>
-                <span class="sub-span bold-span">Diana Ivanova</span>
-                <span class="sub-span">
-                  I&#39;m a product designer and conceptual artist in New York.
-                  I like to solve novel problems and improve the world.
-                </span>
-              </h1>
+                  href="files/cv-placeholder.pdf"
+                  target="_blank"
+                  class="button-secondary"
+                  >Download my resume</a
+                >
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="work">
-          <div class="subnav">
-            <h2 class="hidden"><span class="">Work</span></h2>
+        <div
+          class="textile-trans-img-5"
+          role="img"
+          aria-label="pen and ink drawing of anemone flowers"
+        ></div>
 
-            <nav class="tab" id="subnav">
-              <div class="container">
-                <div class="text-block">
-                  <button
-                    class="tablinks subnavlinks active"
-                    onclick="openWork(event, 'design')"
-                  >
-                    design
-                  </button>
-                  <button
-                    class="tablinks subnavlinks"
-                    onclick="openWork(event, 'art')"
-                  >
-                    art
-                  </button>
-                  <button
-                    class="tablinks subnavlinks"
-                    onclick="openWork(event, 'world')"
-                  >
-                    world
-                  </button>
-                </div>
+        <section id="skills">
+          <div class="wrapper">
+            <h2>Skills</h2>
+            <div class="grid-six skills-grid">
+              <div class="content-UX">
+                <h3><span class="h4-span">UX design</span></h3>
+                <ul>
+                  <li>User research</li>
+                  <li>Context research</li>
+                  <li>Prototype build</li>
+                  <li>Test and scale</li>
+                </ul>
               </div>
-            </nav>
+              <div class="content-visual">
+                <h3><span class="h4-span"> Visual design</span></h3>
+                <ul>
+                  <li>Typography</li>
+                  <li>Iconography</li>
+                  <li>Hierarchy</li>
+                  <li>Voice</li>
+                </ul>
+              </div>
+              <div class="content-tools">
+                <h3><span class="h4-span">Tools</span></h3>
+                <ul>
+                  <li>Markers</li>
+                  <li>Figma</li>
+                  <li>Adobe</li>
+                  <li>VS Code</li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </section>
+      </div>
 
-          <div class="container tabcontent default-active" id="design">
-            <div class="row" id="design-project-3">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a href="./wb.html" class="img-link">
+      <section id="design" class="gradient-blue">
+        <div class="wrapper--wide">
+          <div class="section-hero">
+            <h2 id="work">Projects</h2>
+          </div>
+          <div class="cards">
+            <div class="grid-six cards-grid">
+              <div class="card card1 gradient-white">
+                <div class="card-contents">
+                  <div>
                     <img
-                      src="img/covers/img-1-min.png"
-                      alt="The cover image for an online tea store called Wild Bloom."
+                      src="img/covers/zen-min.png"
+                      alt="cover image showing an iPhone mockup of the splash screen for the app Zenvelopes"
                     />
-                  </a>
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>Wild Bloom</h3>
-                  <p>
-                    Wild Bloom is a modern luxury tea company with a mission. I
-                    created branding at the intersection of luxury, ethics, and
-                    a call to rewild, then designed an online store.
-                  </p>
-                  <p>
-                    <span class="bold-span">Skills:</span> User-centered design,
-                    brand development, e-commerce platforms.
-                  </p>
-                  <div class="flex-container">
-                    <a href="./wb.html" class="button">View project</a>
+                  </div>
+                  <div class="card-txt-container">
+                    <h4>Zenvelopes</h4>
+                    <p>
+                      Using an ancient Japanese system for budgeting to help
+                      freelancers manage complex incomes and address math
+                      anxiety.
+                    </p>
+                    <div class="card-button">
+                      <a href="./zen.html" class="button-secondary"
+                        >View project</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row" id="design-project-2">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a href="./cookshop.html" class="img-link">
+              <div class="card card2 gradient-white">
+                <div class="card-contents">
+                  <div class="">
                     <img
-                      src="img/covers/bg05-responsive-min.png"
-                      alt="The cover image for a recipes app for men called Cookshop."
+                      src="img/covers/cook-min.png"
+                      alt="cover image with a splash screen from the app Cookshop"
                     />
-                  </a>
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>Cookshop</h3>
-                  <p>
-                    Cookshop is a recipes app for men. I conducted user research
-                    and competitive analysis to explore the hypothesis that male
-                    home cooks face gender bias in recipe content. Then, I
-                    defined masculinizing cues in UI design.
-                  </p>
-                  <p>
-                    <span class="bold-span">Skills:</span> User research,
-                    competitive analysis, personas, testing and responsive
-                    design.
-                  </p>
-                  <div class="flex-container">
-                    <a href="./cookshop.html" class="button">View project</a>
+                  </div>
+                  <div class="card-txt-container">
+                    <h4>Cookshop</h4>
+                    <p>
+                      Exploring whether male-identifying home cooks suffer
+                      gender bias in recipe content. Then I defined visual cues
+                      that “masculinize” UI.
+                    </p>
+                    <div class="card-button">
+                      <a
+                        href="files/cookshop-cs-min.pdf"
+                        target="_blank"
+                        class="button-secondary"
+                        >.PDF</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row" id="design-project-1">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a href="./zenvelopes.html" class="img-link">
+              <div class="card card3 gradient-white">
+                <div class="card-contents">
+                  <div>
                     <img
-                      src="img/covers/img-min.png"
-                      alt="The cover image for a personal budgeting app called Zenvelopes."
+                      src="img/covers/wb-title-min.png"
+                      alt="Victorian illustration of two men talking to each other, lavender palette"
                     />
-                  </a>
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>Zenvelopes</h3>
-                  <p>
-                    Zenvelopes is a budgeting app for people who hate budgeting.
-                    I applied an ancient Japanese budgeting method to help
-                    mitigate finance anxiety and grow a healthier money
-                    relationship in users with complex income and expense
-                    models.
-                  </p>
-                  <p>
-                    <span class="bold-span">Skills:</span> Design to native iOS
-                    and Android constraints, interaction design, aural and
-                    haptic feedback.
-                  </p>
-                  <div class="flex-container">
-                    <a href="./zenvelopes.html" class="button">View project</a>
+                  </div>
+                  <div class="card-txt-container">
+                    <h4>Wild Bloom</h4>
+                    <p>
+                      Tackling branding to "decolonize the tea trade." Then,
+                      building a functional responsive online store for an
+                      ethics-driven luxury tea corp.
+                    </p>
+                    <div class="card-button">
+                      <a
+                        href="files/wb-cs-min.pdf"
+                        target="_blank"
+                        class="button-secondary"
+                        >.PDF</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row" id="dev-project-1">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a href="./sitecs.html" class="img-link">
+              <div class="card card4 gradient-white">
+                <div class="card-contents">
+                  <div>
                     <img
-                      src="img/covers/bg-site-responsive-min.png"
-                      alt="A mobile device showing the Home page of this website"
+                      src="img/covers/note-cover-min.png"
+                      alt="mobile phone next to a laptop showing the homepage of this portfolio website"
                     />
-                  </a>
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>Portfolio website</h3>
-                  <p>
-                    The making of this portfolio website. I address the problem
-                    of housing diverse projects in a harmonious and scannable
-                    way. I also learn to code.
-                  </p>
-                  <p>
-                    <span class="bold-span">Skills:</span> Responsive design,
-                    front-end development using HTML, CSS, and JavaScript,
-                    testing and debugging.
-                  </p>
-                  <div class="flex-container">
-                    <a href="./sitecs.html" class="button">View project</a>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" id="design-project-4">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a href="under-construction.html" class="img-link">
-                    <img
-                      src="img/notteo/img-notteo@2x/img-1-min.png"
-                      alt="iPhone showing the splash screen for a note-taking app called Notteo."
-                    />
-                  </a>
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>Notteo</h3>
-                  <p>
-                    Notteo is a minimalist app for note-taking. I created UI and
-                    branding in 5 hours.
-                  </p>
-                  <div class="flex-container">
-                    <a
-                      href="files/notteo-cs-min.pdf"
-                      target="_blank"
-                      class="button"
-                      >.PDF</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" id="design-project-5">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a href="under-construction.html" class="img-link">
-                    <img
-                      src="img/wear/img-wear@2x/img-min.png"
-                      alt="iPhone showing the splash screen for a clothing resale app called Wear."
-                    />
-                  </a>
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>Wear</h3>
-                  <p>
-                    Wear is a second-hand clothing resale app. It was my first
-                    project. I created custom icons and location-based clothing
-                    swap concept.
-                  </p>
-                  <div class="flex-container">
-                    <a
-                      href="files/wear-cs-min.pdf"
-                      target="_blank"
-                      class="button"
-                      >.PDF</a
-                    >
+                  <div class="card-txt-container">
+                    <h4>Notteo</h4>
+                    <p>
+                      Designing minimalist UI and branding for a note-taking app, in 4 hours. 
+                    </p>
+                    <div class="card-button">
+                      <a
+                        href="files/notteo-cs-min.pdf"
+                        target="_blank"
+                        class="button-secondary"
+                        >.PDF</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="container tabcontent" id="art">
-            <div class="row" id="art-project-3">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a
-                    href="https://vimeo.com/857278217"
-                    class="img-link"
-                    data-fancybox=""
-                  >
-                    <img
-                      src="img/art-artwork/bg-3-min.png"
-                      alt="black screen with a line of text that says The Artwork Will Begin in square brackets"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                  <h3>the Artwork</h3>
+      <div class="gradient-black">
+        <div
+          class="textile-trans-img-3"
+          role="img"
+          aria-label="pen and ink drawing of anemone flowers"
+        ></div>
+
+        <section id="art">
+          <div class="wrapper">
+            <div class="section-hero">
+              <div class="grid-six art-hero-grid">
+                <div class="art-hero-text">
+                  <h2>Art</h2>
                   <p>
-                    The Artwork is an audio piece designed to be experienced on
-                    the go. It gives instructions for having an artistic
-                    experience by observing any object. Similar to a GPS,
-                    it&#39;s a guide using an artificial voice to direct the
-                    user through the steps of artistic observation and light
-                    analysis. It provides an artistic experience to anyone at
-                    any time, in the absence of any artwork.
+                    "I have always liked people who cannot adapt themselves to
+                    life pragmatically."
                   </p>
-                  <div class="flex-container">
+                  <p class="citation-p">—A. Tarkovsky</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="art-cards" class="cards">
+          <div class="grid-six cards-grid">
+            <div class="card card1 black-bg">
+              <div class="card-contents">
+                <div>
+                  <img
+                    src="img/art-terlik/art-cover07-min.png"
+                    alt="cover image for a video artwork, showing a knitted foot covering on a black background."
+                  />
+                </div>
+                <div class="card-txt-container">
+                  <h4>Terlik</h4>
+                  <p>
+                    What is the simplest way to tell a story? Here, a
+                    traditional hand-knitted foot covering unravels to the soft
+                    sound of a crackling fire. Terlik is a meditative loop about
+                    progress and loss.
+                  </p>
+                  <div class="card-button">
+                    <a
+                      href="https://vimeo.com/857243382"
+                      class="button-secondary"
+                      data-fancybox=""
+                      >Watch</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card2 black-bg">
+              <div class="card-contents">
+                <div>
+                  <img
+                    src="img/art-salon/art-cover01-min.png"
+                    alt="visualization from the installation Salon"
+                  />
+                </div>
+                <div class="card-txt-container">
+                  <h4>Salon</h4>
+                  <p>
+                    Salon is a living room where viewers relax and consume a
+                    list of command-form sentences about being a woman. I
+                    collected the commands through ethnographic study and
+                    cultural artifacts like women's magazines. The list is
+                    randomized to comical or thought-provoking effect.
+                  </p>
+                  <div class="card-button">
+                    <a href="" class="button-secondary">Coming Soon</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card3 black-bg">
+              <div class="card-contents">
+                <div class="card-image">
+                  <img
+                    src="img/art-kalganova/art-cover02-min.png"
+                    alt="Cover imae for an artwork. Paper puppet of the face of a woman in a frame, seen in profile."
+                  />
+                </div>
+                <div class="card-txt-container">
+                  <h4>Kalganova</h4>
+                  <p>
+                    “Kalganova” is an experiment in portraiture using a
+                    hand-drawn paper puppet with 67 parts, including movable
+                    tongue and teeth. In this stop-motion video, she paces back
+                    and forth within her frame, looped to infinity. Fun fact:
+                    she has a husband, but he was cut from the project.
+                  </p>
+                  <div class="card-button">
+                    <a href="" class="button-secondary">Coming Soon</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card4 black-bg">
+              <div class="card-contents">
+                <div class="card-image">
+                  <img
+                    src="img/art-artwork/art-cover09-min.png"
+                    alt="Cover image for an audio artwork. Black screen with the words 'headphones on'."
+                  />
+                </div>
+                <div class="card-txt-container">
+                  <h4>The Artwork</h4>
+                  <p>
+                    The Artwork is an audio work that gives instructions for
+                    having an artistic experience. Similar to a GPS, an
+                    artificial voice directs the user through the steps of
+                    artistic observation and light analysis of any object
+                    nearby. It provides an art experience to anyone at any time,
+                    in the absence of any artwork.
+                  </p>
+                  <div class="card-button">
                     <a
                       href="https://vimeo.com/857278217"
-                      class="button"
+                      class="button-secondary"
                       data-fancybox=""
                       >Listen</a
                     >
@@ -359,217 +399,105 @@
                 </div>
               </div>
             </div>
-
-            <div class="row" id="art-project-2">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a href="under-construction.html" class="img-link">
-                    <img
-                      src="img/art-salon/bg-min.png"
-                      alt="visualization of a man sitting on a beanbag chair listening to headphones, with more headsets hung on the wall"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                  <h3>Salon</h3>
-                  <p>
-                    Salon is an immersive installation created for an open call
-                    by the Bulgarian Fund for Women. It&#39;s a living room
-                    where users can relax and use printed or audio material,
-                    which have been redacted to include only command-form
-                    sentences from real cultural artifacts for women, such as
-                    women&#39;s magazines. These command-form sentences are
-                    taken out of context and randomized to comical or
-                    thought-provoking effect.
-                  </p>
-                  <div class="flex-container">
-                    <a href="under-construction.html" class="button"
-                      >Under construction</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" id="art-project-1">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <a
-                    href="https://vimeo.com/857243382"
-                    class="img-link"
-                    data-fancybox
-                  >
-                    <img
-                      src="img/art-terlik/bg-7-min.png"
-                      alt="a traditional knitted foot covering on black background"
-                    />
-                  </a>
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>Terlik</h3>
-                  <p>
-                    Terlik is a stop-motion video project. The action is the
-                    process of complete unraveling of a traditional hand-knitted
-                    foot covering, to the soft sound of a crackling fire. It is
-                    a meditative loop about progress and loss.
-                  </p>
-                  <div class="flex-container">
-                    <a
-                      href="https://vimeo.com/857243382"
-                      class="button"
-                      data-fancybox
-                      >Watch</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+        </div>
+      </div>
 
-          <div class="container tabcontent" id="world">
-            <div class="row" id="textile-project-1">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <img
-                    src="img/textile/swatch-min.png"
-                    alt="a blue fabric swatch"
-                  />
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>How to save the world</h3>
+      <div class="gradient-blue">
+        <section id="world">
+          <div class="wrapper">
+            <div class="section-hero">
+              <div class="grid-six world-hero-grid">
+                <div class="world-hero-text">
+                  <h2 id="world-work">World</h2>
                   <p>
-                    I don't know how to save the world, but I design textiles
-                    and donate my profits to causes I care about once per
-                    quarter.
+                    In 2021, I accidentally experienced a war. Being passionate
+                    but irrelevant, I made botanical textile designs of native
+                    plants from the "Flora Palaestina" and sold them to raise
+                    money for a peace-building effort. It's a small and unheroic
+                    activity that didn't solve the conflict. But so far it has
+                    raised $1247. It reminds me that boring things can add up
+                    over time.
                   </p>
-                  <div id="counter-block">
-                    <p>So far I've donated $</p>
-                    <div id="counter"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" id="textile-project-3">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <img
-                    src="img/textile/fabric-swatch-min.png"
-                    alt="a fabric swatch with a date palm illustration"
-                  />
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>home / land</h3>
                   <p>
-                    Textiles inspired by the date palm, native to the Middle
-                    East. Proceeds go to the Arava Institute through Friends of
-                    the Arava Institute. They work on developing cross-border
-                    environmental cooperation in the face of political conflict
-                    and war.
+                    <em
+                      >"Any idiot can face a crisis. It’s the day-to-day living
+                      that wears you out."</em
+                    >
                   </p>
-                  <div class="flex-container">
-                    <a
-                      href="https://www.spoonflower.com/collections/740066-home-land-by-two_brds"
-                      class="button"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Shop this project</a
-                    >
-                  </div>
-                  <div class="flex-container">
-                    <a
-                      href="https://www.arava.org"
-                      class="button-tertiary"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Learn more about the Arava Institute</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" id="textile-project-2">
-              <div class="text-block">
-                <div class="col-md-12 col-lg-12">
-                  <img
-                    src="img/textile/anemone-min.png"
-                    alt="a fabric swatch with red and yellow flowers"
-                  />
-                </div>
-
-                <div class="col-md-12 col-lg-12">
-                  <h3>Slava</h3>
-                  <p>
-                    Slavic folk-art inspired florals supporting humanitarian
-                    work in Ukraine. Proceeds go to Global Giving's Ukraine
-                    Crisis Relief fund.
-                  </p>
-                  <div class="flex-container">
-                    <a
-                      href="https://www.spoonflower.com/collections/740199-global-giving-ukraine-by-two_brds"
-                      class="button"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Shop this project</a
-                    >
-                  </div>
-                  <div class="flex-container">
-                    <a
-                      href="https://www.globalgiving.org/projects/ukraine-crisis-relief-fund/"
-                      class="button-tertiary"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Learn more about Global Giving</a
-                    >
-                  </div>
+                  <p class="citation-p">—Unknown</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </main>
 
-      <footer id="contact">
-        <div class="container">
-          <h2 class="hello-animate">say HELLO</h2>
-          <p><span class="sub-span">dianovahello@gmail.com</span></p>
-          <div class="social-links">
-            <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/thediana/"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="button-contact"
+        <div
+          class="textile-trans-img-4"
+          role="img"
+          aria-label="pen and ink abstract geometric drawing"
+        ></div>
+      </div>
+    </main>
+
+    <footer id="footer" class="gradient-black">
+      <div class="wrapper">
+        <section class="project-section showcase">
+          <h3 id="contact">Say Hello:</h3>
+          <div class="grid-six project-section-grid p-sec-grid-img3">
+            <div class="p-sec-grid-1">
+              <div class="buttons">
+                <ul>
+                  <li><p>dianovahello@gmail.com</p></li>
+                  <li>
+                    <a href="mailto:dianovahello@gmail.com" class="button"
+                      ><i class="fa-solid fa-envelope"></i>Email</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/thediana/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="button"
+                      ><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.behance.net/dianaivanova15"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="button"
+                      ><i class="fa-brands fa-behance"></i>Behance</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-sec-grid-2">
+              <img
+                class="img-sm"
+                src="img/about-me/img-about-me@2x/img-about-me@2x.png"
+                alt="Photo of Diana"
+              />
+            </div>
+            <div class="p-sec-grid-3">
+              <div class="center">
+                <a href="#top" class=""
+                  ><i class="fa-solid fa-chevron-up"></i>TOP</a
                 >
-                  <i class="fa-brands fa-linkedin-in fa-xl"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.behance.net/dianaivanova15"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="button-contact"
-                >
-                  <i class="fa-brands fa-behance fa-xl"></i>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:dianovahello@gmail.com" class="button-contact">
-                  <i class="fa-regular fa-envelope fa-xl"></i>
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
+            <div class="p-sec-grid-4">
+              <div class="copyright">
+                <p>Copyright Diana Ivanova 2023-2024</p>
+              </div>
+            </div>
           </div>
-          <p>Copyright Diana Ivanova 2023-2024</p>
-        </div>
-      </footer>
-    </div>
+        </section>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -582,16 +510,5 @@
       src="https://kit.fontawesome.com/f7ab72f41f.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      let counts = setInterval(updated);
-      let upto = 0;
-      function updated() {
-        let count = document.getElementById("counter");
-        count.innerHTML = ++upto;
-        if (upto === 894) {
-          clearInterval(counts);
-        }
-      }
-    </script>
   </body>
 </html>
