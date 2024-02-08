@@ -59,32 +59,14 @@ div {
 
 /* Styling for color themes */
 
-.gradient-blue {
-  background-image: linear-gradient(
-    to right bottom,
-    #dbe9f4,
-    #d8e7f3,
-    #d5e6f2,
-    #d2e4f2,
-    #cfe2f1
-  );
-}
-
-.gradient-black {
-  background-image: linear-gradient(
-    to top,
-    #111416,
-    #15181a,
-    #181c1e,
-    #1b1f23,
-    #1e2327
-  );
+.black-bg {
+  background-color: #1e2327;
   color: #99b0c3;
   font-weight: 350;
 }
 
-.black-bg {
-  background-color: #1e2327;
+.black-bg-dark {
+  background-color: #181c1f;
   color: #99b0c3;
   font-weight: 350;
 }
@@ -94,28 +76,14 @@ div {
   color: #1e2327;
 }
 
-.gradient-grey {
-  background-image: linear-gradient(
-    to right bottom,
-    #d3e1ec,
-    #d1e0ec,
-    #cfdfec,
-    #cddeec,
-    #cbddec
-  );
+.blue-bg {
+  background-color:#dbe9f4;
+  color: #1e2327;
 }
 
-.gradient-white {
-  background-image: linear-gradient(
-    to right bottom,
-    #f3f7fb,
-    #f0f5fa,
-    #edf3fa,
-    #eaf2f9,
-    #e7f0f8
-  );
-  font-weight: 400;
-  color: rgba(45, 54, 65, 1);
+.grey-bg {
+  background-color: #e7f0f8;
+  color: #1e2327;
 }
 
 
@@ -779,7 +747,7 @@ nav .fa-xmark,
 }
 
 #footer a,
-.gradient-black a {
+.black-bg a {
   color: #f3f7fb;
   font-weight: 350;
 }
