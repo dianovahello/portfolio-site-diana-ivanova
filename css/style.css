@@ -33,7 +33,7 @@ body {
   background-color: var(--white);
   font-family: "Archivo", sans-serif;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--black);
 }
 
@@ -144,7 +144,7 @@ div {
   font-weight: 400;
   text-transform: none;
   text-align: left;
-  line-height: 1.65;
+  line-height: 1.8;
   padding-top: 2rem;
   max-width: 40rem;
   margin-left: auto;
@@ -156,7 +156,7 @@ div {
   display: block;
   font-size: 1rem;
   text-align: left;
-  line-height: 1.65;
+  line-height: 1.8;
   margin-left: auto;
   margin-right: auto;
 }
@@ -402,8 +402,9 @@ nav .fa-xmark,
 .nav-item a:active,
 .nav-item a:visited {
   color: var(--black);
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* Styling for textile-trans */
@@ -1034,14 +1035,6 @@ nav .fa-xmark,
     margin: 0 1rem 0 0;
   }
 
-  .nav-item a,
-  .nav-item a:hover,
-  .nav-item a:focus,
-  .nav-item a:active,
-  .nav-item a:visited {
-    font-size: unset;
-  }
-
   /* Media 640 styling for hero  */
 
   #hero .buttons {
@@ -1206,7 +1199,6 @@ nav .fa-xmark,
 }
 
 @media only screen and (min-width: 1024px) {
-  /* Media 1024 styling for header */
 
   /* Media 1024 styling for textile-trans */
 
