@@ -17,16 +17,8 @@ Typescale: augmented fourth ratio 1.414
 
 */
 
-:root {
-  --white: #f3f7fb;
-  --white-dark: #e7f0f8;
-  --black: #1e2327;
-  --black-dark: #181c1f;
-  --blue: #dbe9f4;
-  --blue-dark: #99b0c3;
-  --accent: #ff5a5f;
-  --accent-dark: #7a0004;
-}
+
+/* General and resets */
 
 * {
   box-sizing: border-box;
@@ -72,11 +64,26 @@ div {
   font-size: 0;
 }
 
+/* Utility classes */
+
 .center {
   text-align: center;
 }
 
-/* Styling for color themes */
+/* Color variables */
+
+:root {
+  --white: #f3f7fb;
+  --white-dark: #e7f0f8;
+  --black: #1e2327;
+  --black-dark: #181c1f;
+  --blue: #dbe9f4;
+  --blue-dark: #99b0c3;
+  --accent: #ff5a5f;
+  --accent-dark: #7a0004;
+}
+
+/* Color styles */
 
 .black-bg {
   background-color: var(--black);
@@ -103,41 +110,6 @@ div {
 .grey-bg {
   background-color: var(--white-dark);
   color: var(--black);
-}
-
-/* styling for headings mobile 320px */
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "archivo", sans-serif;
-  overflow-wrap: break-word;
-  padding: 2rem 1rem;
-  margin: 0;
-  line-height: 1.45;
-  text-align: center;
-}
-
-h1 {
-  font-size: 3.998rem;
-  text-align: left;
-}
-
-h2 {
-  font-size: 2.827rem;
-}
-
-h3 {
-  font-size: 1.999rem;
-  font-family: "Archivo", sans-serif;
-  text-transform: inherit;
-}
-
-h4 {
-  font-size: 1.414rem;
-  font-family: "Archivo", sans-serif;
-  text-transform: inherit;
 }
 
 .h1-span {
@@ -189,6 +161,41 @@ h4 {
   margin-right: auto;
 }
 
+/* Headings mobile 320px */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "archivo", sans-serif;
+  overflow-wrap: break-word;
+  padding: 2rem 1rem;
+  margin: 0;
+  line-height: 1.45;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.998rem;
+  text-align: left;
+}
+
+h2 {
+  font-size: 2.827rem;
+}
+
+h3 {
+  font-size: 1.999rem;
+  font-family: "Archivo", sans-serif;
+  text-transform: inherit;
+}
+
+h4 {
+  font-size: 1.414rem;
+  font-family: "Archivo", sans-serif;
+  text-transform: inherit;
+}
+
 p {
   font-size: 1rem;
   margin: 0 0 1rem 0;
@@ -212,14 +219,14 @@ ol {
   margin-right: auto;
 }
 
-/* Styling for icons */
+/* Icons */
 
 i,
 .button i {
   padding: 0 8px 0 0;
 }
 
-/* styling for links */
+/* Links */
 
 a,
 a:focus,
@@ -230,7 +237,7 @@ a:visited {
   padding: 2px 0;
   text-decoration: none;
   outline: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .button,
@@ -426,13 +433,6 @@ nav .fa-xmark,
   background-color: var(--white-dark);
 }
 
-.sm {
-  font-size: 2.827rem;
-  text-transform: uppercase;
-  padding: 0.5rem;
-  background-color: rgba(243, 247, 251, 0.5);
-}
-
 .textile-trans-img-1 {
   background-image: url(../img/textile/anemone-bg-husky-min.png);
 }
@@ -453,7 +453,9 @@ nav .fa-xmark,
   background-image: url(../img/textile/tex-banner-min.png);
 }
 
-/* Styling for hero */
+/* Styling for index */
+
+/* Styling for index hero */
 
 #hero {
   margin: 0;
@@ -488,7 +490,7 @@ nav .fa-xmark,
   width: 100%;
 }
 
-/* Styling for about */
+/* Styling for index about */
 
 #about {
   padding: 0 0 2rem 0;
@@ -518,7 +520,7 @@ nav .fa-xmark,
   font-size: 1rem;
 }
 
-/* Styling for skills */
+/* Styling for index skills */
 
 #skills {
   padding-bottom: 1rem;
